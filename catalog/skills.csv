@@ -1,0 +1,72 @@
+name,title,category,description,argument_hint
+agenda-packet-builder,Agenda Packet Builder,governance,"Build a city council or board agenda packet with readiness checks, missing attachments, hearing/publication flags, and item-by-item support notes.",meeting-date or meeting-type
+ordinance-drafter,Ordinance Drafter,governance,"Draft or revise a municipal ordinance with issue spotting around authority, amendment targets, enforcement, effective dates, and procedural steps.",topic or code-section
+resolution-drafter,Resolution Drafter,governance,"Draft a municipal resolution for appointments, approvals, findings, recognitions, or formal policy statements.",topic
+staff-report-builder,Staff Report Builder,governance,"Create a decision-ready staff report with summary, background, analysis, options, recommendation, fiscal impact, and attachment list.",issue
+council-meeting-brief,Council Meeting Brief,governance,"Prepare the mayor, council, manager, or clerk for a meeting with question lists, motions, and item-by-item watch notes.",meeting-date
+motion-language-crafter,Motion Language Crafter,governance,"Turn a desired decision into clean motion language and identify amendments, findings, and signature blocks that may be needed.",agenda-item
+public-hearing-prep,Public Hearing Prep,governance,"Prepare hearing scripts, findings, notice checkpoints, public-comment capture structure, and closing action options.",hearing-topic
+board-appointment-check,Board Appointment Check,governance,"Screen board and commission appointments for eligibility, term logic, ward/residency rules, and attendance concerns.",board-name
+charter-code-crosscheck,Charter Code Crosscheck,governance,"Check whether a draft action fits the city's charter, code, local rules, and meeting process before it moves forward.",draft-action
+open-meeting-risk-check,Open Meeting Risk Check,governance,"Review proposed meeting activity, messaging, workshops, emails, or serial conversations for meeting-law and transparency risk.",scenario
+legislative-history-brief,Legislative History Brief,governance,"Build a concise history of an ordinance, resolution, policy, or recurring issue from prior agendas, minutes, and staff memos.",topic
+election-calendar-planner,Election Calendar Planner,governance,"Map key dates and task owners for municipal filing periods, elections, onboarding, and related notices or briefings.",election-year
+initiative-referendum-recall-guide,Initiative Referendum Recall Guide,governance,"Create a neutral process guide for initiative, referendum, or recall questions using local charter and state-law references.",process
+budget-variance-analysis,Budget Variance Analysis,finance,"Explain monthly or quarterly variances by separating timing noise, structural variance, one-time events, and management action needs.",fund or department
+revenue-forecast-scenario,Revenue Forecast Scenario,finance,"Build scenario-based revenue outlooks with assumptions, downside cases, and budget implications for city leadership.",revenue-source
+cip-prioritizer,Cip Prioritizer,finance,"Rank capital projects using risk, condition, service impact, regulatory pressure, funding fit, and delivery realism.",cip-list
+procurement-bid-evaluator,Procurement Bid Evaluator,finance,"Compare bids, proposals, or quotes using documented criteria, threshold awareness, and a defendable recommendation.",solicitation-name
+invoice-claim-review,Invoice Claim Review,finance,"Summarize a claim, invoice batch, or approval item for executive or council review, including funding source and red flags.",claim-batch
+user-fee-policy-review,User Fee Policy Review,finance,"Assess fees, permit charges, and rate proposals against cost recovery, policy goals, peer context, and public communication needs.",fee-program
+debt-financing-brief,Debt Financing Brief,finance,"Prepare a plain-language financing brief on options, constraints, voter approval needs, reserve effects, and timing.",project or issue
+audit-response-builder,Audit Response Builder,finance,"Turn audit findings or comments into corrective actions, owners, deadlines, and a credible management response.",audit-finding
+grant-opportunity-screen,Grant Opportunity Screen,finance,"Quickly screen a grant for eligibility, strategic fit, match burden, operating tail, and probability of success.",grant-name
+grant-compliance-check,Grant Compliance Check,finance,"Review reporting, match, procurement, and documentation obligations for an awarded grant so the city stays compliant.",grant-name
+contract-issue-spotter,Contract Issue Spotter,legal-risk,"Review a draft contract for scope, term, payment, indemnity, insurance, records, termination, and operational red flags.",contract-name
+records-request-triage,Records Request Triage,legal-risk,"Triage a public records request into likely custodians, date ranges, exclusions, sensitive material, and response steps.",request
+litigation-hold-checklist,Litigation Hold Checklist,legal-risk,"Create a defensible litigation-hold plan with custodians, systems, retention steps, and communication notes.",matter-name
+ethics-conflict-check,Ethics Conflict Check,legal-risk,"Spot ethics, disclosure, gift, recusal, personal-interest, or appearance issues in a proposed city action.",scenario
+labor-employment-issue-scan,Labor Employment Issue Scan,legal-risk,"Screen a personnel or workplace issue for policy, due-process, leave, retaliation, wage-hour, or discrimination risk.",issue
+ordinance-enforceability-check,Ordinance Enforceability Check,legal-risk,"Review a draft ordinance for vague language, missing definitions, due-process issues, and enforcement practicality.",ordinance-topic
+land-use-findings-builder,Land Use Findings Builder,legal-risk,Draft or test zoning and land-use findings so they track adopted criteria rather than preference alone.,case-name
+franchise-utility-review,Franchise Utility Review,legal-risk,"Review a franchise or utility-related action for authority, rate/process implications, and approval steps.",utility-action
+service-request-triage,Service Request Triage,operations,"Triage resident or internal service requests into the right department, urgency, response language, and escalation path.",request-text
+emergency-incident-brief,Emergency Incident Brief,operations,"Create a leader-ready incident brief with facts, impacts, actions underway, resource asks, and message guidance.",incident
+storm-recovery-action-plan,Storm Recovery Action Plan,operations,"Turn a storm or tornado damage snapshot into immediate, near-term, and long-term recovery work with owners.",incident
+public-works-project-update,Public Works Project Update,operations,"Draft a clear progress update for a public works project, including schedule, budget, traffic, and resident impact.",project-name
+utility-outage-comms,Utility Outage Comms,operations,"Prepare outage communications for water, wastewater, stormwater, or other utility events in plain language.",outage
+fleet-policy-drafter,Fleet Policy Drafter,operations,"Draft or refine policy for fleet use, take-home vehicles, replacement timing, accidents, or fuel controls.",policy-topic
+facilities-maintenance-prioritizer,Facilities Maintenance Prioritizer,operations,"Rank facility issues by safety, compliance, mission impact, cost, and temporary workaround options.",facility-list
+code-enforcement-case-summary,Code Enforcement Case Summary,operations,Summarize a code enforcement or nuisance case for internal review or action routing with facts and process status.,case-id
+zoning-case-analysis,Zoning Case Analysis,planning-and-growth,"Analyze a rezoning, special permit, plat, or development case against plan and code criteria, context, and precedent.",case-name
+comp-plan-crosswalk,Comp Plan Crosswalk,planning-and-growth,"Crosswalk a proposed project, ordinance, or policy against adopted comprehensive-plan goals and themes.",topic
+development-agreement-review,Development Agreement Review,planning-and-growth,"Review or outline a development agreement for obligations, triggers, public cost, and enforceability issues.",project-name
+subdivision-case-brief,Subdivision Case Brief,planning-and-growth,"Prepare a concise decision brief for platting or subdivision cases with conditions, utility issues, and hearing notes.",case-name
+housing-policy-options,Housing Policy Options,planning-and-growth,"Generate practical housing policy options with pros, cons, implementation steps, and likely political considerations.",housing-topic
+economic-development-incentive-memo,Economic Development Incentive Memo,planning-and-growth,"Summarize a proposed incentive with public costs, expected benefits, controls, and negotiation issues.",project-name
+downtown-project-concept,Downtown Project Concept,planning-and-growth,"Shape a downtown or corridor concept into a usable project brief with partners, phasing, and activation ideas.",location
+annexation-brief,Annexation Brief,planning-and-growth,"Prepare an annexation or growth-boundary brief with service, fiscal, land-use, and process considerations.",area-name
+hiring-panel-kit,Hiring Panel Kit,people,"Build a panel interview kit with role-based questions, scoring guidance, and red-flag notes for city hiring.",position-title
+performance-review-writer,Performance Review Writer,people,"Draft a balanced performance evaluation with evidence, tone control, and practical development goals.",employee-or-role
+disciplinary-memo-builder,Disciplinary Memo Builder,people,"Draft a corrective-action or discipline memo that is factual, professional, and process-aware.",issue
+org-chart-and-span-review,Org Chart And Span Review,people,"Assess an org chart or reporting structure for clear accountability, workload, succession, and service impact.",department-name
+board-training-builder,Board Training Builder,people,"Build an orientation or training packet for council, boards, commissions, or department supervisors.",audience
+ai-acceptable-use-policy,Ai Acceptable Use Policy,people,"Draft or refresh a municipal AI acceptable-use policy with human review, records, privacy, and security controls.",policy-version
+staff-handbook-redline,Staff Handbook Redline,people,"Review or draft handbook language with an eye to clarity, consistency, and rollout issues.",section
+investigation-intake,Investigation Intake,people,Create a neutral intake summary and next-step plan for workplace complaints or internal investigations.,matter-name
+constituent-response,Constituent Response,public-engagement,Draft a respectful response to a resident issue while routing the matter internally and protecting the city from overpromising.,issue
+public-comment-summarizer,Public Comment Summarizer,public-engagement,"Synthesize hearing or meeting comments into themes, misconceptions, unanswered questions, and response options.",meeting-topic
+press-release-writer,Press Release Writer,public-engagement,"Write a city press release that is accurate, readable, and aligned with legal and operational review needs.",topic
+speechwriter,Speechwriter,public-engagement,"Draft remarks for the mayor, council, manager, or department head in a strong but grounded municipal voice.",event-or-topic
+town-hall-kit,Town Hall Kit,public-engagement,"Prepare a town hall kit with agenda, ground rules, likely questions, follow-up method, and message priorities.",event-topic
+faq-builder,Faq Builder,public-engagement,"Convert a project, policy, or controversy into a plain-language public FAQ that reduces repeated confusion.",topic
+social-post-series,Social Post Series,public-engagement,"Generate a multi-post city social media series with tone control, accessibility, and channel fit.",campaign-topic
+crisis-message-house,Crisis Message House,public-engagement,"Build a disciplined crisis message house with holding statement, key messages, and tough Q&A.",incident
+kpi-dashboard-narrative,Kpi Dashboard Narrative,data-and-research,"Turn KPI tables into a useful narrative that explains movement, drivers, and management action.",dashboard-name
+vendor-proposal-scorecard,Vendor Proposal Scorecard,data-and-research,"Create or refine a proposal scorecard with weighted criteria, notes fields, and a fair evaluation approach.",rfp-name
+records-retention-mapper,Records Retention Mapper,data-and-research,"Map city records to retention, custody, sensitivity, and disposition steps using local practice and law.",record-series
+policy-research-synthesizer,Policy Research Synthesizer,data-and-research,"Synthesize policy research into decision-ready options that name trade-offs, examples, and implementation questions.",topic
+meeting-minutes-drafter,Meeting Minutes Drafter,data-and-research,"Draft minutes from notes, motions, and recordings with procedural clarity and neutral tone.",meeting-date
+legislative-tracker,Legislative Tracker,data-and-research,"Track recurring legislation, ordinances, or policy proposals through status changes and decision points.",topic
+contract-obligation-extractor,Contract Obligation Extractor,data-and-research,"Extract deadlines, deliverables, payment triggers, notice clauses, and renewal points from a contract.",contract-name
+demographic-brief-builder,Demographic Brief Builder,data-and-research,Build a clear demographic or service-area brief from census or local data without overstating weak signals.,area-or-topic

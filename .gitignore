@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+__pycache__/
+dist/
+build/
+MayorGPT.zip
+*.zip

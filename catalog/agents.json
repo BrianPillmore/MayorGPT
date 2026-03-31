@@ -1,0 +1,649 @@
+[
+  {
+    "name": "mayor",
+    "title": "Mayor",
+    "category": "elected-officials",
+    "best_for": [
+      "public remarks",
+      "strategic framing",
+      "constituent leadership",
+      "regional advocacy",
+      "meeting tone-setting"
+    ],
+    "deliverables": [
+      "mayoral statements",
+      "speech drafts",
+      "opening remarks",
+      "priority memos",
+      "public explanations of council actions"
+    ]
+  },
+  {
+    "name": "vice-mayor-presiding-officer",
+    "title": "Vice Mayor / Presiding Officer",
+    "category": "elected-officials",
+    "best_for": [
+      "meeting management",
+      "procedural rulings",
+      "backup remarks",
+      "special meetings",
+      "succession planning"
+    ],
+    "deliverables": [
+      "presiding scripts",
+      "meeting flow notes",
+      "motion and sequence guidance",
+      "brief remarks",
+      "continuity memos"
+    ]
+  },
+  {
+    "name": "councilmember",
+    "title": "Councilmember",
+    "category": "elected-officials",
+    "best_for": [
+      "agenda review",
+      "policy questions",
+      "constituent follow-up",
+      "amendment ideas",
+      "ward advocacy"
+    ],
+    "deliverables": [
+      "question lists",
+      "district memos",
+      "policy options",
+      "meeting notes",
+      "constituent response drafts"
+    ]
+  },
+  {
+    "name": "city-manager",
+    "title": "City Manager",
+    "category": "executive-office",
+    "best_for": [
+      "budget strategy",
+      "operations management",
+      "agenda recommendations",
+      "cross-department coordination",
+      "executive briefings"
+    ],
+    "deliverables": [
+      "manager memos",
+      "implementation plans",
+      "budget narratives",
+      "cross-department action lists",
+      "council recommendations"
+    ]
+  },
+  {
+    "name": "assistant-city-manager",
+    "title": "Assistant City Manager",
+    "category": "executive-office",
+    "best_for": [
+      "project tracking",
+      "special initiatives",
+      "dashboard updates",
+      "follow-up tracking",
+      "cross-functional meetings"
+    ],
+    "deliverables": [
+      "project trackers",
+      "initiative charters",
+      "status dashboards",
+      "executive summaries",
+      "follow-up lists"
+    ]
+  },
+  {
+    "name": "chief-of-staff-executive-office",
+    "title": "Chief of Staff / Executive Office Coordinator",
+    "category": "executive-office",
+    "best_for": [
+      "briefing books",
+      "calendar triage",
+      "follow-up preparation",
+      "executive correspondence",
+      "stakeholder mapping"
+    ],
+    "deliverables": [
+      "briefing packets",
+      "decision memos",
+      "stakeholder maps",
+      "event prep notes",
+      "call sheets"
+    ]
+  },
+  {
+    "name": "public-information-officer",
+    "title": "Public Information Officer / Communications Director",
+    "category": "executive-office",
+    "best_for": [
+      "press releases",
+      "talking points",
+      "FAQs",
+      "media statements",
+      "crisis communication"
+    ],
+    "deliverables": [
+      "message houses",
+      "press releases",
+      "social copy",
+      "media Q&A",
+      "communication calendars"
+    ]
+  },
+  {
+    "name": "constituent-services-director",
+    "title": "Constituent Services Director",
+    "category": "executive-office",
+    "best_for": [
+      "resident correspondence",
+      "issue triage",
+      "service escalation",
+      "trend analysis",
+      "town hall prep"
+    ],
+    "deliverables": [
+      "response drafts",
+      "intake summaries",
+      "escalation notes",
+      "issue heatmaps",
+      "resident FAQ content"
+    ]
+  },
+  {
+    "name": "city-clerk",
+    "title": "City Clerk",
+    "category": "statutory-roles",
+    "best_for": [
+      "agendas",
+      "minutes",
+      "records requests",
+      "ordinance formatting",
+      "notice deadlines",
+      "election logistics"
+    ],
+    "deliverables": [
+      "agenda packets",
+      "minute drafts",
+      "notice checklists",
+      "attestation blocks",
+      "records retention maps"
+    ]
+  },
+  {
+    "name": "city-attorney",
+    "title": "City Attorney",
+    "category": "statutory-roles",
+    "best_for": [
+      "ordinance review",
+      "contract review",
+      "public meeting questions",
+      "land use findings",
+      "legal risk flags"
+    ],
+    "deliverables": [
+      "legal issue summaries",
+      "risk memos",
+      "redline comments",
+      "findings language",
+      "privilege-sensitive talking points"
+    ]
+  },
+  {
+    "name": "municipal-court-administrator",
+    "title": "Municipal Judge / Court Administrator",
+    "category": "statutory-roles",
+    "best_for": [
+      "court workflow",
+      "citation processes",
+      "fine schedules",
+      "court notices",
+      "minor violations bureau concepts"
+    ],
+    "deliverables": [
+      "court process maps",
+      "docket summaries",
+      "policy options",
+      "public FAQs",
+      "administrative checklists"
+    ]
+  },
+  {
+    "name": "finance-director-budget-officer",
+    "title": "Finance Director / Budget Officer / Treasurer",
+    "category": "statutory-roles",
+    "best_for": [
+      "budget development",
+      "variance analysis",
+      "financial policies",
+      "claims review",
+      "debt and reserve analysis"
+    ],
+    "deliverables": [
+      "budget books",
+      "variance memos",
+      "fiscal impact statements",
+      "reserve analyses",
+      "financial dashboards"
+    ]
+  },
+  {
+    "name": "procurement-contract-administrator",
+    "title": "Procurement & Contract Administrator",
+    "category": "statutory-roles",
+    "best_for": [
+      "RFPs",
+      "bid comparisons",
+      "sole-source justifications",
+      "contract routing",
+      "vendor communications"
+    ],
+    "deliverables": [
+      "scope drafts",
+      "evaluation matrices",
+      "award memos",
+      "compliance checklists",
+      "contract summaries"
+    ]
+  },
+  {
+    "name": "planning-and-development-director",
+    "title": "Planning & Development Director",
+    "category": "departments",
+    "best_for": [
+      "rezonings",
+      "special permits",
+      "site plans",
+      "staff reports",
+      "growth policy"
+    ],
+    "deliverables": [
+      "staff reports",
+      "case summaries",
+      "findings and conditions",
+      "plan/code crosswalks",
+      "public hearing materials"
+    ]
+  },
+  {
+    "name": "public-works-director",
+    "title": "Public Works Director",
+    "category": "departments",
+    "best_for": [
+      "capital project updates",
+      "maintenance prioritization",
+      "infrastructure memos",
+      "storm response coordination",
+      "operations dashboards"
+    ],
+    "deliverables": [
+      "project updates",
+      "maintenance plans",
+      "CIP inputs",
+      "operational risk notes",
+      "service-level explanations"
+    ]
+  },
+  {
+    "name": "utilities-director",
+    "title": "Utilities Director",
+    "category": "departments",
+    "best_for": [
+      "rate studies",
+      "utility updates",
+      "compliance summaries",
+      "outage communications",
+      "capital needs"
+    ],
+    "deliverables": [
+      "system status briefs",
+      "rate option memos",
+      "compliance summaries",
+      "outage notices",
+      "asset management priorities"
+    ]
+  },
+  {
+    "name": "economic-development-director",
+    "title": "Economic Development Director",
+    "category": "departments",
+    "best_for": [
+      "business recruitment",
+      "incentive analysis",
+      "downtown strategy",
+      "development partnerships",
+      "market messaging"
+    ],
+    "deliverables": [
+      "incentive memos",
+      "developer briefs",
+      "site summaries",
+      "downtown activation ideas",
+      "business retention notes"
+    ]
+  },
+  {
+    "name": "human-resources-risk-director",
+    "title": "Human Resources & Risk Director",
+    "category": "departments",
+    "best_for": [
+      "hiring packets",
+      "policy drafts",
+      "discipline memos",
+      "training outlines",
+      "risk assessments"
+    ],
+    "deliverables": [
+      "interview kits",
+      "policy updates",
+      "corrective-action memos",
+      "training plans",
+      "risk briefs"
+    ]
+  },
+  {
+    "name": "information-technology-gis-director",
+    "title": "Information Technology & GIS Director",
+    "category": "departments",
+    "best_for": [
+      "system selection",
+      "cyber risk",
+      "data governance",
+      "GIS map briefs",
+      "AI governance implementation"
+    ],
+    "deliverables": [
+      "technology roadmaps",
+      "risk notes",
+      "system comparison memos",
+      "data inventories",
+      "AI control recommendations"
+    ]
+  },
+  {
+    "name": "grants-and-intergovernmental-affairs-director",
+    "title": "Grants & Intergovernmental Affairs Director",
+    "category": "departments",
+    "best_for": [
+      "grant screening",
+      "grant applications",
+      "legislative agendas",
+      "regional partnership memos",
+      "funder updates"
+    ],
+    "deliverables": [
+      "grant briefs",
+      "application outlines",
+      "compliance trackers",
+      "legislative one-pagers",
+      "partner talking points"
+    ]
+  },
+  {
+    "name": "emergency-manager",
+    "title": "Emergency Manager",
+    "category": "departments",
+    "best_for": [
+      "incident briefs",
+      "EOP updates",
+      "proclamations",
+      "resource requests",
+      "after-action reports"
+    ],
+    "deliverables": [
+      "situation reports",
+      "incident objectives",
+      "resource lists",
+      "recovery plans",
+      "after-action summaries"
+    ]
+  },
+  {
+    "name": "police-chief",
+    "title": "Police Chief",
+    "category": "departments",
+    "best_for": [
+      "incident summaries",
+      "policy updates",
+      "staffing cases",
+      "equipment justifications",
+      "community safety messaging"
+    ],
+    "deliverables": [
+      "command summaries",
+      "policy memos",
+      "briefing points",
+      "deployment explanations",
+      "public safety updates"
+    ]
+  },
+  {
+    "name": "fire-chief",
+    "title": "Fire Chief",
+    "category": "departments",
+    "best_for": [
+      "incident summaries",
+      "response justifications",
+      "inspection policy",
+      "life-safety memos",
+      "station/resource planning"
+    ],
+    "deliverables": [
+      "incident briefs",
+      "coverage analyses",
+      "inspection guidance",
+      "life-safety recommendations",
+      "capital staffing requests"
+    ]
+  },
+  {
+    "name": "parks-and-recreation-director",
+    "title": "Parks & Recreation Director",
+    "category": "departments",
+    "best_for": [
+      "program proposals",
+      "facility activation",
+      "event planning",
+      "park maintenance priorities",
+      "community wellness narratives"
+    ],
+    "deliverables": [
+      "program briefs",
+      "event run sheets",
+      "facility recommendations",
+      "maintenance notes",
+      "community benefit summaries"
+    ]
+  },
+  {
+    "name": "library-and-cultural-services-director",
+    "title": "Library & Cultural Services Director",
+    "category": "departments",
+    "best_for": [
+      "program planning",
+      "board support",
+      "policy explanations",
+      "grant framing",
+      "public service narratives"
+    ],
+    "deliverables": [
+      "program briefs",
+      "policy memos",
+      "board reports",
+      "grant concepts",
+      "community impact summaries"
+    ]
+  },
+  {
+    "name": "consulting-engineer",
+    "title": "Consulting Engineer",
+    "category": "external-advisors",
+    "best_for": [
+      "technical memos",
+      "design alternatives",
+      "probable cost opinions",
+      "drainage/street/utility reviews",
+      "capital scoping"
+    ],
+    "deliverables": [
+      "technical summaries",
+      "design option tables",
+      "cost opinions",
+      "review comments",
+      "construction risk notes"
+    ]
+  },
+  {
+    "name": "traffic-engineer",
+    "title": "Traffic Engineer",
+    "category": "external-advisors",
+    "best_for": [
+      "traffic impact review",
+      "intersection options",
+      "signal/signing recommendations",
+      "school/park access",
+      "parking and circulation analysis"
+    ],
+    "deliverables": [
+      "traffic summaries",
+      "option comparisons",
+      "mitigation lists",
+      "safety notes",
+      "public explanation language"
+    ]
+  },
+  {
+    "name": "bond-counsel",
+    "title": "Bond Counsel",
+    "category": "external-advisors",
+    "best_for": [
+      "bond timelines",
+      "election-linked debt",
+      "documentation checklists",
+      "financing action items",
+      "closing sequences"
+    ],
+    "deliverables": [
+      "financing timelines",
+      "document lists",
+      "issue-spotting memos",
+      "process summaries",
+      "presentation notes"
+    ]
+  },
+  {
+    "name": "municipal-advisor",
+    "title": "Municipal Advisor / Financial Advisor",
+    "category": "external-advisors",
+    "best_for": [
+      "funding comparisons",
+      "cash flow strategy",
+      "rate-backed debt options",
+      "bond issue framing",
+      "capital plan financing"
+    ],
+    "deliverables": [
+      "option matrices",
+      "debt profiles",
+      "cash flow notes",
+      "board presentation summaries",
+      "trade-off memos"
+    ]
+  },
+  {
+    "name": "land-use-counsel",
+    "title": "Land Use Counsel",
+    "category": "external-advisors",
+    "best_for": [
+      "high-risk zoning cases",
+      "development agreements",
+      "conditions of approval",
+      "hearing process",
+      "property-rights issues"
+    ],
+    "deliverables": [
+      "issue memos",
+      "findings language",
+      "hearing cautions",
+      "agreement comments",
+      "risk summaries"
+    ]
+  },
+  {
+    "name": "labor-and-employment-counsel",
+    "title": "Labor & Employment Counsel",
+    "category": "external-advisors",
+    "best_for": [
+      "discipline review",
+      "investigation planning",
+      "policy updates",
+      "leave/accommodation issues",
+      "employment litigation risk"
+    ],
+    "deliverables": [
+      "issue summaries",
+      "investigation outlines",
+      "risk memos",
+      "policy comments",
+      "decision options"
+    ]
+  },
+  {
+    "name": "outside-litigation-counsel",
+    "title": "Outside Litigation Counsel",
+    "category": "external-advisors",
+    "best_for": [
+      "claim assessment",
+      "litigation hold",
+      "settlement posture",
+      "executive session prep",
+      "case status summaries"
+    ],
+    "deliverables": [
+      "litigation summaries",
+      "hold instructions",
+      "risk range memos",
+      "decision trees",
+      "public-safe status updates"
+    ]
+  },
+  {
+    "name": "grant-strategist",
+    "title": "Grant Strategist",
+    "category": "external-advisors",
+    "best_for": [
+      "grant narratives",
+      "eligibility screens",
+      "project framing",
+      "funding calendars",
+      "funder alignment"
+    ],
+    "deliverables": [
+      "grant summaries",
+      "application narratives",
+      "work-plan outlines",
+      "match strategy notes",
+      "reporting calendars"
+    ]
+  },
+  {
+    "name": "crisis-communications-consultant",
+    "title": "Crisis Communications Consultant",
+    "category": "external-advisors",
+    "best_for": [
+      "high-risk media events",
+      "incident messaging",
+      "reputation management",
+      "tough Q&A",
+      "public trust recovery"
+    ],
+    "deliverables": [
+      "message houses",
+      "holding statements",
+      "media Q&A",
+      "stakeholder maps",
+      "recovery communication plans"
+    ]
+  }
+]

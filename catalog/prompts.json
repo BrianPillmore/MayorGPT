@@ -1,0 +1,422 @@
+[
+  {
+    "name": "constituent-response",
+    "title": "Constituent Response",
+    "category": "daily",
+    "use_when": "You need a calm, useful response to a resident complaint, question, compliment, or service request.",
+    "output": "A reply draft, internal escalation note, and any follow-up questions or promises to avoid."
+  },
+  {
+    "name": "executive-brief",
+    "title": "Executive Brief",
+    "category": "daily",
+    "use_when": "You need a one-page briefing for the mayor, city manager, or council on a fast-moving issue.",
+    "output": "A short executive brief with issue, background, options, recommendation, risks, and next steps."
+  },
+  {
+    "name": "councilmember-daily-brief",
+    "title": "Councilmember Daily Brief",
+    "category": "daily",
+    "use_when": "A councilmember needs a concise update on hot issues, resident concerns, and upcoming decision points.",
+    "output": "A compact daily memo grouped into watch items, resident issues, decisions ahead, and suggested follow-up."
+  },
+  {
+    "name": "meeting-prep",
+    "title": "Meeting Prep",
+    "category": "daily",
+    "use_when": "You need talking points, questions, and motion pathways before a council or board meeting.",
+    "output": "Item-by-item prep notes, likely questions, possible motions, and risk flags."
+  },
+  {
+    "name": "media-talking-points",
+    "title": "Media Talking Points",
+    "category": "daily",
+    "use_when": "A leader or spokesperson needs concise public-facing talking points for media or stakeholder calls.",
+    "output": "Core messages, quotable language, do-not-say notes, and likely Q&A."
+  },
+  {
+    "name": "service-request-triage",
+    "title": "Service Request Triage",
+    "category": "daily",
+    "use_when": "The city needs to route resident or internal service requests quickly and consistently.",
+    "output": "A triage summary with owner, urgency, service category, resident-facing response, and escalation need."
+  },
+  {
+    "name": "inbox-prioritizer",
+    "title": "Inbox Prioritizer",
+    "category": "daily",
+    "use_when": "An elected or executive office needs help sorting email into action buckets.",
+    "output": "A prioritized list grouped into respond, delegate, watch, schedule, and archive."
+  },
+  {
+    "name": "difficult-email",
+    "title": "Difficult Email Response",
+    "category": "daily",
+    "use_when": "You need to respond to an angry, accusatory, or politically sensitive email without escalating conflict.",
+    "output": "A measured response draft plus a shorter alternative and internal risk notes."
+  },
+  {
+    "name": "quick-policy-explainer",
+    "title": "Quick Policy Explainer",
+    "category": "daily",
+    "use_when": "You need to explain a city policy, ordinance, process, or decision in plain English.",
+    "output": "A plain-language explanation, FAQ bullets, and one-paragraph public summary."
+  },
+  {
+    "name": "council-weekly-brief",
+    "title": "Council Weekly Brief",
+    "category": "weekly",
+    "use_when": "The governing body needs a weekly strategic and operational snapshot.",
+    "output": "A weekly council brief with wins, watch items, decisions ahead, and questions for follow-up."
+  },
+  {
+    "name": "city-manager-operations-review",
+    "title": "City Manager Operations Review",
+    "category": "weekly",
+    "use_when": "The manager\u2019s office needs a weekly operational review across departments.",
+    "output": "An operations review memo with cross-department blockers, deadlines, and executive decisions needed."
+  },
+  {
+    "name": "department-director-1on1",
+    "title": "Department Director 1:1 Prep",
+    "category": "weekly",
+    "use_when": "You need an agenda and follow-up tracker for recurring manager/director check-ins.",
+    "output": "A 1:1 agenda, key questions, decision points, and next-step tracker."
+  },
+  {
+    "name": "project-status-dashboard-narrative",
+    "title": "Project Status Dashboard Narrative",
+    "category": "weekly",
+    "use_when": "A dashboard needs human-readable narrative for leaders or the public.",
+    "output": "Narrative summaries that explain status, changes, blockers, and what happens next."
+  },
+  {
+    "name": "development-pipeline-review",
+    "title": "Development Pipeline Review",
+    "category": "weekly",
+    "use_when": "Leadership wants a weekly picture of pending development activity and pressure points.",
+    "output": "A pipeline memo summarizing near-term cases, constraints, and decisions likely to reach council."
+  },
+  {
+    "name": "legislative-monitor",
+    "title": "Legislative Monitor",
+    "category": "weekly",
+    "use_when": "The city needs a running summary of state or regional legislation that could affect operations or authority.",
+    "output": "A short weekly legislative memo with implications, recommended posture, and questions for advocacy."
+  },
+  {
+    "name": "community-engagement-summary",
+    "title": "Community Engagement Summary",
+    "category": "weekly",
+    "use_when": "You need to summarize what the city heard from residents over the past week.",
+    "output": "A theme-based summary with representative concerns, sentiment, and suggested follow-up."
+  },
+  {
+    "name": "agenda-cycle",
+    "title": "Agenda Cycle",
+    "category": "monthly",
+    "use_when": "The city is building a regular or special meeting agenda packet.",
+    "output": "A draft agenda order, packet checklist, missing items list, and item-by-item readiness status."
+  },
+  {
+    "name": "staff-report",
+    "title": "Staff Report Builder",
+    "category": "monthly",
+    "use_when": "You need a clean, decision-ready staff report for council, a board, or a commission.",
+    "output": "A staff report with summary, background, analysis, options, recommendation, attachments, and action language."
+  },
+  {
+    "name": "board-commission-appointments",
+    "title": "Board & Commission Appointments",
+    "category": "monthly",
+    "use_when": "The city is filling vacancies or preparing appointment action for boards or commissions.",
+    "output": "An appointment memo, eligibility screen, interview questions, and draft action language."
+  },
+  {
+    "name": "financial-review",
+    "title": "Monthly Financial Review",
+    "category": "monthly",
+    "use_when": "Leadership needs a monthly look at revenues, expenditures, variances, cash, and claims.",
+    "output": "A monthly finance memo explaining trendlines, outliers, and actions needed."
+  },
+  {
+    "name": "communications-calendar",
+    "title": "Communications Calendar",
+    "category": "monthly",
+    "use_when": "The city needs a proactive monthly communication plan tied to projects, meetings, and events.",
+    "output": "A channel-by-channel monthly communications calendar with message themes and owner assignments."
+  },
+  {
+    "name": "utility-rate-watch",
+    "title": "Utility Rate Watch",
+    "category": "monthly",
+    "use_when": "Utility leadership or council needs a recurring rate and system pressure scan.",
+    "output": "A rate watch memo with pressures, scenarios, timing options, and customer communication needs."
+  },
+  {
+    "name": "grant-pipeline-review",
+    "title": "Grant Pipeline Review",
+    "category": "monthly",
+    "use_when": "The city wants a monthly snapshot of grants pursued, awarded, at-risk, or worth pursuing.",
+    "output": "A pipeline review with next applications, compliance deadlines, award risks, and decisions needed."
+  },
+  {
+    "name": "performance-memo",
+    "title": "Monthly Performance Memo",
+    "category": "monthly",
+    "use_when": "Leadership wants a monthly performance narrative across service areas.",
+    "output": "A short memo explaining what moved, why it moved, and what management is doing next."
+  },
+  {
+    "name": "strategic-priority-review",
+    "title": "Strategic Priority Review",
+    "category": "quarterly",
+    "use_when": "The city needs a quarterly scorecard on adopted goals or council priorities.",
+    "output": "A strategic review with status, evidence, slippage reasons, and quarter-ahead focus."
+  },
+  {
+    "name": "cip-review",
+    "title": "Capital Improvement Plan Review",
+    "category": "quarterly",
+    "use_when": "The city needs to review or re-rank capital projects.",
+    "output": "A CIP review memo with ranking logic, recommended sequencing, funding notes, and deferral risks."
+  },
+  {
+    "name": "risk-register-update",
+    "title": "Risk Register Update",
+    "category": "quarterly",
+    "use_when": "Leadership needs a practical refresh of operational, fiscal, legal, reputational, and safety risks.",
+    "output": "An updated risk register with severity, trend, mitigation owners, and next actions."
+  },
+  {
+    "name": "workforce-planning-review",
+    "title": "Workforce Planning Review",
+    "category": "quarterly",
+    "use_when": "The city needs a quarterly view of vacancies, retention, succession, and training needs.",
+    "output": "A workforce memo with pressure points, succession risks, and recommended actions."
+  },
+  {
+    "name": "intergovernmental-relations-brief",
+    "title": "Intergovernmental Relations Brief",
+    "category": "quarterly",
+    "use_when": "The mayor or manager needs a concise regional/state/federal relationship brief.",
+    "output": "A brief with partner status, current asks, sensitivities, and next engagement steps."
+  },
+  {
+    "name": "budget-kickoff",
+    "title": "Budget Kickoff",
+    "category": "annual",
+    "use_when": "The city is opening its annual budget cycle and needs clear instructions and framing.",
+    "output": "A budget kickoff memo, calendar, department instructions, and key assumptions."
+  },
+  {
+    "name": "budget-adoption-book",
+    "title": "Budget Adoption Book",
+    "category": "annual",
+    "use_when": "You need a polished summary for workshops or adoption.",
+    "output": "An adoption-ready summary book with narrative, highlights, trade-offs, and public-facing explanations."
+  },
+  {
+    "name": "audit-response",
+    "title": "Audit Response",
+    "category": "annual",
+    "use_when": "The city needs to respond to audit findings, comments, or management recommendations.",
+    "output": "A response memo with corrective actions, owners, dates, and communication language."
+  },
+  {
+    "name": "state-of-the-city",
+    "title": "State of the City",
+    "category": "annual",
+    "use_when": "The mayor or manager needs an annual community narrative.",
+    "output": "A speech or report that balances celebration, honesty, and the year ahead."
+  },
+  {
+    "name": "goal-setting-retreat",
+    "title": "Goal Setting Retreat",
+    "category": "annual",
+    "use_when": "The council or executive team is preparing for its annual retreat or planning session.",
+    "output": "A retreat packet with briefing memo, agenda, facilitation prompts, and draft goal language."
+  },
+  {
+    "name": "legislative-agenda",
+    "title": "Legislative Agenda",
+    "category": "annual",
+    "use_when": "The city is setting its annual policy and advocacy priorities with outside governments.",
+    "output": "A concise legislative agenda with talking points and priority tiers."
+  },
+  {
+    "name": "ai-governance-refresh",
+    "title": "AI Governance Refresh",
+    "category": "annual",
+    "use_when": "The city wants an annual refresh of acceptable-use, review, and oversight practices for AI.",
+    "output": "A policy refresh memo, training priorities, and implementation checklist."
+  },
+  {
+    "name": "candidate-briefing",
+    "title": "Candidate Briefing",
+    "category": "elections-and-transition",
+    "use_when": "The city wants a neutral, educational briefing for candidates or prospective candidates.",
+    "output": "A neutral briefing deck or memo explaining roles, process, and major city issues."
+  },
+  {
+    "name": "transition-memo",
+    "title": "Transition Memo",
+    "category": "elections-and-transition",
+    "use_when": "A newly elected official or incoming administration needs a handoff packet.",
+    "output": "A transition memo organized into first 30/90/180 day issues and key decisions ahead."
+  },
+  {
+    "name": "new-council-onboarding",
+    "title": "New Council Onboarding",
+    "category": "elections-and-transition",
+    "use_when": "The city is onboarding one or more newly elected councilmembers.",
+    "output": "An onboarding plan, reading list, and first-meeting prep packet."
+  },
+  {
+    "name": "campaign-to-governance-boundary",
+    "title": "Campaign to Governance Boundary",
+    "category": "elections-and-transition",
+    "use_when": "A candidate or officeholder needs help respecting the line between campaigning and official acts.",
+    "output": "A boundary memo noting what is safe, risky, or requires legal/policy review."
+  },
+  {
+    "name": "incident-brief",
+    "title": "Incident Brief",
+    "category": "emergencies",
+    "use_when": "You need a rapid, leader-ready summary during an incident.",
+    "output": "A situation report with facts, impacts, actions underway, asks, and message guidance."
+  },
+  {
+    "name": "emergency-proclamation",
+    "title": "Emergency Proclamation",
+    "category": "emergencies",
+    "use_when": "The city is considering or preparing an emergency declaration or supporting order.",
+    "output": "A draft proclamation plus a legal/process checklist and public explanation."
+  },
+  {
+    "name": "tornado-recovery",
+    "title": "Tornado Recovery",
+    "category": "emergencies",
+    "use_when": "The city needs structured recovery planning after severe weather or tornado impacts.",
+    "output": "A recovery action plan with immediate, near-term, and long-term tasks."
+  },
+  {
+    "name": "crisis-comms",
+    "title": "Crisis Communications",
+    "category": "emergencies",
+    "use_when": "The city must communicate during a high-stakes operational or reputational incident.",
+    "output": "A message house, holding statement, FAQs, and update cadence."
+  },
+  {
+    "name": "shelter-and-recovery",
+    "title": "Shelter and Recovery Support",
+    "category": "emergencies",
+    "use_when": "The city needs resident-facing guidance for shelter, donations, debris, cleanup, or support services.",
+    "output": "Resident guidance in plain English plus internal coordination notes."
+  },
+  {
+    "name": "after-action-review",
+    "title": "After Action Review",
+    "category": "emergencies",
+    "use_when": "The city is wrapping an incident and wants structured learning rather than blame.",
+    "output": "An after-action report with observations, corrective actions, owners, and deadlines."
+  },
+  {
+    "name": "ordinance-draft",
+    "title": "Ordinance Draft",
+    "category": "legislation-and-procurement",
+    "use_when": "You need to draft or revise an ordinance.",
+    "output": "A draft ordinance with purpose, operative language, procedural notes, and issue flags."
+  },
+  {
+    "name": "resolution-draft",
+    "title": "Resolution Draft",
+    "category": "legislation-and-procurement",
+    "use_when": "You need a resolution for appointments, policy statements, approvals, or formal findings.",
+    "output": "A clean draft resolution with recitals and action language."
+  },
+  {
+    "name": "interlocal-agreement",
+    "title": "Interlocal Agreement Review",
+    "category": "legislation-and-procurement",
+    "use_when": "The city is evaluating or drafting an interlocal or cooperative agreement.",
+    "output": "A review memo plus revision suggestions and approval checklist."
+  },
+  {
+    "name": "rfp-scope",
+    "title": "RFP Scope of Work",
+    "category": "legislation-and-procurement",
+    "use_when": "The city needs a clear solicitation scope for services or products.",
+    "output": "A scope of work plus evaluation criteria and vendor question list."
+  },
+  {
+    "name": "bid-evaluation",
+    "title": "Bid Evaluation",
+    "category": "legislation-and-procurement",
+    "use_when": "You need a documented, fair comparison of bids, proposals, or quotes.",
+    "output": "An evaluation memo and comparison matrix with recommendation and caveats."
+  },
+  {
+    "name": "contract-approval-memo",
+    "title": "Contract Approval Memo",
+    "category": "legislation-and-procurement",
+    "use_when": "A contract is moving to council or executive approval.",
+    "output": "An approval memo summarizing scope, cost, procurement path, key terms, and review status."
+  },
+  {
+    "name": "hiring-scorecard",
+    "title": "Hiring Scorecard",
+    "category": "people-and-hr",
+    "use_when": "The city needs a structured interview and evaluation tool for hiring.",
+    "output": "A scorecard, question set, and interview packet."
+  },
+  {
+    "name": "disciplinary-memo",
+    "title": "Disciplinary Memo",
+    "category": "people-and-hr",
+    "use_when": "You need a memo for corrective action or discipline.",
+    "output": "A professional, factual memo with expectations and next steps."
+  },
+  {
+    "name": "performance-evaluation",
+    "title": "Performance Evaluation",
+    "category": "people-and-hr",
+    "use_when": "A supervisor needs help drafting a balanced, specific evaluation.",
+    "output": "A performance review draft with strengths, opportunities, and development goals."
+  },
+  {
+    "name": "workforce-reorganization",
+    "title": "Workforce Reorganization",
+    "category": "people-and-hr",
+    "use_when": "The city is considering reporting-line, staffing, or organizational redesign.",
+    "output": "An options memo with org alternatives, pros/cons, and implementation issues."
+  },
+  {
+    "name": "town-hall-briefing",
+    "title": "Town Hall Briefing",
+    "category": "public-engagement",
+    "use_when": "You need a structured prep packet for a public meeting, town hall, or listening session.",
+    "output": "An event brief with agenda, messages, ground rules, likely questions, and follow-up plan."
+  },
+  {
+    "name": "public-comment-synthesis",
+    "title": "Public Comment Synthesis",
+    "category": "public-engagement",
+    "use_when": "You need to summarize public comment from hearings, meetings, or written submissions.",
+    "output": "A theme-based synthesis with representative points, misconceptions, and response options."
+  },
+  {
+    "name": "survey-summary",
+    "title": "Survey Summary",
+    "category": "public-engagement",
+    "use_when": "The city wants a readable synthesis of resident survey results.",
+    "output": "A summary with toplines, notable splits, open-ended themes, and suggested next steps."
+  },
+  {
+    "name": "community-faq",
+    "title": "Community FAQ Builder",
+    "category": "public-engagement",
+    "use_when": "Residents keep asking the same questions and the city needs a public FAQ.",
+    "output": "A public-facing FAQ with plain-language answers and pointers to source documents or contacts."
+  }
+]
