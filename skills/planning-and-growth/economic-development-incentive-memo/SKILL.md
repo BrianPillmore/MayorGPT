@@ -4,43 +4,43 @@ description: Summarize a proposed incentive with public costs, expected benefits
 argument-hint: [project-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Provide council with a plain memo on what a proposed incentive (abatement, TIF, fee waiver, land write-down, infrastructure contribution, grant) costs the public, what it buys, whether the project would occur without it, and how the city is protected if the project underperforms.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Return on subsidy analysis** — calculate the full cost of the incentive and the projected net fiscal return: (a) total foregone tax revenue over the entire abatement or TIF period, not just the annual figure; (b) any public infrastructure investment required to serve the project — roads, utilities, site preparation, or facility upgrades — as a separate line item; (c) projected annual tax and fee revenue the project will generate after the incentive period ends; (d) annual cost of services the project will draw during and after the incentive period; (e) net fiscal return: the cumulative revenue surplus after the incentive period minus the public infrastructure investment already made. Express the answer in plain terms — does the city come out ahead, and if so, in what year? If the analysis depends on employment or indirect economic projections, flag those as assumptions and show what happens if the projections miss by 25 percent. Flag any deal where the projected net fiscal return does not exceed the public infrastructure investment within a reasonable time horizon.
-6. **"But for" test** — document the specific evidence that this development would not occur without the public incentive. Acceptable evidence includes: documented site control failures without the incentive, financing gaps verified by an independent lender letter, comparable projects in the market that failed to proceed without subsidy, or a third-party financial feasibility analysis. Unsupported developer assertions that the project "won't pencil" without the incentive are not sufficient. If the "but for" case cannot be documented with verifiable evidence, flag the incentive as potential unnecessary subsidy — the city may be paying for something that would have happened anyway.
-7. **Value-per-acre benchmark assessment** — estimate the assessed value per acre the proposed development will generate once built and on the tax roll. Compare against established benchmarks: auto-oriented development (big-box retail, drive-through pads, surface-parked strip commercial) typically generates under $200,000 per acre in assessed value; traditional mixed-use development generates approximately $1–2 million per acre; dense multi-story or historic urban mixed-use can reach $8–19 million per acre. State explicitly where the proposed project falls on this spectrum. If the project will generate under $200,000 per acre, flag whether the required infrastructure investment can be recovered from that tax base over any reasonable time horizon. A subsidy that finances infrastructure for low-value-per-acre development is a compounding fiscal liability, not a one-time cost.
-8. **Economic gardening alternative** — briefly analyze what the same public investment would yield if directed toward intensive support for existing growing local businesses in the relevant sector. Existing businesses already occupy buildings served by existing infrastructure; their growth generates increased tax value with no new infrastructure obligation. Estimate: if comparable public funds ($50,000–$200,000 in program support, or the full incentive amount if larger) were directed toward market research access, peer networks, strategic consulting, and capital connections for Stage 2 local businesses (revenue $500K–$10M, past startup phase), what is the plausible range of revenue growth, employment growth, and assessed value increase? Present this as an explicit alternative scenario so decision-makers can compare fiscal return, infrastructure obligation, and risk profile side by side.
-9. End with clear next steps.
+## Required inputs
+- Incentive request and term sheet; project description, investment, jobs, wages, and timeline.
+- Developer pro forma and any independent gap analysis.
+- Tax jurisdiction overlay (county, school, special districts) because abatement or TIF affects them.
+- Council incentive policy (criteria, caps, clawback standards) and state incentive statute.
+- Infrastructure required, assessed-value benchmarks, and cost-of-services data (see fiscal-impact-analysis).
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **incentive deals that require new public infrastructure investment** — the infrastructure obligation outlasts the incentive period; if the tax base is abated for 10–20 years but roads and utilities are built today, the city absorbs the full maintenance cost before it ever receives the full tax benefit; this is the highest-risk scenario and requires an explicit payback analysis before council approval
+## Workflow
+1. Define the incentive precisely: instrument, amount, duration, and which taxes or fees are affected, plus who else bears the cost (overlapping jurisdictions).
+2. Total public cost: foregone revenue over the full term (not only the first year), plus any infrastructure, land discount, fee waiver, administrative cost, and the O&M of public assets created. Present nominal and present value if a discount rate is adopted.
+3. But-for test: require verifiable evidence that the project would not proceed without the incentive: independent third-party gap analysis, lender letters, comparable failed projects, or documented site alternatives. Developer assertions alone are insufficient. Classify the finding as documented, inconclusive, or unsupported.
+4. Benefit estimate: new assessed value, jobs (direct, with wage thresholds), sales or other tax, and spillover with stated multipliers. Remove benefits that would occur anyway.
+5. Net fiscal return and payback year; sensitivity to cost overruns, delay, and a lower assessed value than projected.
+6. Value-per-acre comparison against the city's land uses and the site's current use (see fiscal-impact-analysis); redevelopment that lowers productivity on land already served is a regression.
+7. Alternative uses of the same dollars: for example intensive support for existing growing local businesses (see economic-gardening-analysis), infrastructure maintenance, or reserves.
+8. Controls: performance milestones, clawback and recapture, pay-for-performance (rebate after taxes paid), job and wage reporting with audit rights, successor/assignment limits, and termination for default.
+9. Process: public notice, hearing, disclosure rules, and school or county consent where required.
 
-Your output should usually include:
-- case brief
-- options or findings
-- return on subsidy summary (total public cost, projected net fiscal return, payback year)
-- "but for" finding (documented, inconclusive, or unsupported — with explanation)
-- value-per-acre assessment with benchmark comparison
-- economic gardening alternative scenario
-- missing-info list
+## Output structure
+| Item | Amount | Duration | Source of funds | Notes |
+Sections: case brief, return-on-subsidy summary (total public cost, annual net return, payback), but-for finding, benchmark assessment, alternatives, controls checklist, missing-info list.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Incentive front-loads city cost (infrastructure first, taxes abated later).
+- No clawback; benefits depend on unverified projections.
+- Single-tenant dependence or parent-company guarantee missing.
+- Precedent risk: other applicants will ask for the same.
+- Statutory limits, open-meetings, or conflict-of-interest issues; bond counsel if tax-exempt financing is used.
+
+## Common mistakes
+- Comparing the incentive to gross revenue instead of net.
+- Counting jobs that relocate within the region.
+- Ignoring other taxing jurisdictions' losses.
+- Forgetting maintenance cost of public improvements.
+
+## State-law variance
+Permitted incentives, caps, disclosure, and clawback requirements vary by state.

@@ -3,12 +3,6 @@ name: development-pipeline-review
 title: Development Pipeline Review
 type: prompt
 category: weekly
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Development Pipeline Review
@@ -24,6 +18,10 @@ Leadership wants a weekly picture of pending development activity and pressure p
 - major developers
 - utility/traffic issues
 - public concerns
+- statutory review deadlines
+- quasi-judicial matters where officials should avoid contact
+- infrastructure capacity constraints
+- fiscal impact of near-term projects
 
 ## Expected output
 
@@ -34,24 +32,28 @@ A pipeline memo summarizing near-term cases, constraints, and decisions likely t
 - note hearing schedule
 - flag infrastructure gaps
 - distinguish rumor from filed application
+- distinguish filed applications from rumors
+- note hearing schedule and review deadlines and flag state-law variance
+- keep quasi-judicial communications on the record
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 
 ## Copy/paste prompt
 
 ```xml
 <role>
-You are a municipal government assistant helping with development pipeline review.
+You are a development-services analyst helping leadership watch pending development applications and infrastructure pressure.
 </role>
 
 <context>
 CITY: [CITY_NAME]
 GOVERNANCE_MODEL: [council-manager / mayor-council / other]
-LOCAL_RULES: [charter, code, policy, state law, templates, tone preferences]
-SOURCE_MATERIALS: [agenda, reports, emails, maps, contracts, budget sheets, comments, incident notes]
+LOCAL_RULES: [zoning code and review timelines, state shot-clock and approval-deadline rules, quasi-judicial procedure and ex parte rules, public records law]
+SOURCE_MATERIALS: [active applications, case status, hearing dates, utility and traffic reviews, developer contact notes, public comments, pending annexations or agreements]
 </context>
 
 <task>
 Leadership wants a weekly picture of pending development activity and pressure points.
-Produce a pipeline memo summarizing near-term cases, constraints, and decisions likely to reach council.
+Produce: a pipeline memo summarizing near-term cases, constraints, and decisions likely to reach council.
 </task>
 
 <inputs>
@@ -60,19 +62,28 @@ Produce a pipeline memo summarizing near-term cases, constraints, and decisions 
 - major developers
 - utility/traffic issues
 - public concerns
+- statutory review deadlines
+- quasi-judicial matters where officials should avoid contact
+- infrastructure capacity constraints
+- fiscal impact of near-term projects
 </inputs>
 
 <checks>
 - note hearing schedule
 - flag infrastructure gaps
 - distinguish rumor from filed application
+- distinguish filed applications from rumors
+- note hearing schedule and review deadlines and flag state-law variance
+- keep quasi-judicial communications on the record
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Near-term cases with status
+2. Constraints and dependencies
+3. Decisions likely to reach council
+4. Public concern summary
+5. Items for the city attorney
 </required_output>
 ```
 
@@ -80,4 +91,5 @@ Produce a pipeline memo summarizing near-term cases, constraints, and decisions 
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

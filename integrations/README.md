@@ -1,25 +1,44 @@
 # Integrations
 
-MayorGPT's logic lives in plain Markdown, so it runs on any model or platform that accepts a system prompt and file attachments. These guides cover the four main integration approaches.
+MayorGPT's logic lives in plain Markdown, so it runs on any model or platform that accepts a system prompt or file attachments. Nothing here depends on a single vendor.
 
----
+The fastest path on any platform:
 
-## Claude Code / CLI — `claude-code/`
+```bash
+python scripts/export_bundle.py --list
+python scripts/export_bundle.py --agent city-manager --prompt executive-brief \
+  --context-pack sample-springfield-example --format text
+```
 
-The highest-capability integration. MayorGPT skills use Claude-compatible `SKILL.md` files that Claude Code picks up natively. Install selected skill directories into `.claude/skills/` in your project, paste an agent file into `CLAUDE.md` or a system prompt, and keep your city context pack in the project for reference. Claude Code users should also read the Claude Projects section in `claude-code/README.md`, which covers setting up a persistent browser-based workspace for city staff who do not use the CLI.
+`scripts/export_bundle.py` assembles an agent, optional prompt, optional context pack and optional skills into `text`, `markdown`, `openai-messages`, `gemini`, `custom-gpt` (size-fitted instructions plus knowledge files) or `all` (writes `dist/<agent>/`). It prints size estimates and warns when a prompt is large.
 
-## Claude Projects (browser) — covered in `claude-code/README.md`
+## Platform support matrix
 
-Claude Projects (available on Claude.ai) let staff configure a persistent AI workspace with a system prompt, uploaded knowledge files, and per-conversation attachments — no CLI required. Set the project instructions using `claude-code/sample-project-instructions.md`, upload the relevant agent and stack files as persistent knowledge, and attach live operational documents (current budget exports, draft staff reports) per conversation rather than as permanent files. Create separate projects for workflows with different role boundaries or confidentiality levels.
+| Platform | Guide | Paste prompt | Upload files | Skills | API client |
+|---|---|---|---|---|---|
+| ChatGPT (Custom GPTs, Projects) | [chatgpt](chatgpt/README.md) | yes | yes | via export | `openai` |
+| Google Gemini (Gems, AI Studio) | [gemini](gemini/README.md) | yes | yes | via export | `gemini` |
+| xAI Grok | [grok](grok/README.md) | yes | varies | via export | `xai` |
+| Microsoft Copilot, Azure | [microsoft-copilot](microsoft-copilot/README.md) | yes | yes | via export | `azure` |
+| Mistral | [mistral](mistral/README.md) | yes | varies | via export | `mistral` |
+| Local models (Ollama, LM Studio, llama.cpp, vLLM) | [local-models](local-models/README.md) | yes | n/a | via export | `ollama`, `lmstudio`, `llamacpp`, `vllm` |
+| Coding assistants (Cursor, GitHub Copilot, Aider, Windsurf, Cline, ...) | [coding-assistants](coding-assistants/README.md) | rule files | yes | folder or export | n/a |
+| Perplexity, DeepSeek, Meta AI, Cohere, Qwen, others | [other-assistants](other-assistants/README.md) | yes | varies | via export | `perplexity`, `deepseek`, `cohere`, `qwen`, `openrouter` |
+| Any OpenAI-compatible gateway | [api](api/README.md) | n/a | n/a | via export | `openai-compatible` |
 
-## Generic (any model) — `generic/`
+"Varies" means it depends on plan and current product features; check the platform's documentation. Skills are plain `SKILL.md` folders; see the skills installer below.
 
-Works with ChatGPT, Gemini Gems, open-source system prompts, and any platform that accepts a role instruction and file attachment. The pattern: pick a context pack, pick an agent from `agents/`, pick a prompt from `prompts/`, optionally add skills as reusable prompt snippets, attach source material, and ask for a draft plus a missing-information list, a risk/process list, and recommended next steps. Because MayorGPT keeps all logic in Markdown, porting to any platform is straightforward even when the platform does not support Claude-style skills.
+## Guides
 
-## OpenAI Custom GPT — `openai-custom-gpt/`
+- [API](api/README.md): provider-agnostic command line client (`mayorgpt_llm.py`) for OpenAI-compatible APIs and native Gemini, with `--print-prompt` and `--dry-run`. Standard library only.
+- [Skills installer](skills-installer/README.md): copy `SKILL.md` folders into any tool's skills or instructions directory, or bundle them with the export script.
+- [Generic assembly guide](generic/assembly-guide.md): the platform-independent recipe.
+- [Tyler Munis ERP pairing](tyler-munis/README.md): which Munis exports to pull for each financial workflow, how to clean them, which skills pair with them, and which data must never be pasted into an AI session. MayorGPT has no direct Munis connection.
 
-Use an `agents/` file as the GPT's role or instruction layer. Copy a `prompts/` XML block into the user prompt or action area. For skill-like behavior, convert the corresponding `SKILL.md` instructions into actions or reusable prompt snippets. The Markdown-based structure makes this translation direct.
+## Auto-discovered instruction files
 
-## Tyler Munis ERP pairing — `tyler-munis/`
+Open this repository in a coding or chat tool and it will find `AGENTS.md`, `GEMINI.md`, `CONVENTIONS.md`, `.github/copilot-instructions.md`, `.cursor/rules/mayorgpt.mdc` or `.windsurfrules`. All point to `AGENTS.md`.
 
-MayorGPT has no direct API connection to Munis. Instead, this guide specifies exactly which Munis report exports to pull for each financial workflow (budget variance, CIP status, fund balance, grant accounting, debt service), how to clean those exports before attaching them (remove auto-inserted subtotals, fix column headers, add fund labels, separate multi-fund exports by tab), which MayorGPT skills pair with each export, and what Munis data categories must never be pasted into any AI session (employee payroll detail, SSNs, benefits enrollment, vendor TINs, utility billing account data). Munis data is authoritative; AI analysis of it is a working draft requiring Finance Director review before use.
+## Before you use any of them
+
+Choose a tool your city has approved for the data involved. Protected data (SSNs, payroll detail, sealed records, privileged legal advice, resident personal data) belongs only in approved, appropriately configured or local deployments. Outputs are working drafts that need human review. See `docs/safety-and-governance.md`.

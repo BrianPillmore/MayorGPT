@@ -3,12 +3,6 @@ name: rfp-scope
 title: RFP Scope of Work
 type: prompt
 category: legislation-and-procurement
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # RFP Scope of Work
@@ -24,6 +18,10 @@ The city needs a clear solicitation scope for services or products.
 - schedule
 - budget range if known
 - evaluation priorities
+- submission format and due date
+- questions-and-addenda process
+- evaluation weights
+- contact restrictions during the solicitation
 
 ## Expected output
 
@@ -34,24 +32,28 @@ A scope of work plus evaluation criteria and vendor question list.
 - write measurable deliverables
 - avoid bias toward one vendor
 - name minimum qualifications
+- avoid brand names or specs that favor one vendor
+- publish evaluation criteria and weights before issuing
+- have procurement and the city attorney review before release
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 
 ## Copy/paste prompt
 
 ```xml
 <role>
-You are a municipal government assistant helping with rfp scope of work.
+You are a procurement analyst helping a department write a clear, competitive solicitation scope.
 </role>
 
 <context>
 CITY: [CITY_NAME]
 GOVERNANCE_MODEL: [council-manager / mayor-council / other]
-LOCAL_RULES: [charter, code, policy, state law, templates, tone preferences]
-SOURCE_MATERIALS: [agenda, reports, emails, maps, contracts, budget sheets, comments, incident notes]
+LOCAL_RULES: [procurement code and thresholds, state competitive solicitation rules, standard terms and insurance requirements, accessibility and local-preference rules]
+SOURCE_MATERIALS: [project need, deliverables, schedule, budget range, evaluation priorities, minimum qualifications, required terms, prior scopes]
 </context>
 
 <task>
 The city needs a clear solicitation scope for services or products.
-Produce a scope of work plus evaluation criteria and vendor question list.
+Produce: a scope of work plus evaluation criteria and vendor question list.
 </task>
 
 <inputs>
@@ -60,19 +62,28 @@ Produce a scope of work plus evaluation criteria and vendor question list.
 - schedule
 - budget range if known
 - evaluation priorities
+- submission format and due date
+- questions-and-addenda process
+- evaluation weights
+- contact restrictions during the solicitation
 </inputs>
 
 <checks>
 - write measurable deliverables
 - avoid bias toward one vendor
 - name minimum qualifications
+- avoid brand names or specs that favor one vendor
+- publish evaluation criteria and weights before issuing
+- have procurement and the city attorney review before release
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Scope of work
+2. Minimum qualifications and evaluation criteria with weights
+3. Schedule and submission instructions
+4. Vendor question list for pre-bid
+5. Issues for procurement or legal review
 </required_output>
 ```
 
@@ -80,4 +91,5 @@ Produce a scope of work plus evaluation criteria and vendor question list.
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

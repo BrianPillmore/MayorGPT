@@ -3,12 +3,6 @@ name: strategic-priority-review
 title: Strategic Priority Review
 type: prompt
 category: quarterly
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Strategic Priority Review
@@ -24,6 +18,10 @@ The city needs a quarterly scorecard on adopted goals or council priorities.
 - owner updates
 - budget tie-ins
 - public concerns
+- evidence for each status rating
+- resource constraints
+- decisions that would unblock progress
+- goals that are no longer realistic
 
 ## Expected output
 
@@ -34,24 +32,28 @@ A strategic review with status, evidence, slippage reasons, and quarter-ahead fo
 - tie work to adopted priorities
 - name what is off-track
 - refresh owners and dates
+- tie each item to an adopted priority
+- use evidence, not owner optimism, for status
+- name what is off track and why
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 
 ## Copy/paste prompt
 
 ```xml
 <role>
-You are a municipal government assistant helping with strategic priority review.
+You are a performance analyst helping leadership score progress against council-adopted priorities.
 </role>
 
 <context>
 CITY: [CITY_NAME]
 GOVERNANCE_MODEL: [council-manager / mayor-council / other]
-LOCAL_RULES: [charter, code, policy, state law, templates, tone preferences]
-SOURCE_MATERIALS: [agenda, reports, emails, maps, contracts, budget sheets, comments, incident notes]
+LOCAL_RULES: [adopted strategic plan or council goals, performance measures, budget appropriations]
+SOURCE_MATERIALS: [priority list, measures and targets, owner updates, milestone dates, budget tie-ins, public concerns]
 </context>
 
 <task>
 The city needs a quarterly scorecard on adopted goals or council priorities.
-Produce a strategic review with status, evidence, slippage reasons, and quarter-ahead focus.
+Produce: a strategic review with status, evidence, slippage reasons, and quarter-ahead focus.
 </task>
 
 <inputs>
@@ -60,19 +62,28 @@ Produce a strategic review with status, evidence, slippage reasons, and quarter-
 - owner updates
 - budget tie-ins
 - public concerns
+- evidence for each status rating
+- resource constraints
+- decisions that would unblock progress
+- goals that are no longer realistic
 </inputs>
 
 <checks>
 - tie work to adopted priorities
 - name what is off-track
 - refresh owners and dates
+- tie each item to an adopted priority
+- use evidence, not owner optimism, for status
+- name what is off track and why
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Scorecard by priority (on track, at risk, off track)
+2. Evidence and variance notes
+3. Slippage causes and recovery steps
+4. Next-quarter focus
+5. Council decisions needed
 </required_output>
 ```
 
@@ -80,4 +91,5 @@ Produce a strategic review with status, evidence, slippage reasons, and quarter-
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

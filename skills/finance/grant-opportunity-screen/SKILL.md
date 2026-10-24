@@ -4,38 +4,45 @@ description: Quickly screen a grant for eligibility, strategic fit, match burden
 argument-hint: [grant-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `grant-screen-template.md`.
+## Purpose
+Make a fast go/no-go call on whether the city should invest staff time in an application. The cost of a grant is rarely the match alone: it includes grant-writing hours, compliance burden, the operating tail after the grant ends, and the opportunity cost of staff.
 
-Follow this workflow:
+## Required inputs
+- Notice of funding opportunity (NOFO) or program guidelines, with deadline, eligible applicants, eligible activities, and scoring criteria.
+- Funder type (federal, state pass-through, foundation) and award size range and expected number of awards.
+- Candidate project, its cost, readiness (design, environmental, site control), and sponsor department.
+- Adopted plans, CIP, and council priorities the project would serve.
+- Available local match and its source.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- fund or department context
-- relevant budget sheets
-- trend data
-- policy constraints
-- timing or deadline
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Full-cost flag** — as part of the screen, assess the ongoing obligation the grant creates: (a) identify every asset the grant would build or purchase — infrastructure, facilities, equipment, technology, vehicles; (b) for each asset, estimate the annual maintenance and replacement cost the city will be responsible for after the grant period ends; express this as a specific dollar amount, not a general acknowledgment; (c) confirm whether the city's current operating budget has identified capacity to absorb this ongoing cost — a grant that builds a $2 million facility the city cannot maintain is a liability, not an asset; (d) for infrastructure grants specifically (roads, water, sewer, facilities), note the asset's expected useful life and the annual depreciation — the city will need to fund eventual replacement from local revenue; (e) compare the annual maintenance obligation to the annual benefit the asset provides. If the ongoing cost exceeds the ongoing benefit, flag the grant as a fiscal risk regardless of the construction cost being covered.
-6. End with clear next steps.
+## Workflow
+1. Eligibility gate: applicant type, population or income thresholds, geography, eligible costs, prior-award restrictions, SAM.gov/UEI registration, and required audits. Any hard failure ends the screen.
+2. Fit: map the project to the scoring criteria with a rough point estimate per criterion. Note criteria the city cannot meet (e.g., partnership letters, benefit-cost analysis).
+3. Readiness: construction-ready vs. planning-only. Many programs reward readiness; unfunded environmental review or right-of-way can disqualify.
+4. Match and cash flow: required percentage, cash vs. in-kind, source and approval needed. Determine whether the grant is reimbursement-based (the city fronts cash) and whether the general fund can carry that float.
+5. Operating tail: staffing, maintenance, insurance, and reporting after the grant ends. Compare the tail to the benefit. State whether the project is in the CIP; grants should accelerate priorities, not create new ones the city cannot sustain.
+6. Compliance burden: Uniform Guidance procurement, Davis-Bacon, Buy America preferences, environmental review, reporting, and records (see grant-compliance-check).
+7. Probability and effort: estimate competitiveness (applications vs. awards if known), staff hours to apply, whether a consultant is needed, and cost of a consultant (check fee structure: contingency fees may be prohibited as a cost under federal awards).
+8. Decision: Pursue, Pursue with partner, Defer to next cycle, or Pass, with the reason.
 
-Always flag:
-- one-time vs recurring money
-- control/procurement issues
-- assumption sensitivity
-- funding cliff risk
-- **grants that fund new infrastructure without a funded maintenance plan** — the grant covers construction; the city pays for maintenance, repair, and eventual replacement indefinitely; accepting a grant without budgeting the operating tail creates a deferred liability that will eventually require either emergency spending or asset failure
+## Output structure
+| Criterion | Finding | Pass/Concern/Fail |
+Rows: eligibility, fit, readiness, match, cash flow, operating tail, compliance burden, competitiveness, staff effort.
 
-Your output should usually include:
-- analysis memo
-- scenario table including annual maintenance obligation and operating budget capacity
-- recommended next steps
+Add: scoring-self-assessment table, timeline back from deadline, council actions needed (authorization to apply, match commitment), and recommendation.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Match source not identified or requiring a vote before the deadline.
+- Project not in any adopted plan or CIP.
+- Recurring cost obligations created without a funding source.
+- Prohibited consultant fee arrangements or conflicts of interest in grant-writing contracts.
+- Deadline too close to complete required letters, resolutions, or environmental documents.
+
+## Common mistakes
+- Chasing available money rather than an adopted priority.
+- Counting the grant amount without the tail.
+- Ignoring reimbursement float.
+- Underestimating application hours.
+- Treating a competitive program as likely without award history.
+
+## State-law variance
+Council authorization rules for applying, accepting, and matching funds vary by charter and state law.

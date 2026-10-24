@@ -4,48 +4,44 @@ description: Compare bids, proposals, or quotes using documented criteria, thres
 argument-hint: [solicitation-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `scorecard-template.md`.
+## Purpose
+Evaluate responses to a solicitation in a way that survives a bid protest, an audit, and a public records request. The method must follow the solicitation as issued: criteria and weights cannot change after opening.
 
-Follow this workflow:
+## Required inputs
+- The solicitation (IFB, RFP, RFQ), addenda, and the procurement method used.
+- All responses, bid tabulation, bond/insurance documents, references, and price forms.
+- The city's purchasing policy and state procurement statute thresholds (quote, informal bid, formal sealed bid, council approval), and any funding-source rules (federal funds follow 2 CFR 200.317-200.327; state grants may add rules).
+- Evaluation committee roster and conflict-of-interest/confidentiality attestations.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- fund or department context
-- relevant budget sheets
-- trend data
-- policy constraints
-- timing or deadline
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Workflow
+1. Confirm the method fits the dollar value and type: low-bid sealed bid (IFB) for clearly defined goods and construction; RFP with weighted criteria for services where qualifications matter; qualifications-based selection for architects and engineers where state or federal law requires it (price negotiated after ranking). Note that method choice is often set by statute.
+2. Responsiveness: check each response against mandatory requirements (signed forms, bid security, addenda acknowledged, licensing, insurance, bonds). Minor informalities may be waivable only if the solicitation and law allow; material deviations disqualify.
+3. Responsibility: financial capacity, past performance, debarment/suspension (SAM.gov for federal funds), local-preference or small/disadvantaged business rules if lawful and stated.
+4. Score only against published criteria and weights. Each evaluator scores independently, writes a short justification per criterion, and signs. Normalize price scoring with a stated formula (for example, lowest price divided by bidder price times the price points).
+5. Total cost of ownership: add recurring fees, licensing, maintenance, escalators, training, exit/transition costs, and compare over the term. Check unit prices for front-loading or unbalanced bids.
+6. Reconcile: tabulate, check arithmetic, document ties and the tie-break rule, and note reference-check results.
+7. Recommendation: lowest responsive responsible bidder, or highest-ranked proposer, with the contract value, term, funding source and appropriation, and council approval needed.
+8. File completeness: retain solicitation, proofs of advertisement, all responses, score sheets, minutes, protest-period notice, and award letters per the records retention schedule.
 
-Always flag:
-- one-time vs recurring money
-- control/procurement issues
-- assumption sensitivity
-- funding cliff risk
-- AI tool vendor conflict-of-interest: if an AI tool is being used to assist evaluation, and the vendor of that tool has any commercial relationship with a bidder — including reseller agreements, subcontracting relationships, shared investors, or referral arrangements — that conflict must be disclosed and documented before evaluation proceeds; do not assume the procurement officer is aware of upstream vendor relationships
-- AI-assisted evaluation scores that have not been reviewed and signed by a human procurement officer — AI output cannot be the final scoring record in any municipal procurement
-- missing documentation of the AI tool used, the criteria and weights applied, and the basis for AI-generated scores — these are required elements of a complete and public procurement file
+## Output structure
+| Respondent | Responsive? | Responsible? | Price (base/TCO) | Score by criterion | Total | Rank |
 
-Your output should usually include:
-- analysis memo
-- scenario table
-- recommended next steps
+Add: recommendation memo, risk notes per top respondent, protest exposure, funding confirmation, and council action language.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Evaluators with financial or personal ties to a bidder, or contact with bidders outside the designated process.
+- Specifications that match one vendor's product.
+- Single response, or price far from the estimate (re-solicit or negotiate per policy).
+- Contract splitting or add-on change orders that bypass the threshold.
+- Use of AI tools in evaluation: disclose tool name/version, the criteria and weights supplied, and confirm the tool vendor has no commercial relationship with any bidder. AI scores are drafts; a named human officer must review and sign the final scoring record.
+- Protest filed or bid mistake claimed: route to the city attorney.
 
-AI-assisted evaluation: conflict-of-interest and documentation requirements:
-Research on AI in government procurement (ACM FAccT 2025) documents a structural conflict-of-interest that existing procurement-integrity frameworks were not designed to address: vendors systematically learn from government use of AI tools, gaining insight into agency demand signals and evaluation preferences. When a city uses an AI tool to evaluate bids, the company providing that AI tool may have commercial relationships with one or more bidders — relationships that may not be visible to the procurement officer.
+## Common mistakes
+- Changing criteria after opening.
+- Scoring unstated preferences.
+- Awarding on price when the solicitation promised best value.
+- Failing to document why a lower-priced bid was rejected.
+- Ignoring tail costs.
 
-When AI tools are used in bid evaluation, the following requirements apply:
-
-- Conflict check before evaluation begins: confirm that the AI tool vendor has no commercial relationship — including subcontracting, reseller, referral, or investment relationships — with any bidder in the current solicitation. Document the check and the result in the procurement file. If a conflict exists or cannot be ruled out, evaluate using non-AI methods or a different tool, and document the decision.
-- Human sign-off is mandatory: AI-generated evaluation scores, rankings, or recommendation summaries are drafts only. A human procurement officer must independently review, adjust as warranted, and sign the final scoring record. The signed human record — not the AI output — is the official evaluation document.
-- Public record documentation: the procurement file must include, as a matter of public record: (1) the name and version of any AI tool used in evaluation, (2) the criteria and weights applied in the AI evaluation, and (3) a notation that AI output was reviewed by a named human officer before finalization. A procurement file that contains only AI-generated output is incomplete and potentially indefensible on protest.
+## State-law variance
+Bid thresholds, local-preference limits, design-build, cooperative purchasing, and protest procedures vary by state and charter. Verify.

@@ -3,12 +3,6 @@ name: state-legislative-testimony
 title: State Legislative Testimony
 type: prompt
 category: intergovernmental
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # State Legislative Testimony
@@ -79,10 +73,11 @@ Produce a testimony draft, a fiscal and operational impact analysis, recommended
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Testimony draft (written and oral version)
+2. Fiscal and operational impact analysis
+3. Recommended amendments
+4. Supporting municipalities and stakeholders
+5. Format and timing notes for the committee
 </required_output>
 ```
 
@@ -90,4 +85,5 @@ Produce a testimony draft, a fiscal and operational impact analysis, recommended
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

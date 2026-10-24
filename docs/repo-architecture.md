@@ -2,9 +2,9 @@
 
 MayorGPT currently includes:
 
-- **34 agents** in role-based folders,
-- **60 reusable prompts** organized by cadence and function,
-- **71 Claude-compatible skills** grouped by municipal workstream,
+- **40 agents** in role-based folders,
+- **85 reusable prompts** organized by cadence and function,
+- **95 portable SKILL.md skills** grouped by municipal workstream,
 - example city context notes,
 - integration guides,
 - evaluation rubrics, and
@@ -19,7 +19,7 @@ Reusable role definitions. These are the closest thing to a reusable municipal â
 Task-specific prompts. These cover the day-to-day, month-to-month, and annual rhythm of city work.
 
 ### `skills/`
-Action-oriented instruction bundles. These are the most Claude-native artifacts in the repo.
+Action-oriented instruction bundles. Each skill is a portable folder with a `SKILL.md` file that any model can read as plain Markdown.
 
 ### `context-packs/`
 City-specific overlays. Add a folder here for each city you configure the system for.

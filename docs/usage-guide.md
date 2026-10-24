@@ -24,21 +24,21 @@ You do not need all four every time. A simple constituent response might only ne
 
 ---
 
-## Workflow A: Claude Code / CLI
+## Workflow A: Coding assistants and agentic tools
 
-This is the highest-capability path. Claude Code reads `SKILL.md` files natively.
+Use this path with tools that read project files and instruction folders. Check your tool's current documentation for how it loads skills and instructions.
 
-1. Copy selected skill directories into `.claude/skills/` in your project.
-2. Paste the relevant agent file into your `CLAUDE.md` or system prompt.
+1. Install selected skill directories where your tool expects them (see `integrations/skills-installer/README.md`).
+2. Paste the relevant agent file into your tool's project instructions or system prompt (see `integrations/coding-assistants/README.md` and the root `AGENTS.md`).
 3. Store your city context pack in the project and reference it in prompts.
 4. Attach the source documents that the stack calls for.
 5. Run the prompt. Ask for a draft, a missing-information list, and a risk/process list.
 
-See `integrations/claude-code/README.md` for full setup instructions, including the Claude Projects (browser) variation for staff who do not use the CLI.
+See `integrations/coding-assistants/README.md` for setup, and `integrations/README.md` for browser-based options for staff who do not use a command line.
 
 ---
 
-## Workflow B: Claude Projects, ChatGPT, or any other model
+## Workflow B: Chat assistants (any model)
 
 Works on any platform that accepts a system prompt and file attachments.
 
@@ -48,7 +48,7 @@ Works on any platform that accepts a system prompt and file attachments.
 4. In the user prompt, reference the relevant prompt from `prompts/` and any skill instructions you want the model to follow.
 5. Ask for a draft, a missing-information list, and a risk/process list.
 
-See `integrations/` for platform-specific guidance, including OpenAI Custom GPT and Tyler Munis ERP pairing.
+See `integrations/README.md` for platform-specific guidance (ChatGPT, Gemini, Grok, Microsoft Copilot, Mistral, local models, and others) and `integrations/tyler-munis/README.md` for Tyler Munis ERP pairing.
 
 ---
 

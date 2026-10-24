@@ -4,37 +4,43 @@ description: Prepare an annexation or growth-boundary brief with service, fiscal
 argument-hint: [area-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Give council a fact-based brief on whether to annex an area, on what terms, and with what service and fiscal commitments. Annexation is both a land-use decision and a long-term infrastructure and service commitment.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Fiscal productivity analysis** — for every annexation, calculate or estimate: (a) total acres being annexed and current or projected assessed value per acre; (b) infrastructure investment required to serve the area — roads, utilities, drainage, and any facility capacity obligations — expressed as a cost per acre; (c) annual tax and fee revenue the annexed area will generate once developed; (d) annual cost of services the annexed area will draw — public works, utilities, police/fire response, and any school or park obligation; (e) payback period: how many years of net revenue surplus (revenue minus service cost) it takes to recover the upfront infrastructure investment. If the territory is low-density or disconnected from the existing service boundary, extend the analysis to full lifecycle — roads and utilities installed today will need replacement in 30–50 years, and the tax base must cover that too. Flag any annexation where the infrastructure cost per acre exceeds the realistic tax value per acre that the land use pattern will generate.
-6. End with clear next steps.
+## Required inputs
+- Boundary map, parcel list, acreage, owners (petition signatures or consent status), existing county zoning and land uses.
+- Current population/housing/employment estimate, assessed value, and existing county services.
+- Utility and road conditions: water/sewer availability and capacity, road condition and ownership, stormwater, fire and EMS response distance.
+- Comprehensive plan growth boundary, intergovernmental agreements (county, neighboring cities, fire districts, utility districts).
+- Annexation statute and city policy (voluntary petition, involuntary, island/enclave, referendum rules).
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **annexations that extend infrastructure without corresponding tax value density** — low-density annexations at the urban fringe typically require the same linear feet of road, water, and sewer per acre as compact development but generate a fraction of the tax value per acre; this gap becomes a long-term fiscal liability that compounds as infrastructure ages
+## Workflow
+1. Identify the annexation pathway and statutory test: contiguity, owner or voter consent thresholds, notice and hearing, boundary approval by county or state, and effective date. These vary; do not assume.
+2. Plan consistency: is the area inside the urban growth/service boundary, and what zoning will apply on annexation? Is pre-annexation zoning or an annexation agreement used?
+3. Service plan: for each service (police, fire/EMS, streets, water, sewer, stormwater, solid waste, parks, code enforcement), state what level will be provided, when, who pays, and what capital is required. Some states require a written service plan with deadlines.
+4. Fiscal model over 10 to 20 years: revenue (property tax, sales tax, shared revenue, fees, utility rates) against cost of services and capital. Use existing city per-unit or per-acre costs; note where annexed areas differ from the city average. Show payback in years and the break-even density.
+5. Infrastructure liability: inventory the roads and utilities the city will take over, their condition, and lifecycle cost. Annexing substandard roads transfers the county's deferred maintenance to the city.
+6. Special districts: effect on fire district or utility district revenue and debt; reallocation required by law.
+7. Equity and community impacts: current residents' views, tax and fee changes, utility rate differentials (outside-city surcharge ends), and displacement risk.
+8. Options: annex now, annex with phased service, annex with development agreement, defer, or enter an intergovernmental agreement. Provide the recommended conditions.
 
-Your output should usually include:
-- case brief
-- options or findings
-- fiscal productivity summary (infrastructure cost per acre, tax value per acre, projected payback period)
-- missing-info list
+## Output structure
+| Service | Current provider | Level after annexation | Capital needed | Annual O&M | Funding source | Start date |
+Add: fiscal summary (annual net by year, cumulative, payback), risk list, process timeline, and public notice requirements.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Net negative fiscal result with no offsetting commitment from the property owner.
+- Promised services without funding or capacity (especially sewer/water).
+- Disputed boundary, enclave creation, or conflict with a neighboring city's plan.
+- Statutory deadlines, mandatory hearing notices, or referendum timing.
+- Legal challenge risk: city attorney review required before introduction of an ordinance.
+
+## Common mistakes
+- Counting new revenue without service and maintenance costs.
+- Ignoring the county road backlog.
+- Using the city's average cost where the area is lower density.
+- Forgetting special-district impacts.
+- Treating annexation as free growth.
+
+## State-law variance
+Annexation law is among the most state-specific areas of municipal law. Confirm pathway, consent thresholds, and boundary approval requirements.

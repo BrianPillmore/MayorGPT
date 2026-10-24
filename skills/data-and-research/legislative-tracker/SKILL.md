@@ -4,39 +4,41 @@ description: Track state or federal legislation relevant to city operations thro
 argument-hint: [legislative-session or topic-area]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Maintain a disciplined list of bills and rules that could change the city's authority, revenue, mandates, or liability, with a clear recommended position and next date for each. It supports the city's intergovernmental affairs function and the adopted legislative agenda. It does not itself take positions; those require council or manager direction.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- list of bills to track or topic areas to monitor (e.g., municipal finance, land use preemption, public safety, labor)
-- current bill status, version, and sponsor for each bill
-- city's adopted legislative agenda and priority positions
-- state municipal league or association positions where available
-- relevant committee hearing schedules or floor calendars
-- any bills where the city has already submitted testimony or a formal position
-3. For each bill being tracked, capture: (a) bill number and short title; (b) current status and next procedural step; (c) whether it supports, is neutral to, or threatens city interests; (d) fiscal impact to the city if estimable; (e) whether it preempts local authority; (f) recommended city action (monitor, engage, testify, oppose, support).
-4. Tier bills by urgency: bills in active committee with a hearing date within 30 days are Tier 1 (immediate action); bills that have passed one chamber are Tier 2 (watch closely); bills that have stalled or are in interim are Tier 3 (monitor).
-5. Identify bills where coalition or association action is available and advise the city on whether to join or lead.
-6. Do not hide uncertainty. If a bill's fiscal or operational impact is speculative, say so and identify what additional information would sharpen the estimate.
-7. End with an action list distinguishing things the city must do now from things that require monitoring only.
+## Required inputs
+- Session calendar and key deadlines (committee, crossover, sine die, effective dates).
+- Adopted legislative agenda or priorities; municipal league alerts and model language.
+- Bill text and latest status from the official legislature site; relevant federal rules and appropriations.
+- Departmental subject matter input and the city attorney's reading for authority questions.
 
-Always flag:
-- bills that preempt local zoning, taxation, procurement, or labor authority
-- bills with an effective date or implementation deadline that creates a short compliance window
-- bills that appear to target a specific city or class of cities based on bill language or context
-- bills with fiscal impacts the city has not yet quantified
-- hearing dates or floor votes within 14 days that require immediate city response
+## Workflow
+1. Define tracking scope by topic (revenue and preemption, land use, public safety, employment, public records, procurement, utilities, elections, emergency management).
+2. For each bill: number, sponsor, title, current stage, next action and date, and the version being reviewed (introduced, amended, enrolled). Always confirm status in the official source; bill text changes materially during amendment.
+3. Summarize what the bill actually does in two sentences using the text, not the title. Identify the affected statutes, effective date, and whether it applies to home rule cities.
+4. Impact analysis: fiscal (revenue lost or gained, new mandates with or without state funding), authority (preemption, new powers, process changes), operations (compliance steps, systems, staffing), and liability.
+5. Quantify when possible with the finance director's data and cite the source; use ranges and label estimates. Do not invent fiscal figures; request fiscal notes from the legislature or league.
+6. Recommended action: monitor, support, oppose, amend (with language), inform residents, or prepare compliance. Link to the legislative agenda and note who may lawfully advocate (lobbying limits on use of public funds vary).
+7. Plan implementation for enacted bills: effective date, rule-making, ordinance or policy updates, training, and budget effect. Add to the compliance calendar.
+8. Produce the leadership brief with the top five items and deadlines for testimony or comment.
 
-Your output should usually include:
-- legislative tracker table (bill / status / impact / city position / recommended action / next date)
-- tiered action list (immediate / watch / monitor)
-- draft or outline of any testimony or letters needed in the near term
-- briefing summary for council or city manager
+## Output structure
+| Bill | Stage / next date | Summary (from text) | Fiscal impact | Authority impact | Recommended action | Owner |
+Add: priority list, watch list, enacted-bill implementation calendar, and talking points with sources.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Preemption of local authority or revenue limits.
+- Unfunded mandates or sudden effective dates.
+- Language that affects pending city projects, contracts, or litigation.
+- Advocacy restrictions: confirm with the city attorney what staff and officials may say or spend.
+- Late amendments (strike-and-replace) shifting meaning.
+
+## Common mistakes
+- Relying on bill titles or advocacy summaries.
+- Tracking introduced versions that have been amended.
+- Missing effective dates and rulemaking.
+- Giving fiscal numbers without a source.
+
+## State-law variance
+Legislative calendars, home-rule status, and lobbying restrictions differ by state.

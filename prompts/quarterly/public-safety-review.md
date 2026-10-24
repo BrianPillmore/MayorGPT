@@ -3,12 +3,6 @@ name: public-safety-review
 title: Public Safety Quarterly Review
 type: prompt
 category: quarterly
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Public Safety Quarterly Review
@@ -79,10 +73,11 @@ Produce a quarterly performance memo with department-by-department summaries, tr
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Department-by-department summaries
+2. Trend analysis with noise caveats
+3. Staffing and resource concerns
+4. Critical incidents needing review
+5. Recommended council discussion items
 </required_output>
 ```
 
@@ -90,4 +85,5 @@ Produce a quarterly performance memo with department-by-department summaries, tr
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

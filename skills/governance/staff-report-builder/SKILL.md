@@ -4,36 +4,40 @@ description: Create a decision-ready staff report with summary, background, anal
 argument-hint: [issue]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `staff-report-template.md`.
+# Staff Report Builder
 
-Follow this workflow:
+**Purpose:** Produce a staff report that lets a council decide in one reading and survives a records request or appeal. Use `staff-report-template.md`.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- agenda or docket
-- draft staff report
-- charter/code provisions
-- proposed action language
-- posting/publication deadlines
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Decision requested (the exact action) and why now
+- Facts, data, prior council actions, public input to date
+- Cost, funding source, and budget account; legal and policy constraints
+- Department head and attorney review status
 
-Always flag:
-- missing legal review
-- missing fiscal impact
-- missing attachments
-- authority/process mismatch
+## Workflow
+1. **Lead with the ask:** one-sentence recommended action, followed by a short summary.
+2. **Background:** prior actions with dates and instrument numbers (see `legislative-history-brief`), the problem, and stakeholders affected.
+3. **Analysis:** criteria used (adopted code, plan policy, procurement rules), data and sources, risks, and what was considered but rejected. Separate facts from judgments.
+4. **Options:** at least two real alternatives with consequences, including no action. State the staff recommendation and why.
+5. **Fiscal impact:** one-time and recurring, funding source, appropriation needed, grant match, effect on future budgets, and procurement method (competitive vs. sole source; verify thresholds).
+6. **Legal and procedural notes:** vote required, notice done, hearing status, ordinance vs. resolution, environmental or regulatory review.
+7. **Public engagement:** who was consulted, what was heard, and what was not.
+8. **Consistency:** cross-check numbers across summary, tables, and the draft resolution.
+9. **Review chain:** author, department head, finance, attorney, manager, and the clerk's deadline.
 
-Your output should usually include:
-- ready-to-use draft
-- risk and missing-info list
-- next-step checklist
+## Output structure
+Title/date/item | Recommended action | Summary | Background | Analysis | Options | Fiscal impact | Legal/procedural | Public input | Attachments | Prepared by/reviewed by
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate to the city attorney
+- Staff recommendation that depends on an unresolved legal question
+- Sole-source or contract above threshold; related-party relationships
+- Unfunded commitments; a recommendation that departs from adopted policy
+- Report contains privileged advice (do not attach to the public packet)
+
+## Common mistakes
+- Burying the recommendation
+- Fiscal impact stated as "minimal" without numbers
+- Presenting one option dressed as three
+- Attaching internal legal analysis to a public document
+
+*Not legal advice; attorney review required where flagged.*

@@ -4,7 +4,7 @@ Use these rubrics to score AI-generated output before it goes anywhere that matt
 
 ---
 
-## The 7 rubrics
+## The rubrics
 
 | Rubric | Scores |
 |---|---|
@@ -15,6 +15,13 @@ Use these rubrics to score AI-generated output before it goes anywhere that matt
 | `agenda-packet-rubric.md` | Whether a draft agenda packet includes all intended items, contains action language, identifies missing attachments, notes fiscal impact and legal review status, and makes the requested action obvious to decision-makers. |
 | `emergency-brief-rubric.md` | Whether an emergency situation report separates confirmed facts from preliminary reports, states what changed since the last update, shows community impacts and operational actions, identifies resource needs, and aligns public messaging with the operational picture. |
 | `public-facing-writing-rubric.md` | Whether a press release, FAQ, letter, or speech is calm and clear, translates jargon, limits facts to what is confirmed, shows empathy where residents are affected, and would hold up if quoted publicly or forwarded widely. |
+| `procurement-and-grants-rubric.md` | Whether procurement documents and grant materials follow the actual process, protect fairness and conflict safeguards, trace requirements and claims to sources, show full fiscal and compliance obligations, and avoid invented rules or commitments. |
+| `planning-and-land-use-rubric.md` | Whether land use analyses identify the decision type, apply supplied criteria, tie findings to the record, assess plan consistency and fiscal/infrastructure impact, and route legal questions to counsel. |
+| `constituent-communications-accessibility-rubric.md` | Whether resident-facing communications are plain-language, accessible (ADA/Section 508 readiness), language-access aware, status-labeled, and give clear actions and alternate formats. |
+
+## Running an eval
+
+See `eval-runbook.md` for a lightweight method to run side-by-side comparisons (baseline versus MayorGPT, version A versus B, or model versus model), score with these rubrics, and record results.
 
 ---
 

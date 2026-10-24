@@ -4,34 +4,43 @@ description: Build a disciplined crisis message house with holding statement, ke
 argument-hint: [incident]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Crisis Message House
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- topic
-- audience
-- facts confirmed
-- tone
-- channel or event context
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Within the first hour of an incident, give leaders a disciplined set of verified messages. Use `holding-statement-template.md` for the first statement.
 
-Always flag:
-- speculation risk
-- tone mismatch
-- unmet expectations
-- need for follow-up timing
+## Required inputs
+- Verified facts only (what, where, when, who is affected), and what is not yet known
+- Source and time of each fact; who is the incident commander or lead agency
+- Public safety actions, resources, and instructions for residents
+- Legal constraints: pending investigation, privacy, victim notification, litigation risk
 
-Your output should usually include:
-- public-facing draft
-- internal notes
-- Q&A or next steps
+## Workflow
+1. **Fact sheet:** list Confirmed / Unconfirmed / Unknown. Only confirmed items go public. Timestamp every version.
+2. **Roof (one sentence):** the city's core stance, e.g., safety first, accurate information, accountability.
+3. **Three pillars (key messages):** (a) what happened, factually; (b) what the city is doing; (c) what residents should do. Add proof points under each: actions, numbers, contact points.
+4. **Holding statement** (within 30-60 minutes): acknowledge the incident, express care, state what is known, the response underway, where to get updates, and when the next update will come. No speculation about cause, blame, or number of victims until confirmed.
+5. **Tough Q&A:** list the hardest questions (cause, fault, warnings, response time, cost, injuries, who knew), write short truthful answers, and identify those that must say "we do not know yet, and we will tell you when we do" or "we cannot comment on an active investigation."
+6. **Spokespeople and channels:** one lead spokesperson, one subject-matter expert; website banner, social, emergency alerts, 311, press line; plan for accessible and multilingual alerts (see `language-access-plan`).
+7. **Notifications before public release:** affected families, employees, council, partner agencies, regulators; legal and insurance contacts.
+8. **Cadence and corrections:** schedule updates, correct errors quickly and visibly, and log every statement.
+9. **After-action:** retain statements and logs (public records; litigation hold likely).
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Fact sheet (confirmed/unconfirmed)
+- Message house (roof, 3 pillars, proof points)
+- Holding statement and first social post
+- Tough Q&A table with approvers
+- Update schedule and approvals chain
+
+## Red flags / escalate to the city attorney
+- Potential city fault or liability; death or serious injury
+- Employee misconduct, data breach, or criminal investigation
+- Request to release names, addresses, or video
+- Statements that could affect pending or future litigation
+
+## Common mistakes
+- Saying "no risk" or "all clear" too early
+- Posting before leadership and legal review when speed is not safety-critical
+- Letting different officials give inconsistent facts
+
+*Not legal advice.*

@@ -3,12 +3,6 @@ name: public-records-response
 title: Public Records / FOIA Response
 type: prompt
 category: daily
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Public Records / FOIA Response
@@ -76,10 +70,11 @@ Produce a triage summary, responsive-records inventory with exemption flags, a d
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Triage summary and deadline calendar
+2. Responsive-records inventory with custodians
+3. Exemption analysis with legal-review flags
+4. Draft response letter
+5. Internal tracking checklist
 </required_output>
 ```
 
@@ -87,4 +82,5 @@ Produce a triage summary, responsive-records inventory with exemption flags, a d
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

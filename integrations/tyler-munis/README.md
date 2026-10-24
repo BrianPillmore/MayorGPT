@@ -71,7 +71,7 @@ The following Munis data categories should never be pasted into a general-purpos
 1. Identify the MayorGPT skill and stack appropriate for your task.
 2. Pull the corresponding Munis exports listed above.
 3. Apply the formatting preparation steps in this guide.
-4. Open a Claude Project or Claude Code session configured with the appropriate agent and stack.
+4. Open a session in your approved AI tool, configured with the appropriate agent and stack (see `integrations/README.md`).
 5. Attach the prepared Munis export and any supporting documents (adopted budget, prior-year comparison, grant agreement).
 6. Run the skill prompt. Review the output against the raw Munis data before using it in any memo or report.
 7. Have Finance Director or Budget Officer review any output before it goes to City Manager, Council, or the public.

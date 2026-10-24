@@ -25,7 +25,7 @@ If the Future Land Use Map was previously amended to Medium-Density Residential 
 
 ### If you want findings language instead of a staff report
 After the infrastructure studies come back clean and staff is ready to recommend approval, swap in:
-- Skill: `skills/planning-and-growth/land-use-findings-builder/`
+- Skill: `skills/legal-risk/land-use-findings-builder/`
 - Prompt: `prompts/legislation-and-procurement/resolution-draft.md`
 
 This will produce adoptable findings and conditions language rather than a staff report narrative.

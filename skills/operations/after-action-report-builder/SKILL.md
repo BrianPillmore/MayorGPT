@@ -4,42 +4,44 @@ description: Build a structured after-action report (AAR) for any significant in
 argument-hint: [incident-or-project-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Produce an AAR and improvement plan (AAR/IP) that turns an event into corrective action. For emergency events, follow HSEEP-style structure: capabilities tied to the core capabilities or the city's emergency operations plan (EOP), observations with root causes, and an improvement plan with owners and dates. AARs are often public records; draft accordingly.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- incident or project name, dates, and brief description
-- response or execution timeline (what happened, in sequence)
-- list of participating departments, agencies, and key personnel
-- identified successes and what factors produced them
-- identified failures, gaps, or problems and their contributing causes
-- prior AAR findings on related events, if any
-- any legal, personnel, or liability matters that arose and must be handled separately
-3. Structure the report using standard AAR sections: Executive Summary; Incident/Event Overview; Objectives and Performance; Timeline; Findings (separated into Strengths and Areas for Improvement); Recommendations with assigned owners and target completion dates; Appendices.
-4. For each area for improvement, write a specific, actionable recommendation — not a vague aspiration. Each recommendation should name: what will change, who is responsible, and by when.
-5. Be honest. The value of an AAR is candor. Do not write a report that only validates existing practice.
-6. Distinguish operational findings from policy findings. Some improvements require only staff training or procedure changes; others require council policy action or budget authorization.
-7. Flag any findings that involve potential liability, discipline, or legal exposure — these should be coordinated with the city attorney before the report is finalized or distributed.
-8. Do not hide uncertainty. If the timeline or root cause of a problem is unclear, say so and recommend further review.
-9. End with clear next steps, including who must review the AAR before it is released and how the improvement plan will be tracked.
+## Required inputs
+- Incident or event summary, dates, activation level, and ICS organization chart (Incident Commander, Section Chiefs, EOC activation).
+- Logs: ICS 214 unit logs, ICS 201 briefing, 202/203/204/205 forms, dispatch records, WebEOC or equivalent, press releases, resource requests (mutual aid, state, EMAC).
+- Staff and partner debrief input (hot wash notes, surveys) and resident feedback.
+- Costs and damage documentation (for FEMA Public Assistance or insurance where applicable).
+- The EOP, continuity plan, and prior AAR open items.
 
-Always flag:
-- recommendations requiring council action or budget authorization to implement
-- findings involving potential legal liability or personnel matters
-- prior AAR recommendations that were not implemented and may have contributed to this event
-- gaps in the original response plan that the event exposed
-- training, equipment, or mutual aid gaps that recur across multiple AARs
+## Workflow
+1. Define scope and audience: operations, internal learning, or council/public. Choose a no-blame, fact-based tone; individual performance matters belong in HR channels, not the AAR.
+2. Timeline: build an accurate sequence from logs, not memory; reconcile conflicts and mark unknowns.
+3. Objectives and capabilities: list what the response was meant to do (life safety, incident stabilization, property protection, communications, resource management, continuity) and rate each as performed without challenges, with some challenges, with major challenges, or not performed.
+4. Strengths and areas for improvement: for each observation, record what happened, the effect, the likely root cause (plan, organization, equipment, training, exercise, communications, authority), and evidence.
+5. NIMS/ICS fit: span of control, unity of command, common terminology, resource typing, incident action plan quality, interoperability, and EOC-to-field coordination. Note whether ICS forms were used and archived.
+6. Communications and public information: speed and accuracy, alerting systems (WEA, local alert tools), multilingual/accessibility, rumor control, and joint information with partners.
+7. Financial and administrative: emergency purchases and declarations, cost tracking by ICS resource, force-account labor documentation, procurement compliance (federal emergency procurement rules if seeking reimbursement), and records retention.
+8. Improvement plan: for each corrective action, one owner by title, due date, resources needed, how completion will be verified (plan revision, training, exercise), and tracking cadence.
 
-Your output should usually include:
-- formatted AAR draft ready for review
-- improvement plan matrix (recommendation / owner / deadline / resource need)
-- distribution and approval checklist
-- follow-up tracking mechanism recommendation
+## Output structure
+| Core capability / objective | Rating | Strengths | Areas for improvement | Root cause | Evidence |
+Then the improvement plan table: Action | Owner | Due | Resource | Verification | Status.
+Include: executive summary (one page), timeline, cost summary, and lessons applicable to other departments.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Injuries, fatalities, or potential liability: city attorney review before distribution, and risk management notice.
+- Findings implicating individuals, vendors, or mutual-aid partners.
+- Evidence of failure to follow the EOP or notify required authorities.
+- Documentation gaps that endanger disaster reimbursement.
+- Security-sensitive details (critical infrastructure vulnerabilities): redact or restrict distribution per public records exemptions.
+
+## Common mistakes
+- Writing from memory or from the loudest voice.
+- Recommending training for a design or authority problem.
+- No owners or dates.
+- Never revisiting open items.
+- Combining a public narrative with sensitive operational detail.
+
+## State-law variance
+Public-records exemptions for security plans, emergency declaration authority, and reporting duties differ by state.

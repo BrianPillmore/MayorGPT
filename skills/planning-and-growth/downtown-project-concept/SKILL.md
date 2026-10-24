@@ -4,40 +4,42 @@ description: Shape a downtown or corridor concept into a usable project brief wi
 argument-hint: [location]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Turn an idea for a downtown block, corridor, or district into a project brief that tests land productivity, ownership, phasing, funding, and community support before the city commits capital. Downtown land is typically the city's most tax-productive per acre, so the default question is what the concept does to the productive use of existing buildings and parcels.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Financial productivity framing** — downtown and urban core properties are among a city's most financially productive land. Frame the concept through this lens: (a) compare the tax value per acre of the subject downtown block or corridor to the city's average assessed value per acre and to a representative peripheral development of similar public investment; downtown properties in healthy cities typically generate 10–100 times more tax value per acre than single-use peripheral development; (b) assess whether the concept increases the productive use of existing buildings — occupied upper floors, active ground-floor uses, reduced surface parking — or whether it creates new vacancies, demolishes taxable buildings, or converts land to non-taxable uses; (c) evaluate whether public investment in the concept (streetscape, parking, façade programs, infrastructure) generates a measurable increase in adjacent assessed values, and estimate the timeline and magnitude; (d) note whether the concept reduces or increases parking as a share of total land area in the block or district — surface parking is among the least productive uses of downtown land per acre and reducing it is typically a financial gain, not a loss.
-6. Apply the **productive place checklist**: Does this concept increase the number of productive buildings per block? Does it generate activity at multiple times of day (not just business hours)? Does it reduce or increase parking as a share of total land area? Does it improve walkability in a way that supports adjacent business activity and property values? Does it add taxable floor area or convert taxable land to a non-taxable or low-value use? Does this concept introduce stroad characteristics to downtown — wider travel lanes, increased vehicle speeds, reduced pedestrian accommodation, or parking lots that fragment the street wall? If so, flag as financially counterproductive: stroad characteristics reduce the walkability and enclosure that make downtown land valuable. Can this concept be tested at low cost before committing to permanent investment — through paint, temporary furniture, bollards, pilot programming, or a short-term pop-up? Tactical urbanism pilots generate real data on community response and land-use activation at a fraction of the cost of permanent construction. Pre-1940s buildings in downtown are typically the city's highest-value-per-acre assets. Demolishing them for surface parking, structured parking, or new construction almost always destroys assessed value per acre even when the replacement project appears larger — the density and character of older mixed-use fabric are difficult to replicate and are what make downtown land productive in the first place.
-7. End with clear next steps.
+## Required inputs
+- Site or district boundary, parcel ownership, building age and condition, vacancies, and assessed values from the county assessor.
+- Adopted downtown plan, zoning (form-based or conventional), historic district rules, and parking requirements.
+- Street and utility conditions, planned capital work, and traffic counts.
+- Market information (rents, vacancy, foot traffic if available) and local business and property-owner capacity.
+- Funding tools available: TIF, BID/assessment district, facade grants, state historic tax credits, brownfield funds.
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **downtown concepts that demolish taxable buildings or convert productive land to surface parking or non-revenue uses** — these reduce the financial productivity of the most valuable land in the city; even a modest occupied building typically generates more tax value per acre than an empty lot, a parking lot, or a publicly owned plaza
-- **stroad characteristics introduced to downtown** — wider lanes, increased speeds, reduced pedestrian accommodation, or parking lots that fragment the street wall undermine the walkability and enclosure that make downtown land valuable; flag these as financially counterproductive even when the project is framed as a traffic improvement
-- **demolition of pre-1940s buildings** — older mixed-use downtown buildings are typically the city's highest-value-per-acre assets; replacing them with parking, surface lots, or new construction almost always destroys assessed value per acre and should be evaluated against a full fiscal comparison before proceeding
+## Workflow
+1. Define the problem and the success measures (occupied buildings, assessed value per acre, evening activity, sales tax, safety), with baseline numbers.
+2. Productivity baseline: assessed value per acre of the subject area compared with the city average and with a peripheral development that received similar public investment. Use local assessor data. Widely cited illustrative ranges (auto-oriented sites low, traditional mixed-use much higher) can orient a discussion but must be labeled illustrative and replaced with local data.
+3. Productive place checklist: more productive buildings per block; activity at multiple times of day; parking as a share of land area falling or rising; walkability supporting adjacent property value; taxable floor area added or lost; street design drifting toward higher speeds and wider lanes (see street-design-fiscal-analysis).
+4. Ownership and control: who owns the key parcels, willingness to sell or partner, site control by the city, option agreements, and land assembly risk. Identify the private anchor and the public role.
+5. Phasing: start with low-cost, reversible actions (temporary activation, pilot programs, small-scale infill, facade and code-compliance help) before large capital. State the trigger for each next phase.
+6. Partners and roles: business association, property owners, county, state DOT for state routes, nonprofit and arts organizations, utilities. Define decision rights.
+7. Financing: map each component to an eligible funding source, avoid pledging general fund to speculative components, and show the maintenance tail for new public space.
+8. Risks: displacement of existing small businesses, historic building loss, parking politics, construction disruption, and activity programming that needs ongoing staff.
 
-Your output should usually include:
-- case brief
-- options or findings
-- financial productivity summary (tax value per acre comparison, productive place checklist results)
-- missing-info list
+## Output structure
+| Component | Purpose | Cost | Funding source | Owner/partner | Phase | Success metric |
+Add: productivity comparison table, checklist results, activation ideas with cost, and a 12/24/60-month roadmap.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Demolishing taxable or historic buildings for parking or low-value uses.
+- Public plaza or garage without an operating budget.
+- City investing in property it cannot manage or sell.
+- TIF or abatement without a but-for test (see economic-development-incentive-memo).
+- Historic-preservation law, eminent domain, or environmental contamination issues: involve the city attorney.
+
+## Common mistakes
+- Starting with a rendering rather than the baseline data.
+- Planning big capital before small experiments.
+- Ignoring existing business owners.
+- Treating events as a substitute for daily activity.
+
+## State-law variance
+TIF, eminent domain, BID formation, and historic tax-credit programs differ by state.

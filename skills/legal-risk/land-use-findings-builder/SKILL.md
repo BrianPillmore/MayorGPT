@@ -4,34 +4,41 @@ description: Draft or test zoning and land-use findings so they track adopted cr
 argument-hint: [case-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Land Use Findings Builder
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- draft document or scenario facts
-- local charter/code/policy
-- state-law context if known
-- timeline
-- decision-maker
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Build or test written findings for rezonings, conditional/special use permits, variances, subdivisions, and appeals. Quasi-judicial decisions are generally reviewed on the record for whether findings are supported by evidence and tied to adopted criteria. Use `findings-template.md`.
 
-Always flag:
-- facts still unknown
-- items needing licensed counsel review
-- procedural vulnerabilities
-- recordkeeping needs
+## Required inputs
+- Application, staff report, and applicable code criteria (quote exact text)
+- Hearing record: testimony, exhibits, planning commission recommendation
+- The decision (approve, approve with conditions, deny) and the council's stated reasons
+- Standard of review and appeal route (verify)
 
-Your output should usually include:
-- issue spot list
-- risk summary
-- review checklist
+## Workflow
+1. **Identify the decision type and standard:** legislative rezoning (broad discretion, consistency with comprehensive plan), quasi-judicial permit (apply criteria to facts), variance (hardship tests vary by state), or appeal (de novo or on the record).
+2. **List each approval criterion** from the code verbatim.
+3. **For each criterion, write three items:** the finding (met / not met), the facts and evidence in the record that support it (with exhibit or testimony cite), and the reasoning connecting them. Do not rely on generalized neighborhood opposition unless the criteria make it relevant.
+4. **Check consistency** with the comprehensive plan, zoning purpose statements, and prior similar decisions; explain distinctions.
+5. **Conditions:** each must be reasonably related and proportional to the impact of the proposal (federal takings doctrine requires an essential nexus and rough proportionality for exactions; confirm with the attorney), and enforceable.
+6. **Constitutional and statutory checks:** equal treatment, religious land use and fair-housing protections, accessory dwelling or housing-streamlining mandates that limit denial grounds, shot clocks and deemed-approved rules, vested rights, and nonconforming uses (all vary by state).
+7. **Procedure review:** notice, conflicts and ex parte disclosures, record closure, who signs, appeal clock starts at adoption of written findings.
+8. **Mismatch test:** if the vote leans on reasons not in the criteria, flag and propose either another basis from the record or a continuance to prepare findings.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Criteria-by-criteria findings table
+- Proposed conditions with nexus explanation
+- Draft motion adopting findings
+- Record gaps and risk notes
+
+## Red flags / escalate to the city attorney
+- Decision based on who is applying, not the criteria
+- Moratorium, takings, vested-rights, or religious-use claims
+- Pending litigation or threat of one; developer settlement discussions
+- Evidence submitted after the record closed
+
+## Common mistakes
+- Conclusory findings ("the project is not compatible")
+- Findings written after the vote with new reasons
+- Conditions with no connection to the harm
+
+*Not legal advice.*

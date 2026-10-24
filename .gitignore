@@ -8,3 +8,4 @@ dist/
 build/
 MayorGPT.zip
 *.zip
+.env

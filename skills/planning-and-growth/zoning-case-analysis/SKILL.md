@@ -4,39 +4,44 @@ description: Analyze a rezoning, special permit, plat, or development case again
 argument-hint: [case-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `case-brief-template.md`.
+## Purpose
+Prepare a staff-quality analysis for a land-use hearing that applies the correct legal standard for the type of request: legislative (rezoning), quasi-judicial (special/conditional use permit, variance), or administrative. The findings must be defensible on appeal.
 
-Follow this workflow:
+## Required inputs
+- Application, site plan, narrative, and exhibits; legal description; ownership.
+- Zoning code criteria for the request, adopted plan, and overlay districts.
+- Surrounding land uses and zoning, aerial photos, history of cases in the area.
+- Review comments: engineering, utilities, fire, traffic, environmental, schools.
+- Public notices, protest petitions, and written comments.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Tax value per acre check** — as part of the fiscal analysis, determine: (a) the current assessed value per acre of the subject parcel(s); (b) the projected assessed value per acre under the proposed use, using comparable assessed values for similar developments already on the tax roll in the city; (c) whether the proposed use increases or decreases tax value per acre relative to the existing use; (d) whether the proposed use increases the infrastructure obligation per acre — more impervious surface, additional utility demand, added traffic signal or road widening triggers — without a proportional increase in assessed value. Use comparable developments in the city as the benchmark wherever possible, and flag the comparison clearly.
-6. End with clear next steps.
+## Workflow
+1. Classify the request and its decision body, standard, and process. Quasi-judicial matters require a record-based decision, written findings, and avoidance of ex parte contacts; legislative matters allow broader policy discretion. Confirm in the code and state law.
+2. Verify notice and procedure: mailed/published/posted notice timing, protest petition thresholds that trigger supermajority votes, and hearing deadlines.
+3. Apply criteria one at a time. For rezonings typical considerations include consistency with the plan, compatibility with surroundings, changed conditions or mistake, adequacy of facilities, and effect on public health, safety, and welfare. For special permits and variances, use the exact code test (variance standards are narrow and typically require hardship not self-created).
+4. Plan consistency: future land use designation, policy citations (see comp-plan-crosswalk).
+5. Context and impacts: traffic (trip generation, access), utilities, drainage, noise/lighting, height and transitions, and hours; separate documented impacts from generalized opposition. Recognize that what is allowed in the requested district is the test for a rezoning, not just the applicant's plan, unless a conditional or contract zoning tool is lawfully available.
+6. Precedent: comparable cases in the area and consistent treatment; avoid spot-zoning concerns (a small parcel treated differently from surroundings without public benefit or plan support).
+7. Fiscal and infrastructure effects (see fiscal-impact-analysis) when the request changes density or needs public improvements.
+8. Draft findings for approval and for denial, and propose conditions that are specific, related to impacts, and legally allowed. Conditions must be authorized; some states bar conditions on straight rezonings.
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **proposals that lower tax value per acre or increase infrastructure obligation per acre without proportional revenue** — this applies regardless of use type; a large-footprint, low-value use (surface parking, big-box retail, low-density auto-oriented commercial) can be less fiscally productive per acre than a modest mixed-use or residential building; this is a fiscal scrutiny issue independent of whether the use is otherwise compatible
+## Output structure
+| Criterion | Code/plan cite | Evidence | Finding (meets/partially/does not) |
+Add: case summary, neighborhood context, options (approve, conditions, deny, continue), recommended findings, and hearing issues list. See case-brief-template.md.
 
-Your output should usually include:
-- case brief
-- options or findings
-- tax value per acre comparison (current vs. proposed vs. comparable)
-- missing-info list
+## Red flags / escalate
+- Protest petition or supermajority trigger.
+- Applicant requests waiver of notice or hearing procedure.
+- Request that appears to be spot zoning or contract zoning.
+- Fair housing, religious land use (RLUIPA), takings, or sign-regulation issues (First Amendment): city attorney review.
+- Decision-maker conflicts or ex parte contact.
+- Applicant threatens litigation; vested-rights claims.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Common mistakes
+- Using popularity as the standard in a quasi-judicial matter.
+- Writing findings that merely restate the code.
+- Treating the plan as the only criterion.
+- Imposing conditions that exceed authority.
+- Forgetting appeal deadlines and the record.
+
+## State-law variance
+Quasi-judicial vs. legislative classification, protest rules, conditional rezoning, and appeal paths vary by state.

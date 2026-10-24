@@ -2,19 +2,56 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
-    branches: [main]
+    branches: [main, master]
+
+permissions:
+  contents: read
 
 jobs:
-  test:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
+      - name: Validate repository structure, links, and counts
+        run: python scripts/validate_repo.py
+      - name: Check catalog is up to date
+        run: python scripts/build_catalog.py --check
+      - name: Export bundle smoke test
+        run: |
+          python scripts/export_bundle.py --list agents > /dev/null
+          python scripts/export_bundle.py --agent mayor --format all --out "$RUNNER_TEMP/bundle"
+          test -s "$RUNNER_TEMP/bundle/system-prompt.txt"
+          python -c "import json,sys; [json.load(open(sys.argv[1]+'/'+f)) for f in ('openai-messages.json','gemini.json')]" "$RUNNER_TEMP/bundle"
+      - name: API client dry run (no network)
+        run: |
+          MAYORGPT_PROVIDER=ollama MAYORGPT_MODEL=test-model \
+            python integrations/api/mayorgpt_llm.py --agent mayor --user hello --dry-run > /dev/null
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements*.txt
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements-dev.txt
       - name: Run tests
         run: pytest tests/ -v
+
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint installer scripts
+        run: shellcheck integrations/skills-installer/install_mayorgpt_skills.sh
