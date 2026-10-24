@@ -6,6 +6,7 @@ It speaks two wire formats:
 
 - **OpenAI-compatible `chat/completions`**, which most hosted and local providers support.
 - **Native Gemini `generateContent`**.
+- **Native Claude Messages API**.
 
 No model is built in. You always choose the provider and model yourself.
 
@@ -26,6 +27,7 @@ Each setting also has a flag (`--provider`, `--model`, `--base-url`). Keys are r
 |---|---|---|---|
 | `openai` | chat/completions | `OPENAI_API_KEY` | `https://api.openai.com/v1` |
 | `gemini` | generateContent | `GEMINI_API_KEY` or `GOOGLE_API_KEY` | `https://generativelanguage.googleapis.com/v1beta` |
+| `claude` | Messages API | `ANTHROPIC_API_KEY` | `https://api.anthropic.com/v1` |
 | `xai` (Grok) | chat/completions | `XAI_API_KEY` | `https://api.x.ai/v1` |
 | `mistral` | chat/completions | `MISTRAL_API_KEY` | `https://api.mistral.ai/v1` |
 | `deepseek` | chat/completions | `DEEPSEEK_API_KEY` | `https://api.deepseek.com` |

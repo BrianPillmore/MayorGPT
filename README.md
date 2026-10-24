@@ -52,6 +52,7 @@ differs in how it accepts instructions and files, so check that platform's curre
 | All platforms (index and matrix) | [integrations/README.md](integrations/README.md) |
 | Provider-agnostic API command line | [integrations/api/README.md](integrations/api/README.md) |
 | ChatGPT / OpenAI | [integrations/chatgpt/README.md](integrations/chatgpt/README.md) |
+| Claude | [integrations/claude/README.md](integrations/claude/README.md) |
 | Google Gemini | [integrations/gemini/README.md](integrations/gemini/README.md) |
 | Grok | [integrations/grok/README.md](integrations/grok/README.md) |
 | Microsoft Copilot | [integrations/microsoft-copilot/README.md](integrations/microsoft-copilot/README.md) |

@@ -17,6 +17,7 @@ python scripts/export_bundle.py --agent city-manager --prompt executive-brief \
 | Platform | Guide | Paste prompt | Upload files | Skills | API client |
 |---|---|---|---|---|---|
 | ChatGPT (Custom GPTs, Projects) | [chatgpt](chatgpt/README.md) | yes | yes | via export | `openai` |
+| Claude (chat, Projects, API) | [claude](claude/README.md) | yes | yes | folder or export | `claude` |
 | Google Gemini (Gems, AI Studio) | [gemini](gemini/README.md) | yes | yes | via export | `gemini` |
 | xAI Grok | [grok](grok/README.md) | yes | varies | via export | `xai` |
 | Microsoft Copilot, Azure | [microsoft-copilot](microsoft-copilot/README.md) | yes | yes | via export | `azure` |
@@ -30,7 +31,7 @@ python scripts/export_bundle.py --agent city-manager --prompt executive-brief \
 
 ## Guides
 
-- [API](api/README.md): provider-agnostic command line client (`mayorgpt_llm.py`) for OpenAI-compatible APIs and native Gemini, with `--print-prompt` and `--dry-run`. Standard library only.
+- [API](api/README.md): provider-agnostic command line client (`mayorgpt_llm.py`) for OpenAI-compatible APIs, native Gemini and native Claude, with `--print-prompt` and `--dry-run`. Standard library only.
 - [Skills installer](skills-installer/README.md): copy `SKILL.md` folders into any tool's skills or instructions directory, or bundle them with the export script.
 - [Generic assembly guide](generic/assembly-guide.md): the platform-independent recipe.
 - [Tyler Munis ERP pairing](tyler-munis/README.md): which Munis exports to pull for each financial workflow, how to clean them, which skills pair with them, and which data must never be pasted into an AI session. MayorGPT has no direct Munis connection.

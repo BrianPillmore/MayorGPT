@@ -150,3 +150,14 @@ def test_no_hardcoded_model_ids_or_vendor_wording():
     text = SRC.read_text().lower()
     for p in ("gpt-", "gemini-1", "gemini-2", "grok-", "llama-3", "mistral-large"):
         assert p not in text
+
+
+def test_claude_payload_and_redaction():
+    c = llm.resolve_config("claude", "some-model", env={"ANTHROPIC_API_KEY": "ak-secret"})
+    url, headers, payload = llm.build_request(c, "SYS", "USER", max_tokens=100)
+    assert url.endswith("/messages")
+    assert headers["x-api-key"] == "ak-secret" and "anthropic-version" in headers
+    assert payload["system"] == "SYS" and payload["max_tokens"] == 100
+    assert payload["messages"] == [{"role": "user", "content": "USER"}]
+    assert "ak-secret" not in llm.dry_run_report(url, headers, payload, c.api_key)
+    assert llm.extract_text("anthropic", {"content": [{"type": "text", "text": "a"}, {"type": "text", "text": "b"}]}) == "ab"

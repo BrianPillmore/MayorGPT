@@ -6,6 +6,7 @@ Two wire formats cover most providers:
     Together, Fireworks, Perplexity, OpenRouter, Cohere, Qwen, Azure or any
     OpenAI-compatible gateway, and local servers (Ollama, LM Studio, vLLM, llama.cpp).
   * Native Gemini generateContent (provider "gemini").
+  * Native Claude Messages API (provider "claude").
 
 Configuration (flags override environment):
   MAYORGPT_PROVIDER   provider preset name (see --list-providers)
@@ -43,7 +44,7 @@ class LLMError(Exception):
     """A user-facing configuration or request error."""
 
 
-# kind: "openai" (chat/completions) or "gemini" (generateContent)
+# kind: "openai" (chat/completions), "gemini" (generateContent) or "anthropic" (Messages API)
 # auth: header style for the key. local servers need no key (key_env None).
 PROVIDERS: dict[str, dict] = {
     "openai": {"kind": "openai", "base_url": "https://api.openai.com/v1", "key_env": "OPENAI_API_KEY",
@@ -71,6 +72,7 @@ PROVIDERS: dict[str, dict] = {
                  "key_optional": True},
     "gemini": {"kind": "gemini", "base_url": "https://generativelanguage.googleapis.com/v1beta",
                "key_env": "GEMINI_API_KEY", "alt_key_env": "GOOGLE_API_KEY"},
+    "claude": {"kind": "anthropic", "base_url": "https://api.anthropic.com/v1", "key_env": "ANTHROPIC_API_KEY"},
 }
 
 
@@ -147,6 +149,15 @@ def build_request(cfg: Config, system: str, user: str, max_tokens: int | None = 
         if cfg.api_key:
             headers["x-goog-api-key"] = cfg.api_key
         return url, headers, payload
+    if cfg.kind == "anthropic":
+        headers["anthropic-version"] = "2023-06-01"
+        if cfg.api_key:
+            headers["x-api-key"] = cfg.api_key
+        payload = {"model": cfg.model, "max_tokens": max_tokens or 4096, "system": system,
+                   "messages": [{"role": "user", "content": user}]}
+        if temperature is not None:
+            payload["temperature"] = temperature
+        return f"{cfg.base_url}/messages", headers, payload
     url = f"{cfg.base_url}/chat/completions"
     payload = {"model": cfg.model,
                "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
@@ -165,7 +176,7 @@ def build_request(cfg: Config, system: str, user: str, max_tokens: int | None = 
 def redact_headers(headers: dict) -> dict:
     out = {}
     for k, v in headers.items():
-        out[k] = "REDACTED" if k.lower() in ("authorization", "api-key", "x-goog-api-key") else v
+        out[k] = "REDACTED" if k.lower() in ("authorization", "api-key", "x-goog-api-key", "x-api-key") else v
     return out
 
 
@@ -183,6 +194,8 @@ def extract_text(kind: str, data: dict) -> str:
         if kind == "gemini":
             cands = data["candidates"]
             return "".join(p.get("text", "") for p in cands[0]["content"]["parts"])
+        if kind == "anthropic":
+            return "".join(b.get("text", "") for b in data["content"] if b.get("type") == "text")
         content = data["choices"][0]["message"]["content"]
         if isinstance(content, list):
             return "".join(c.get("text", "") for c in content if isinstance(c, dict))
