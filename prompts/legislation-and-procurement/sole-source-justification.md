@@ -3,12 +3,6 @@ name: sole-source-justification
 title: Sole-Source Procurement Justification
 type: prompt
 category: legislation-and-procurement
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Sole-Source Procurement Justification
@@ -80,10 +74,11 @@ Produce a complete justification memorandum suitable for the procurement file an
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Justification memorandum for the file and council packet
+2. Legal-basis checklist
+3. Information gaps before signing
+4. Signing-authority and notice determination
+5. Ethics and favoritism flags
 </required_output>
 ```
 
@@ -91,4 +86,5 @@ Produce a complete justification memorandum suitable for the procurement file an
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

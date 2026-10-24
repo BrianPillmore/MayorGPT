@@ -4,34 +4,42 @@ description: Build a clear demographic or service-area brief from census or loca
 argument-hint: [area-or-topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Produce an accurate demographic profile for a decision (service planning, grant eligibility, equity analysis, facility siting) that states uncertainty honestly. Small-area estimates are noisy, and a misread margin of error can misdirect resources.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- source materials
-- decision audience
-- date range
-- output format
-- known caveats
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Geography (city, tract, block group, service area polygon) and the decision the brief supports.
+- Data sources and vintages: decennial census, American Community Survey (ACS) 1-year or 5-year estimates, local administrative data (utility accounts, school enrollment, permits), and population estimates.
+- Specific indicators requested (age, income, poverty, housing cost burden, language, disability, vehicle access).
+- Any program eligibility thresholds (for example low- and moderate-income area tests for federal block grants).
 
-Always flag:
-- data limitations
-- missing sources
-- weak inference
-- items needing validation
+## Workflow
+1. Match source to geography and purpose. ACS 5-year estimates are the usual choice for small areas; 1-year estimates apply only to larger places. Decennial counts are exact for counted topics but ageing. State vintage on every table.
+2. Report margins of error (MOE) for ACS estimates. For small areas, compute whether differences exceed combined MOE before calling something a difference or trend. Do not compare overlapping 5-year periods as independent.
+3. Build the service-area estimate: when your boundary does not match census geography, use block-level allocation or area/population weighting and state the method and error.
+4. Select indicators related to the decision. Present counts and rates, and the denominator.
+5. Compare to city, county, and state benchmarks, and to prior periods where comparable. Avoid inferring causes.
+6. Cross-check with local administrative data (school enrollment, utility connections, building permits) when census data lag or fail for fast-changing areas.
+7. Treatment of sensitive groups: avoid identifying small cells (privacy), use plain-language labels, and respect disclosure rules; avoid deficit framing.
+8. Write findings with confidence: strong signal, weak signal, no reliable conclusion.
 
-Your output should usually include:
-- synthesis memo
-- structured extracts
-- questions for follow-up
+## Output structure
+| Indicator | Area estimate | MOE | City | County/State | Source & vintage | Reliability |
+Add: three to five key findings, a limitations box, method notes for boundary mismatch, and recommended local data to confirm.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Small-area estimates with MOE larger than the estimate.
+- Eligibility determinations (grants) resting on survey estimates: confirm program-approved data and methods.
+- Redistricting or legal uses: demographer and city attorney.
+- Re-identification risk from small counts.
+- Equity claims drawn from a single noisy indicator.
+
+## Common mistakes
+- Ignoring MOE.
+- Comparing ACS 5-year with 1-year without caution.
+- Using outdated data as current.
+- Presenting percentages without counts.
+- Overinterpreting changes between overlapping periods.
+
+## State-law variance
+Program eligibility datasets and state demographer estimates differ by state; check program rules.

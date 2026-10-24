@@ -3,12 +3,6 @@ name: grant-application-narrative
 title: Grant Application Narrative
 type: prompt
 category: legislation-and-procurement
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Grant Application Narrative
@@ -80,10 +74,11 @@ Produce a complete narrative draft aligned to the funder's evaluation criteria, 
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Narrative draft mapped to each funder criterion
+2. Gap-and-weakness analysis
+3. Missing data list
+4. Match and authorization needs
+5. Assurances with ongoing obligations
 </required_output>
 ```
 
@@ -91,4 +86,5 @@ Produce a complete narrative draft aligned to the funder's evaluation criteria, 
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

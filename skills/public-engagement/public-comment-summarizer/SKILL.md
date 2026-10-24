@@ -4,34 +4,45 @@ description: Synthesize hearing or meeting comments into themes, misconceptions,
 argument-hint: [meeting-topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Public Comment Summarizer
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- topic
-- audience
-- facts confirmed
-- tone
-- channel or event context
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Convert raw comments into an honest, usable summary for decision makers, while preserving the official record. A summary never replaces the underlying comments, which must stay in the record.
 
-Always flag:
-- speculation risk
-- tone mismatch
-- unmet expectations
-- need for follow-up timing
+## Required inputs
+- All comment sources: oral testimony (recordings/minutes), emails, web forms, letters, petitions, survey responses, social comments if included
+- The question the body is deciding and the adopted criteria (if quasi-judicial)
+- Comment period dates; identifying fields (address, ward, role) if collected
 
-Your output should usually include:
-- public-facing draft
-- internal notes
-- Q&A or next steps
+## Workflow
+1. **Inventory and de-duplicate.** Count unique commenters, form letters, and petitions separately. Record the timing of each comment against the deadline.
+2. **Code each comment** by position (support / oppose / mixed / question) and by theme (traffic, cost, safety, equity, environment, process, property values, design, and others emerging). Allow multi-coding.
+3. **Report counts with caution.** Public comment is self-selected and not a poll. State this, avoid percentages implying representativeness, and show who is and is not heard (renters, non-English speakers, young people); compare commenter geography to affected area where possible.
+4. **Extract substance**: specific facts, data, alternatives, and conditions proposed. For quasi-judicial matters, separate comments relevant to the adopted criteria from comments about general preference; tell the decision maker which are record evidence.
+5. **Flag misconceptions** with the correct, sourced fact and a suggested neutral response (feeds `faq-builder`).
+6. **List unanswered questions** and owner/answer-by date.
+7. **Present representative quotes** (short, accurate, attributed per policy; avoid exposing private details).
+8. **Offer response options**: modify the proposal, add a condition, extend the comment period, hold a second session, publish a response memo, or no change with reasons.
+9. **Document** how comments were considered; keep the raw set and the summary together under records retention.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Method and counts, with caveats
+- Top themes ranked by frequency and by consequence
+- Position map by area/group
+- Misconceptions and answers
+- Unanswered questions
+- Recommended responses
+
+## Example
+> Theme: "Traffic safety on Elm" (41 of 128 comments; 9 offered specific data). Misconception: "The plan removes all parking" - the plan removes 12 of 140 spaces (staff report p.6).
+
+## Red flags / escalate to the city attorney
+- Comments containing threats, personal data, or claims against the city
+- Late comments in a closed-record quasi-judicial hearing
+- Potential evidence of bias or ex parte communication by a decision maker
+
+## Common mistakes
+- Treating volume as consensus
+- Omitting minority views
+- Dropping comments that criticize staff or officials (viewpoint neutrality)
+
+*Not legal advice.*

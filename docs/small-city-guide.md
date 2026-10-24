@@ -28,7 +28,7 @@ Before anything else — before you try any workflow, before you look at any AI 
 
 Pick one tool. It does not have to be the best tool in the world. It has to be one that your city has reviewed, that staff are allowed to use, and that everyone knows is the approved option.
 
-The most common starting point for small cities is either Microsoft Copilot (if your city already uses Microsoft 365) or a paid ChatGPT or Claude account purchased by the city. The key word is purchased by the city — not a personal free-tier account.
+The most common starting point for small cities is either Microsoft Copilot (if your city already uses Microsoft 365) or a business or enterprise AI subscription purchased by the city. The key word is purchased by the city — not a personal free-tier account.
 
 National League of Cities research found that 68 percent of city employees use personal free-tier AI accounts for government work, and 57 percent input sensitive information into those accounts. Personal accounts are not covered by your city's data agreements. You have no control over how that data is used. That is the governance failure hiding in plain sight, and it is easy to fix: buy a city account and tell staff to use it instead.
 
@@ -124,7 +124,7 @@ These five uses have something in common: they produce a draft that a human revi
 
 **Do not use AI for disciplinary or enforcement decisions without documented human review.** If AI is used in any step of a process that affects someone's rights — a code enforcement citation, an employment termination, a benefits denial — and that decision is later challenged, the city will need to explain exactly what role AI played and who reviewed the outcome. AI decisions that are not documentably reviewed by a human create due process exposure. This is especially true for enforcement targeting (which addresses get cited), hiring and discipline, and benefits eligibility. Use AI to help draft the documentation, not to make the call.
 
-**Do not use personal AI accounts for government work.** This point bears repeating because it is so common. When a staff member uses their personal ChatGPT or Claude account to draft a city document, that content is submitted under the employee's personal account with the employee's personal data agreement — not the city's. The city has no control over data retention, no ability to respond to a public records request for that conversation, and no insurance coverage for a data breach that runs through a personal account. The fix is inexpensive. Do it.
+**Do not use personal AI accounts for government work.** This point bears repeating because it is so common. When a staff member uses their personal AI chatbot account to draft a city document, that content is submitted under the employee's personal account with the employee's personal data agreement — not the city's. The city has no control over data retention, no ability to respond to a public records request for that conversation, and no insurance coverage for a data breach that runs through a personal account. The fix is inexpensive. Do it.
 
 **Do not treat AI output as legal advice.** AI tools can describe what a law generally says. They cannot provide the legal analysis your city attorney would provide — grounded in your state's specific statutes, case law, local code, and the specific facts of your situation. Using AI output to make a legal decision without city attorney review is not a shortcut; it is a liability.
 

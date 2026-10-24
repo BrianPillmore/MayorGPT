@@ -4,34 +4,40 @@ description: Prepare the mayor, council, manager, or clerk for a meeting with qu
 argument-hint: [meeting-date]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Council Meeting Brief
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- agenda or docket
-- draft staff report
-- charter/code provisions
-- proposed action language
-- posting/publication deadlines
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Give the presiding officer or member a role-specific, item-by-item briefing so they can run or participate in the meeting without procedural errors or surprises.
 
-Always flag:
-- missing legal review
-- missing fiscal impact
-- missing attachments
-- authority/process mismatch
+## Required inputs
+- Final agenda and packet; prior meeting minutes and any carry-over items
+- Who the brief is for (mayor/chair, member, manager, clerk) and their position on items, if known
+- Council rules of procedure; any expected public turnout or controversy
 
-Your output should usually include:
-- ready-to-use draft
-- risk and missing-info list
-- next-step checklist
+## Workflow
+1. **Triage the agenda:** mark items as routine, significant, controversial, or legally sensitive (hearings, quasi-judicial, closed session, contracts, land use).
+2. **For each significant item write:** what the action is, why now, fiscal impact, what changed since last time, who will speak, likely amendments, vote required (simple majority, majority of full membership, supermajority; verify local rules), and the exact motion.
+3. **Procedure watch-list:** quorum at start and after recesses; recusals and abstentions and how they affect the count; order of motions (amend, substitute, table, postpone, call the question); how the chair handles a tie vote; reconsideration timing.
+4. **Quasi-judicial items:** remind members to disclose ex parte contacts and site visits on the record, decide only on the record, and avoid prejudgment.
+5. **Public comment:** time limits, sign-up, content-neutral enforcement, and what to say if someone goes over time or off topic.
+6. **Question list:** 3-5 pointed, answerable questions per major item, addressed to staff before the meeting where possible to avoid ambushes.
+7. **Pre-meeting contacts:** remind members that serial communications among a quorum can violate meeting law (see `open-meeting-risk-check`).
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+1. One-page summary: the 3 items that matter most and why
+2. Item sheets (as above)
+3. Motion bank (see `motion-language-crafter`)
+4. Procedure cheat sheet and chair scripts
+5. Follow-up list
+
+## Red flags / escalate to the city attorney
+- Member with a possible conflict of interest on an item
+- Agenda wording that does not match the proposed action
+- Request to take up a matter not on the agenda
+- Threatened litigation or a closed-session discussion drifting beyond its stated ground
+
+## Common mistakes
+- Briefing positions rather than facts, then passing the brief to others (it may be a public record)
+- Forgetting that a motion must be seconded and stated before debate under many rules
+- Ignoring the vote threshold for emergency or zoning actions
+
+*Local rules of procedure control over any general parliamentary guide. Not legal advice.*

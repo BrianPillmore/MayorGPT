@@ -6,7 +6,7 @@ For multi-agent handoff format, output preservation, human review gates, and acc
 
 ---
 
-## The 11 stacks
+## The stacks
 
 | Stack | Use when |
 |---|---|
@@ -21,3 +21,9 @@ For multi-agent handoff format, output preservation, human review gates, and acc
 | `grant-pursuit-stack.md` | A new federal or state program needs eligibility screening, an application deadline is approaching, or a grant compliance deliverable is due. |
 | `intergovernmental-relations-stack.md` | A state legislative session opens and bills need tracking, a regional COG or MPO item requires a city position, or an interlocal agreement is being negotiated. |
 | `fiscal-productivity-stack.md` | A major development proposal, TIF or incentive request, annexation petition, or new infrastructure project needs a full fiscal reality check before Council approval. |
+| `annual-report-and-state-of-the-city-stack.md` | The annual report cycle opens, or the Mayor or City Manager is preparing a State of the City address that must be tied to verified performance and financial data. |
+| `new-administration-transition-stack.md` | An election is certified, new Council members or a new Mayor are sworn in, or a new City Manager starts and needs briefings, onboarding, and a campaign-to-governance translation. |
+| `utilities-rate-case-stack.md` | A rate study is commissioned, a utility is under-recovering its cost of service, or a rate adjustment is heading to Council with notice and hearing requirements. |
+| `downtown-redevelopment-stack.md` | A downtown plan, catalytic site, or developer partnership or incentive request needs concept framing, fiscal and infrastructure analysis, and development agreement review. |
+
+Stack formats are consistent: Best for, When to activate, Combine, Sequence, Watch for. When adding a stack, follow `ORCHESTRATION_PROTOCOL.md` (handoff format, preserved specialist outputs, Gates 1-4, accountability trace) and link only to files that exist.

@@ -4,41 +4,42 @@ description: Map city record series to required retention periods, custody locat
 argument-hint: [record-series or department]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Build or update a department's records inventory and retention map so records are kept as long as the law requires, no longer, and can be found and produced. The state retention schedule governs; a local policy can lengthen but usually cannot shorten required periods.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- description of the record series or department records inventory
-- applicable state records retention schedule for municipalities
-- any local resolution or policy adopting or modifying the state schedule
-- known litigation holds, audit holds, or open public records requests that suspend normal disposition
-- records management system or physical storage location for each series
-- any federal program records requirements (federal grant records, environmental permits, etc.)
-3. For each record series, assign: (a) applicable retention period from state schedule or local policy; (b) triggering event for the retention clock (date of document, date of action, date of account closure, etc.); (c) custody location (department, clerk, IT, off-site); (d) sensitivity classification (public, confidential, restricted, sealed); (e) disposition method (secure destruction, transfer to archives, permanent retention).
-4. Flag any records under litigation hold, audit hold, or pending public records request that cannot be disposed of even if past the normal retention period.
-5. Identify any gaps: record series that exist in practice but are not covered by the current schedule, or records retained far longer than required without a documented reason.
-6. Note federal overlay requirements. Federal grant records typically must be retained for three to seven years from closeout, regardless of the state schedule.
-7. Do not hide uncertainty. If the correct schedule item is ambiguous, identify the ambiguity and recommend city attorney or state archives consultation.
-8. End with a clear action list: records ready for disposition, records requiring hold extension, and records needing schedule updates.
+## Required inputs
+- Department record series inventory (name, description, format, system, volume, date range, owner).
+- Current state general retention schedule and any department-specific or local schedule; the records officer/clerk.
+- Active litigation holds, audits, open public records requests, and grant/contract retention clauses.
+- IT systems of record, backup practices, cloud vendors, and email/messaging/text policies.
 
-Always flag:
-- records under active or anticipated litigation hold that cannot be disposed of
-- records subject to open public records requests pending production or appeal
-- federal program records with retention requirements longer than the state schedule
-- record series not covered by any current schedule item
-- electronic records or system-generated logs that may not be captured in the current inventory
-- personally identifiable information with heightened sensitivity and disposal requirements
+## Workflow
+1. Define each record series by function and content, not by file name or software. Identify duplicates and convenience copies.
+2. Match each series to a schedule item. Record the item number, retention period, trigger event (end of fiscal year, contract expiration, case closure, separation, superseded date), and disposition (destroy, transfer to archives, permanent).
+3. Identify longer-of rules: federal grant records (generally at least three years after the final financial report under 2 CFR 200.334, longer if audit or litigation is open), bond and debt records, tax records, personnel and medical records (separate files and statutory periods), construction records (statutes of repose), and contract records (statute of limitations).
+4. Classify sensitivity: public, confidential by statute (personnel, medical, criminal justice information, attorney-client, certain security plans), or mixed requiring redaction. Record the legal basis for confidentiality and who may access.
+5. Custody and format: where the official copy is held, the system of record, whether electronic records are preserved in a usable format over the retention period, and who maintains permanent records (migration plan).
+6. Holds and suspensions: list any hold that suspends disposition, scope, and the person who can release it. Disposition requires hold check.
+7. Disposition process: approval by department head and records officer, documentation of destruction (certificate/log), secure destruction methods, and the transfer to state archives for permanent items.
+8. Identify gaps: series not on the schedule, inconsistent practices, shadow systems, unmanaged email or messaging, and legacy storage. Recommend schedule requests, policy fixes, and training.
 
-Your output should usually include:
-- retention map table (series / retention period / trigger / custody / disposition method)
-- hold and exception list
-- schedule gap or update recommendations
-- action list with owner assignments
+## Output structure
+| Series | Description | Schedule item | Retention & trigger | Disposition | Custodian/system | Sensitivity | Hold? | Gap |
+Add: disposition-ready list for the period, items needing attorney or state archives input, and an action plan. See retention-map-template.md.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Destruction in progress while a hold, audit, or public records request is open.
+- Series with no schedule item.
+- Records in personal accounts or unmanaged systems.
+- Confidential data in broadly accessible storage.
+- Shortened retention in a local policy that conflicts with state law.
+- Loss or unauthorized destruction: city attorney and state archives notification as required.
+
+## Common mistakes
+- Treating all email as one series.
+- Counting from creation when the trigger is a later event.
+- Destroying paper while the electronic version is the official copy (or vice versa) without a decision.
+- Not documenting destruction.
+
+## State-law variance
+Retention schedules, destruction approval, and confidentiality rules are state-specific; use your state's official schedule.

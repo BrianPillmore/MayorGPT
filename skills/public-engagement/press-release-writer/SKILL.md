@@ -4,36 +4,41 @@ description: Write a city press release that is accurate, readable, and aligned 
 argument-hint: [topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `release-template.md`.
+# Press Release Writer
 
-Follow this workflow:
+**Purpose:** Draft a release journalists can use directly and residents can understand, with a documented approval trail. Use `release-template.md`.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- topic
-- audience
-- facts confirmed
-- tone
-- channel or event context
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- The news: what, who, when, where, why it matters, and what residents need to do
+- Verified facts and figures with source documents; quotes the speaker has approved
+- Embargo or timing constraints; related council action or hearing dates
+- Approval chain (department head, manager, attorney if flagged, mayor)
 
-Always flag:
-- speculation risk
-- tone mismatch
-- unmet expectations
-- need for follow-up timing
+## Workflow
+1. **Decide if it is a release.** Service alerts and meeting reminders may be a notice or social post; reserve a release for news (decisions, openings, programs, awards, enforcement actions, incidents).
+2. **Headline and lead:** headline under about 10 words with a verb; the first paragraph answers who/what/when/where/why. Lead with the resident impact, not the department name.
+3. **Body (inverted pyramid):** key facts, then context, then funding source and numbers (verify), then what residents can do, with dates, links, and contact.
+4. **Quote:** one or two attributable quotes that add meaning, not repeat the lead. Never invent or alter a quote; approvals are mandatory.
+5. **Accuracy checks:** names and titles, spelling of places, dollar amounts, vote counts, dates. Distinguish proposed vs. approved actions. Avoid claims such as "first," "only," or "saves $X" unless substantiated.
+6. **Neutrality:** government speech is allowed to inform; avoid advocacy on candidates and ballot measures and avoid timing around elections without legal review (verify state rules).
+7. **Legal and privacy review:** pending litigation, personnel matters, investigations, victim or minor identities, protected health information, security-sensitive details, and procurement-sensitive information.
+8. **Accessibility and distribution:** plain text plus alt text for images, translation if needed, media list, website post, social adaptation, and a record copy retained.
+9. **Prepare the follow-up:** FAQ and likely questions (see `faq-builder`).
 
-Your output should usually include:
-- public-facing draft
-- internal notes
-- Q&A or next steps
+## Output structure
+- Release (headline, dateline, body, boilerplate, contact)
+- Internal cover note: approvals, risk flags, facts to verify
+- Three-line social summary
+- Likely reporter questions with answers
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate to the city attorney
+- Anything about claims, litigation, personnel, or an investigation
+- Statements about fault or safety after an incident (see `crisis-message-house`)
+- Unreleased council decisions or closed-session subjects
+
+## Common mistakes
+- Burying the date or action residents must take
+- Quoting jargon
+- Numbers that differ between the release and the staff report
+
+*Not legal advice.*

@@ -1,0 +1,10 @@
+---
+description: MayorGPT repository conventions (see AGENTS.md)
+alwaysApply: true
+---
+
+Follow the instructions in `AGENTS.md` at the repository root.
+
+- Content is Markdown for city government work. Outputs are drafts for human review; never invent citations, statutes or figures.
+- Keep protected personal data out of all files. No hard-coded model IDs or secrets.
+- After changes run `python scripts/build_catalog.py`, `python scripts/validate_repo.py` and `pytest tests`.

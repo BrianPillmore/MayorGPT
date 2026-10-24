@@ -4,37 +4,44 @@ description: Review or outline a development agreement for obligations, triggers
 argument-hint: [project-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Review a proposed or executed development agreement (DA) between the city and a developer to confirm that public obligations are limited, conditioned, enforceable, and legal, and that the city's regulatory authority is preserved. DAs are legal instruments; this skill supports, not replaces, the city attorney.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Infrastructure cost allocation check** — review whether the agreement assigns the full cost of development-driven infrastructure to the developer or shifts any portion to the public: (a) identify every item of public infrastructure the agreement requires or implies — roads, water and sewer extensions, drainage, traffic signals, utility upgrades, park dedications; (b) for each item, determine whether the developer pays the full cost, shares the cost with the city, or whether the city bears the cost as a condition of approval; (c) for any item where the city bears cost, calculate or estimate the total public investment and state the projected payback period — how many years of net tax revenue from this development will it take to recover the public infrastructure investment; (d) confirm whether the agreement includes provisions that require the developer to bear infrastructure costs before the city issues building permits or certificates of occupancy, or whether the agreement allows phasing that leaves infrastructure obligations unfunded.
-6. End with clear next steps.
+## Required inputs
+- Draft agreement and exhibits (site plan, phasing, infrastructure list, cost estimates, legal description).
+- Enabling authority (state development-agreement statute, charter, home rule) and city policy.
+- Zoning, subdivision, and engineering standards in force; comprehensive plan.
+- Infrastructure master plans and cost estimates; fiscal impact analysis.
+- Any incentive, TIF, impact fee credit, or reimbursement terms.
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **development agreements that require public infrastructure investment without a fiscal impact analysis** — if the city is investing in roads, utilities, or other infrastructure to enable a project, the agreement should be accompanied by a fiscal impact analysis showing the total public cost and the year in which cumulative tax revenue from the project will have recovered that cost; agreements that lack this analysis leave the city unable to evaluate whether the deal generates positive or negative fiscal return
+## Workflow
+1. Authority and process: confirm statutory authority, required public hearing, council vote, recording, and term limits. Some states restrict the term or require it to be recorded for successors.
+2. Vested rights: which regulations are frozen, for how long, and which health-and-safety or state-mandated changes still apply? Avoid locking in codes the city later cannot update.
+3. Developer obligations: list each (infrastructure, dedications, affordable units, open space, fees), with trigger events (plat recording, building permit counts, certificate of occupancy), standards, security (bonds, letters of credit), and remedies if missed.
+4. City obligations: list each (reimbursements, oversizing, credits, fee waivers, utility capacity reservations, processing deadlines). Quantify the public cost and funding source. Flag any obligation that pledges future appropriations without a non-appropriation clause.
+5. Exactions: test required dedications and improvements against nexus and rough proportionality (see exaction-nexus-review) so the city does not agree to unlawful exactions or developer waivers of rights that are unenforceable.
+6. Phasing and sequencing: public infrastructure is built before or with private development? Who bears risk if later phases do not occur? Include automatic sunset on unbuilt phases.
+7. Default and remedies: notice and cure, termination, reversion of vested rights, liquidated damages, assignment and successor liability, and dispute resolution venue.
+8. Operations: reporting, annual review, amendments (administrative vs. council), maintenance responsibility after acceptance (warranty period), and public access/easements.
 
-Your output should usually include:
-- case brief
-- options or findings
-- infrastructure cost allocation summary (developer-borne vs. public-borne costs, payback period for any public investment)
-- missing-info list
+## Output structure
+| Section | Obligation | Party | Trigger/deadline | Public cost ($, source) | Security | Remedy | Issue |
+Add: public-cost summary, enforceability concerns, missing terms, and negotiation priorities (must-have, should-have, tradeoff).
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- City commits future budget without appropriation limits.
+- Open-ended vested rights or indefinite term.
+- Developer-controlled reimbursement formula without audit rights.
+- No security for public improvements.
+- Fee waivers or credits not supported by studies; exactions beyond nexus/proportionality.
+- Conflicts of interest or related-party transactions.
+- Any element requiring state approval, a referendum, or bond counsel.
+
+## Common mistakes
+- Treating the DA as a substitute for code compliance.
+- Leaving triggers vague ("substantial completion").
+- Failing to bind successors.
+- Omitting reporting and enforcement staffing.
+
+## State-law variance
+DA authority, maximum term, vesting rules, and approval process differ by state; some states have no DA statute.

@@ -4,34 +4,44 @@ description: Summarize a claim, invoice batch, or approval item for executive or
 argument-hint: [claim-batch]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Prepare a pre-audit review of a claims/warrant register or individual invoice so that approvers can see what is being paid, under what authority, from which fund, and what could be wrong. This is a review summary; it does not replace the finance officer's certification or the legal duty to audit claims.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- fund or department context
-- relevant budget sheets
-- trend data
-- policy constraints
-- timing or deadline
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Claims list or invoice images with vendor, invoice number, date, amount, fund/account, and department approver.
+- Purchase orders, contracts, change orders, receiving documents, and bid or quote file for items of concern.
+- Budget status for each affected account and appropriation level.
+- Vendor master data: W-9, address, bank change requests, and prior payments.
 
-Always flag:
-- one-time vs recurring money
-- control/procurement issues
-- assumption sensitivity
-- funding cliff risk
+## Workflow
+1. Verify each item against the three-way match: purchase order or contract, receiving or acceptance evidence, and invoice. Missing receiving evidence is an exception.
+2. Authority check: contract executed before service? Within the delegated spending authority of the approver? Above the competitive bidding threshold or council approval threshold (use the city's adopted thresholds; state thresholds vary)?
+3. Duplicate and splitting test: same vendor, similar amounts, same dates; multiple invoices just under a purchasing threshold; invoice numbers sequential or repeated.
+4. Funding test: correct fund and account? Enough appropriation? Restricted funds used only for eligible purposes (grants, gas tax, utility enterprise)? Interfund implications?
+5. Vendor test: new vendor or changed bank details (verify by independent call-back to a known contact), employee or official relationship (conflict of interest), debarment for federally funded items, 1099 reporting, and sales tax exemption handling.
+6. Pricing and terms: unit prices vs. contract, change orders not approved, retainage handling on construction, prompt-payment law interest, and travel or P-card items against policy.
+7. Timing: late fees, discounts, year-end cutoff (accrual to correct fiscal year), and whether the item is a prior-year obligation.
+8. Summarize: totals by fund, exceptions by severity, items to hold, and items recommended for approval.
 
-Your output should usually include:
-- analysis memo
-- scenario table
-- recommended next steps
+## Output structure
+| Claim # | Vendor | Amount | Fund/Account | Authority | 3-way match | Exception | Severity | Recommendation (approve/hold/query) |
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+Add: totals by fund, funding-source note, exceptions list with the question to ask, and items requiring council action (above thresholds, no contract, emergency purchase ratification).
+
+## Red flags / escalate
+- Payment without a contract or purchase order, or backdated documents.
+- Vendor bank-account change request by email (possible business email compromise).
+- Related-party vendors, or an approver who is also the requester.
+- Splitting to avoid bidding or approval limits.
+- Payment from restricted funds for ineligible purposes.
+- Round-dollar, unusual, or after-hours invoices from a new vendor.
+- Suspected fraud: stop, preserve records, and notify the finance director and city attorney.
+
+## Common mistakes
+- Treating department approval as proof of delivery.
+- Approving to avoid late charges without resolving exceptions.
+- Mixing multiple fiscal years in one cutoff.
+- Not documenting why an exception was accepted.
+
+## State-law variance
+Claims audit, warrant signing, and prompt-pay rules differ by state. Emergency purchase ratification procedures vary.

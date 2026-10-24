@@ -1,6 +1,6 @@
 # Examples
 
-Five end-to-end worked examples showing MayorGPT in action across different workflow types. Each example includes a scenario description, realistic inputs, an annotated sample output, and usage notes.
+Nine end-to-end worked examples showing MayorGPT in action across different workflow types. Each example includes a scenario description, realistic inputs, an annotated sample output, and usage notes.
 
 ## Example Index
 
@@ -11,6 +11,10 @@ Five end-to-end worked examples showing MayorGPT in action across different work
 | [03](03-constituent-escalation/) | Service failure escalated to mayor's office | `mayor` | `constituent-response` | Public engagement / crisis |
 | [04](04-tornado-emergency/) | Post-tornado response, first 48 hours | `emergency-manager` + `public-information-officer` | `emergency-incident-brief` + `crisis-message-house` | Emergency operations |
 | [05](05-open-meeting-violation/) | Council member accused of open meetings violation | `city-attorney` + `city-clerk` | `open-meeting-risk-check` | Legal risk / governance |
+| [06](06-water-main-break-comms/) | Water main break, first-morning communications | `public-information-officer` + `utilities-director` | `utility-outage-comms` | Utility outage / public communication |
+| [07](07-grant-award-compliance/) | Grant award and compliance setup | `grants-and-intergovernmental-affairs-director` | `grant-compliance-check` | Grants / compliance |
+| [08](08-labor-negotiation-prep/) | Labor negotiation preparation | `human-resources-risk-director` + `labor-and-employment-counsel` | `labor-employment-issue-scan` | Labor / personnel |
+| [09](09-development-agreement-review/) | Development agreement review | `planning-and-development-director` + `land-use-counsel` | `development-agreement-review` | Land use / contracts |
 
 ## How to use examples
 

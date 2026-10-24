@@ -4,34 +4,41 @@ description: Create a defensible litigation-hold plan with custodians, systems, 
 argument-hint: [matter-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Litigation Hold Checklist
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- draft document or scenario facts
-- local charter/code/policy
-- state-law context if known
-- timeline
-- decision-maker
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Issue a hold so potentially relevant records are preserved once litigation is pending or reasonably anticipated. Failure to preserve can lead to sanctions or adverse-inference instructions under court rules; standards vary by jurisdiction. The city attorney issues and owns the hold. See `litigation-hold-notice-template.md`.
 
-Always flag:
-- facts still unknown
-- items needing licensed counsel review
-- procedural vulnerabilities
-- recordkeeping needs
+## Required inputs
+- Matter description: claim, parties, time period, key events, and what triggered anticipation (notice of claim, demand letter, subpoena, complaint, agency charge, internal incident)
+- Staff and officials likely to have relevant information
+- Systems list: email, chat and text, cloud drives, case-management systems, body-worn and CCTV video, phone records, paper files, personal devices used for city business
 
-Your output should usually include:
-- issue spot list
-- risk summary
-- review checklist
+## Workflow
+1. **Trigger and date:** record when the duty to preserve arose. It may precede a lawsuit (for example a tort claim notice or a written threat).
+2. **Scope:** define subject matter, date range, and record types. Err toward broader scope; narrow later with attorney approval.
+3. **Custodians:** list individuals, departments, and officials (including elected officials), plus former employees whose accounts remain, and third parties holding city data (vendors, cloud hosts, consultants).
+4. **Suspend routine destruction:** auto-delete on email, chat, voicemail, and video overwrite cycles; records-retention schedule disposals; device wipes and replacement; departing-employee account closure.
+5. **Issue notice:** written, plain language, from the attorney; requires acknowledgment; explains what to keep, what not to do (no deleting, editing, or "cleaning up"), and whom to ask. Do not describe the facts or opinions about the case.
+6. **Collect where needed:** forensic copy of mobile devices or key accounts, vendor preservation letters, copies of video before overwrite.
+7. **Follow-up:** reminders at set intervals, new custodians, systems changes, and a log of notices and acknowledgments.
+8. **Release:** written release by the attorney when the matter ends and retention periods otherwise permit disposal.
+9. **Coordinate with records requests:** a hold does not exempt records from disclosure; separately handle public records requests (see `public-records-response`).
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Trigger, scope, and date range
+- Custodian and system table: name/system | owner | action | acknowledgment date
+- Suspension list (what auto-deletes and who stops it)
+- Draft hold notice and tracking log
+
+## Red flags / escalate to the city attorney
+- Evidence already deleted; overwrite cycles about to run
+- Personal devices or messaging apps in use by officials
+- Parties include elected officials or the manager
+- Insurance carrier or risk pool must be notified (policy deadlines)
+
+## Common mistakes
+- Waiting for a filed lawsuit
+- Relying on custodians to self-select what is relevant
+- Forgetting vendors and cloud systems
+
+*Not legal advice.*

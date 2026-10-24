@@ -17,7 +17,7 @@ The Planning Commission holds its public hearing in 18 days. The Planning Direct
 
 **Optional additions:**
 - `skills/planning-and-growth/comp-plan-crosswalk/` to formalize the consistency analysis
-- `skills/planning-and-growth/land-use-findings-builder/` once a recommendation is reached, to draft adoptable findings language
+- `skills/legal-risk/land-use-findings-builder/` once a recommendation is reached, to draft adoptable findings language
 
 ## Why this combination works
 
@@ -32,7 +32,7 @@ The planning-and-development-director agent keeps the output procedurally ground
 
 ## How to set it up
 
-1. Paste the `planning-and-development-director` portable system prompt into the Claude system field.
+1. Paste the `planning-and-development-director` portable system prompt into the model's system/instructions field.
 2. Activate the `zoning-case-analysis` skill (paste SKILL.md content or reference the skill directory).
 3. Attach the source materials listed in `input.md`.
 4. Use the `staff-report` prompt template as the user turn, filling in the bracketed fields.

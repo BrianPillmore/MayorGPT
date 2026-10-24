@@ -4,37 +4,41 @@ description: Generate practical housing policy options with pros, cons, implemen
 argument-hint: [housing-topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Develop a menu of locally feasible housing actions tied to a diagnosed problem (supply, affordability, condition, displacement, homelessness, workforce) and to the city's actual authority. Zoning and fee tools differ from subsidy tools; many levers belong to counties, housing authorities, or the state.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- application or project description
-- applicable plan/code text
-- maps or site context
-- known public issues
-- utility/traffic notes
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. **Fiscal lens on housing patterns** — evaluate each housing policy option not only by its projected supply impact but by the tax value and infrastructure obligation it produces: (a) assess the tax value per acre each housing pattern generates — attached housing types (duplexes, triplexes, small apartment buildings) on existing infill sites typically generate significantly more assessed value per acre and per infrastructure dollar than detached single-family homes on new greenfield lots; (b) assess the infrastructure obligation — greenfield development requires new roads, water and sewer mains, and drainage; infill development uses capacity that is already built and partially paid off; (c) for each option, note whether it tends to concentrate new housing in locations where infrastructure is already present (fiscally efficient) or in locations that require new infrastructure extensions (fiscally costly); (d) if the policy encourages missing middle housing types in existing walkable areas, note the fiscal advantage explicitly — these types typically achieve 3–10 times higher tax value per acre than comparable greenfield single-family lots while drawing on the same existing infrastructure.
-6. End with clear next steps.
+## Required inputs
+- Housing needs assessment or data: households by income band (percent of area median income), cost-burdened share, vacancy, permits issued, rents/prices, age of stock.
+- Zoning capacity (what is buildable by right), parking and lot rules, permitting timelines and fees.
+- Adopted housing element or plan, state mandates, and fair housing obligations.
+- Funding tools: HOME/CDBG (if the city is a recipient), housing trust fund, LIHTC partners, TIF, land bank, general fund.
+- Council priorities and organized stakeholder positions.
 
-Always flag:
-- criteria mismatch
-- infrastructure constraints
-- precedent concerns
-- public-process triggers
-- **housing policy options that channel growth primarily to greenfield areas** — new infrastructure for low-density greenfield housing is among the least fiscally productive patterns a city can support; if a housing option depends on infrastructure extensions to undeveloped land, the full lifecycle infrastructure cost should be part of the policy evaluation
+## Workflow
+1. Diagnose before prescribing: which income bands and household types lack housing, and whether the binding constraint is regulation, cost of construction, land, financing, or subsidy.
+2. Inventory the city's levers: regulatory (zoning, parking, ADUs, lot size, approvals), fee and process (impact fees, review timeline, by-right pathways), land (surplus land, land banks), financial (gap financing, tax abatement, fee waivers), tenant protection (code enforcement, notice rules where lawful), and partnerships (CLTs, nonprofits, housing authority).
+3. Build 4 to 6 options. For each: mechanism, target households and income band, expected units (range, flagged as estimate), fiscal cost (one-time vs. recurring), staff capacity, legal authority and preemption risk, time to effect, and risk of unintended effects.
+4. Estimate cost per affordable unit for subsidy tools and compare to the cost of no-subsidy regulatory reform. State the affordability term (for example 30 years) and monitoring burden.
+5. Check fair housing and equity: compliance with fair housing law, effects on displacement, geographic distribution, and engagement of renters.
+6. Political map: supporters, opponents, likely arguments, and facts that address them. Do not minimize genuine neighborhood concerns (traffic, schools, infrastructure); show how each option handles them.
+7. Sequence: quick wins (administrative changes, by-right ADUs), medium (code amendments), longer (funding programs).
 
-Your output should usually include:
-- case brief
-- options or findings
-- fiscal comparison by housing pattern (tax value per acre, infrastructure obligation, infill vs. greenfield)
-- missing-info list
+## Output structure
+| Option | Mechanism | Target households | Est. units/yr | City cost (one-time / recurring) | Authority & risk | Time | Pros | Cons |
+Add: recommended package with sequencing, metrics, and decision points.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- State preemption or rent-control, inclusionary zoning, or impact-fee limits that bar an option.
+- Affordability covenants without a monitoring entity.
+- Subsidy without long-term affordability term or recapture.
+- Federal funds with environmental review, Davis-Bacon, or relocation duties (URA).
+- Any fair housing risk: city attorney review before introduction.
+
+## Common mistakes
+- Treating all affordability as one problem.
+- Promising unit counts without a pro forma.
+- Relying on voluntary incentives with no developer uptake.
+- Ignoring operating costs of new programs.
+
+## State-law variance
+Inclusionary zoning, rent regulation, ADU mandates, and impact-fee limits vary substantially by state.

@@ -4,40 +4,43 @@ description: Turn KPI tables into a useful narrative that explains movement, dri
 argument-hint: [dashboard-name or reporting-period]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Convert a table of performance measures into a short narrative that says what moved, why, whether it matters, and what management will do. A good narrative tells the reader which two or three measures need attention and does not recite every number.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- KPI data table or dashboard export for the current period
-- prior period and prior year comparison data
-- performance targets or benchmarks for each metric
-- department or program context for each measure
-- audience (council, manager, department director, public)
-- any metrics flagged as off-target or recently changed
-3. For each metric, determine: (a) direction of movement (improving, declining, flat); (b) whether movement is statistically meaningful or within normal variation; (c) likely driver of the movement based on known operational factors; (d) management action underway or needed.
-4. Lead with the most significant findings — metrics that are off-target, showing an accelerating trend, or requiring leadership attention. Do not bury the news in alphabetical or list order.
-5. Distinguish between metrics the city controls directly (service levels, response times, completion rates) and those influenced by external factors (call volume, weather, economic conditions). Do not imply management failure for metrics driven externally.
-6. Use plain numbers with context: "average permit processing time is 14 days, up from 11 days last quarter and above the 10-day target" is more useful than "this metric is 40% above benchmark."
-7. Do not hide uncertainty. If data quality, collection method, or comparability is a known issue, say so and recommend data governance action.
-8. End with a clear management action list: metrics that need immediate response, those on a watch list, and those performing well.
+## Required inputs
+- KPI table with definitions, units, source system, reporting period, prior periods, and targets.
+- Context: staffing changes, policy or fee changes, weather or events, system changes, backlog, and budget status.
+- Audience (council, manager, department staff, public) and format limits.
+- Data quality notes: missing data, definition changes, and manual vs. automated sources.
 
-Always flag:
-- metrics that are off-target by more than 10% without a documented explanation
-- data quality or collection inconsistencies that reduce confidence in the numbers
-- metrics where the target itself may need recalibration based on changed conditions
-- measures that are tracked but never acted upon — candidates for removal from the dashboard
-- any metric with public or legal consequences if performance continues to decline
+## Workflow
+1. Check measure integrity first: definitions unchanged? Same denominator? Seasonal? Source system migrated? State any break in series before interpreting.
+2. Compare each measure to target, prior period, and same period last year. Use the right comparison for seasonality, and note small-number volatility (a swing from 2 to 4 is not a trend).
+3. Classify movement: on track, watch, off track, or not interpretable. Separate output (activity), efficiency (cost or time per unit), outcome (result for residents), and equity measures.
+4. Explain drivers with evidence: workload, vacancies, process change, external factors. Distinguish known causes from hypotheses and label hypotheses.
+5. Test for gaming and unintended effects: a faster closure time can come from closing tickets without resolution; check paired measures (quality, reopen rate).
+6. Link to money and risk where relevant: overtime, backlog cost, grant targets, regulatory metrics, and legal deadlines (for example permit shot clocks).
+7. State management action for each off-track measure: owner, action, date, and expected effect, or explicit decision to accept the result.
+8. Write the narrative: headline in one sentence, three to five key points, then a short table. Use plain language and consistent units. Include a notes section on limitations.
 
-Your output should usually include:
-- narrative summary leading with key findings and management actions needed
-- metric-by-metric table with status, trend, and driver notes
-- watch list and recommended management response for off-target items
-- data quality or governance flags if applicable
+## Output structure
+Headline sentence, then:
+| Measure | Definition | Prior | Current | Target | Status | Driver | Action/owner |
+Add: "What needs attention" (max three), "What is going well," data-quality notes, and next reporting date. See narrative-template.md.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Regulatory or legal-deadline measures off track (permit shot clocks, response times, compliance reports, water quality).
+- Safety or equity measures worsening.
+- Data integrity problems or suspicious improvements.
+- Targets that were never adopted by council or cannot be measured.
+- Metrics tied to staff evaluation or incentives.
+
+## Common mistakes
+- Explaining every measure.
+- Treating correlation as cause.
+- Changing definitions without disclosure.
+- Using averages that hide distribution (report medians/percentiles for response times).
+- Ending without an action.
+
+## State-law variance
+Mandatory performance reporting (state or grant requirements) varies; check program terms.

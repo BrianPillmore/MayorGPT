@@ -4,42 +4,42 @@ description: Draft a legally sufficient public notice for any city council, boar
 argument-hint: [meeting-type and date]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Meeting Notice Drafter
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- meeting type (regular, special, emergency, work session, or standing committee)
-- date, time, and location (physical address and remote access link if hybrid or virtual)
-- draft agenda or list of business items
-- state open meetings law notice requirements (advance hours or days required by meeting type)
-- city's established notice posting locations (city hall bulletin board, website, newspaper of record)
-- whether the meeting includes any public hearing items requiring separate or longer notice
-- any executive session anticipated and its proposed notice language
-3. Apply the correct notice advance-time requirement for the meeting type. Regular meetings typically require 24–72 hours depending on state law; special meetings often require shorter notice (as little as 24 hours) but with stricter limits on what business may be conducted; emergency meetings may waive notice under specific statutory grounds.
-4. Draft notice content including: governing body name; meeting type; date, time, and place; agenda items to be considered; executive session notice if applicable (general subject only, not details); instructions for public participation if applicable; and contact information for accommodations requests.
-5. Generate a posting-and-publication checklist: which locations must receive the notice, by what time and date, and who is responsible for each posting. Document the checklist in the city clerk's file.
-6. Flag any public hearing items that require separate legal notice (newspaper publication, mailed notice to affected parties, or posted notice at the subject property).
-7. Do not hide uncertainty. If state law notice requirements are unclear, recommend city attorney confirmation before the notice is posted.
-8. End with clear next steps.
+**Purpose:** Produce a meeting notice and agenda header that meets open-meetings requirements. Posting periods and content rules differ by state (for example, some states require a minimum of 72 hours for regular meetings and 24 hours for special meetings, but others use different periods). **Verify against your state statute, charter, and local rules.** Use `meeting-notice-template.md`.
 
-Always flag:
-- agenda items that may require more than the standard meeting-type notice period
-- public hearing items requiring separate, longer, or additional-channel notice
-- executive session items where notice language is too specific (risks waiving the privilege) or too vague (risks an open-meetings challenge)
-- remote or hybrid participation options that must appear in the notice under state law
-- ADA/accommodations language required by the Americans with Disabilities Act
-- situations where the city clerk's signature or attestation is required on the notice
+## Required inputs
+- Body name, meeting type (regular, special, emergency, adjourned, work session, joint), date, time, location
+- Remote-access instructions and accessibility information
+- Agenda items with descriptions; whether any closed session is planned and its legal ground
+- Prior posting rules, newspaper/website/posting locations, and e-mail subscriber lists the law requires
 
-Your output should usually include:
-- draft public notice ready for posting
-- posting-and-publication checklist with deadlines and responsible parties
-- special notice flag list (hearings, executive sessions, hybrid access)
-- document-retention note for the clerk's file
+## Workflow
+1. **Select notice class and compute deadlines.** Count backward from the meeting start using the right unit (hours vs. days, business vs. calendar; weekends and holidays). Special meetings often have shorter periods but must state the business to be transacted and may be limited to that business. Emergency meetings have narrow triggers (verify) and often require immediate notice to media who have requested it.
+2. **Required content to verify:** body name; date, time, and place; how to attend remotely and submit comments; accommodations contact (ADA) and language assistance; agenda with enough description of each item for a reasonable reader to understand it; closed-session ground and statutory cite; location where the packet is available; how to subscribe to notices.
+3. **Posting methods:** physical posting at designated locations (city hall, library), website, newspaper of record (where publication is required for hearings and ordinances), mailed or emailed notices to requesters, and the secretary's attestation of posting. Record the date, time, location, and who posted.
+4. **Joint, committee, or advisory bodies:** confirm the notice covers each body with a quorum present; add language noting that a quorum of another body may attend and no action will occur, if your law supports that practice.
+5. **Hearing items:** add the separate legal notice requirements (publication, mailed radius, posted site sign; see `public-hearing-prep`).
+6. **Change control:** adding items after posting, canceling, rescheduling, or recessing to a later time; re-notice rules.
+7. **Plain-language summary** for social and email, linking to the official notice (see `social-post-series`).
+8. **Proof:** certificate of posting, affidavit of publication, and file copy kept per retention rules.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Deadline table (computed backward)
+- Official notice text
+- Agenda header and public comment/remote access block
+- Posting log with signature line
+- Short public-facing summary
+
+## Red flags / escalate to the city attorney
+- Special or emergency meeting with unclear justification
+- Short notice, late agenda additions, or action on an unlisted item
+- Closed session with a vague ground; joint meeting with another agency
+- Missing publication for a hearing item
+
+## Common mistakes
+- Using the regular-meeting deadline for a special meeting
+- Counting from the posting time instead of the meeting start
+- Describing items as "discussion" and then voting
+
+*Not legal advice.*

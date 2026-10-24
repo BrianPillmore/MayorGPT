@@ -4,34 +4,45 @@ description: Convert a project, policy, or controversy into a plain-language pub
 argument-hint: [topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# FAQ Builder
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- topic
-- audience
-- facts confirmed
-- tone
-- channel or event context
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Turn complex municipal decisions into a short, accurate FAQ that answers the questions residents actually ask, in the order they ask them.
 
-Always flag:
-- speculation risk
-- tone mismatch
-- unmet expectations
-- need for follow-up timing
+## Required inputs
+- Topic, current status, and decision timeline
+- Source documents: staff report, ordinance or resolution, maps, budget
+- Question sources: 311 logs, emails, public comments, social posts, council questions
+- Facts that are settled vs. still under consideration
 
-Your output should usually include:
-- public-facing draft
-- internal notes
-- Q&A or next steps
+## Workflow
+1. **Collect real questions** from the sources above; cluster them by theme (what, why, who, how much, when, where, how to participate, what happens next). Use residents' wording, then translate jargon.
+2. **Rank** by frequency and consequence. Open with "What is this?" and "How does it affect me?" Put "How can I weigh in?" high with dates and methods.
+3. **Write each answer** in 2-4 short sentences at about an 8th-grade reading level. State the fact, the source, and the date. Define terms once.
+4. **Handle contested topics** neutrally: describe the options, the reasons for each, and the decision process; do not advocate on a pending decision (public funds generally cannot be used to campaign for a ballot measure; verify state law). Distinguish "adopted," "proposed," and "under study."
+5. **Address misconceptions** respectfully ("Some residents have asked whether...") with evidence.
+6. **Include numbers carefully:** show units, timeframe, funding source, and what is not included. Verify each number against the staff report.
+7. **Include process facts:** meeting dates, comment deadlines, contacts, how decisions are made, appeals.
+8. **Accessibility and language:** plain headings, alt text for graphics, translation plan (see `language-access-plan`).
+9. **Maintain it:** version date, owner, review trigger; keep a changelog and archive old versions as records.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Title and "last updated" line
+- 8-15 questions in groups, each with short answer and source
+- "What we do not know yet" box
+- How to participate and contact information
+- Internal sheet: source citations, approver, and open items
+
+## Example
+> **Will my taxes go up?** The proposal does not change the property-tax rate. It would use $__ from the __ fund (source: staff report, p. 4). Any future rate change would require a separate public hearing.
+
+## Red flags / escalate to the city attorney
+- Statements about legal rights, liability, or the effect of litigation
+- Pending litigation, bids, or personnel matters
+- Anything that sounds like promoting a candidate or ballot measure
+
+## Common mistakes
+- Answering the questions staff wish residents asked
+- Mixing plan, proposal, and adopted policy
+- Letting the FAQ go stale after a vote
+
+*Not legal advice.*

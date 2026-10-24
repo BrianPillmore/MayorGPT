@@ -4,40 +4,44 @@ description: Triage a public records or FOIA request into responsive records, ap
 argument-hint: [request-text or request-number]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Public Records Response
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- original request text and date received
-- applicable state public records act provisions and local policy
-- statutory response deadline calculation from receipt date
-- preliminary inventory of potentially responsive records by department and system
-- any categories of potentially exempt material (attorney-client, personnel, security, ongoing investigation, deliberative process)
-- requester identity and any prior related requests if known
-3. Triage the request into: (a) clearly responsive and releasable, (b) potentially responsive and requiring legal review, (c) clearly exempt with documented basis, and (d) not responsive to the request as written.
-4. Draft a response letter that acknowledges receipt, states the applicable deadline, identifies any need for clarification or extension, and describes the city's intent to produce or withhold each category of records.
-5. Build a records-production checklist covering custodian identification, search documentation, redaction review, fee calculation if applicable, and file retention of the response.
-6. Do not hide uncertainty. If exemption analysis requires city attorney review, say so explicitly.
-7. End with clear next steps, including who must review the response before it is sent.
+**Purpose:** Turn a records request into a defensible response package. State public records acts differ on response deadlines (a few days to several weeks), definition of "record," fees, exemptions, and penalties; **verify against your state act and city policy**. Use `response-letter-template.md`. For early intake and custodian mapping, see `records-request-triage`.
 
-Always flag:
-- statutory response deadline and whether an extension is available and properly noticed
-- any records that require city attorney review before a withholding decision is made
-- records that may trigger third-party notification rights before release
-- any prior related requests from the same requester that could establish a pattern
-- over-withholding risk — sensitivity or embarrassment is not a legal exemption basis
+## Required inputs
+- Request text, date and method received, requester identity (if the act cares)
+- State act, local policy, and fee schedule
+- Departments and systems likely holding records (email, text on personal devices, body-worn video, case management)
+- Retention status of the records sought
 
-Your output should usually include:
-- triage summary by record category
-- draft response letter
-- exemption analysis and supporting checklist
-- production and redaction workflow steps
-- next-step checklist with owner assignments
+## Workflow
+1. **Log and clock.** Record receipt date and compute the deadline per statute (business vs. calendar days; whether clarification requests stop the clock).
+2. **Parse the request.** Identify records sought, date range, and custodians. If ambiguous, send a clarification request promptly; do not narrow the request on your own.
+3. **Search.** Assign custodians; document search terms, locations, and dates. Include personal accounts and devices used for city business where your law covers them.
+4. **Triage into four bins:** releasable; needs attorney review; exempt with a cited, specific basis; not responsive or does not exist (state that no records were found rather than implying withholding).
+5. **Apply exemptions narrowly.** Common categories to verify under your act: attorney-client privilege and work product, personnel and medical privacy, active law-enforcement investigations, security-sensitive infrastructure, trade secrets in bids, pre-decisional deliberative material (where recognized), and personal identifiers. Embarrassment, volume, or inconvenience are not exemptions. Segregate and redact; release the non-exempt remainder.
+6. **Third-party notice** where required (trade secrets, employee records).
+7. **Fees:** charge only what the act allows; estimate before large work.
+8. **Respond in writing:** acknowledgment, any extension with reason and new date, production schedule (rolling), exemptions cited per record or category, appeal or review rights as required.
+9. **Close out:** keep the request file, search log, and a copy of what was released per retention rules.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Deadline calculation
+- Triage table: category | custodian | status | exemption cited | reviewer
+- Draft response letter
+- Production and redaction checklist
+
+## Red flags / escalate to the city attorney
+- Any withholding based on privilege or investigation
+- Requests tied to pending litigation or a claim
+- Requests for records of elected officials' personal devices
+- Repeated, voluminous, or harassing requests (use the statutory tool, not improvisation)
+- Missed deadline
+
+## Common mistakes
+- Letting the deadline lapse while "searching"
+- Blanket denials without citation
+- Treating a draft as exempt without checking that your act recognizes the exemption
+- Releasing unredacted personal data
+
+*Not legal advice.*

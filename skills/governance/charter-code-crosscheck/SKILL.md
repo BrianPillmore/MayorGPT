@@ -4,34 +4,51 @@ description: Check whether a draft action fits the city's charter, code, local r
 argument-hint: [draft-action]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Charter and Code Cross-Check
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- agenda or docket
-- draft staff report
-- charter/code provisions
-- proposed action language
-- posting/publication deadlines
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Test a proposed action against the hierarchy of authority before time is spent drafting or scheduling it.
 
-Always flag:
-- missing legal review
-- missing fiscal impact
-- missing attachments
-- authority/process mismatch
+## Hierarchy to apply (verify for your state and city type)
+1. Federal constitution and statutes
+2. State constitution and statutes (including preemption and Dillon's Rule vs. home-rule status)
+3. City charter
+4. City code / ordinances
+5. Resolutions, administrative regulations, council rules of procedure
+6. Adopted policies and bylaws
 
-Your output should usually include:
-- ready-to-use draft
-- risk and missing-info list
-- next-step checklist
+A lower source cannot override a higher one; a council generally cannot waive a charter requirement by resolution.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Required inputs
+- The draft action in plain words and who wants it
+- Charter and code text (ask for the actual sections; never cite from memory)
+- Council rules of procedure; relevant state statute list from the city attorney
+
+## Workflow
+1. **Characterize the action:** legislative (ordinance), administrative (resolution/motion), quasi-judicial (hearing on specific parties), budgetary, personnel, or contractual.
+2. **Find the source of authority.** Is it an express power, implied power, or home-rule power? Is the subject preempted or reserved to the state, county, or voters?
+3. **Find the procedure.** Number of readings, effective date, publication, referendum window, supermajority or emergency clause, mayoral veto and override, mandatory committee referral.
+4. **Find limits.** Spending and procurement thresholds, debt limits, voter-approval triggers, notice and hearing prerequisites, balanced-budget rules.
+5. **Identify who decides.** Council vs. manager vs. mayor vs. board; delegation limits.
+6. **Resolve conflicts between sources** using the hierarchy; where text is ambiguous, say so and present competing readings without choosing a legal conclusion.
+7. **Produce a path:** the steps, in order, with owners and earliest feasible dates.
+
+## Output structure
+- Action summary (one sentence)
+- Authority table: question | source section | finding | confidence (Confirmed / Needs attorney)
+- Required procedure checklist
+- Conflicts or gaps
+- Recommended path and alternative vehicles (e.g., resolution instead of ordinance)
+
+## Red flags / escalate to the city attorney
+- Any preemption question
+- Action touching elections, taxes, fees, franchises, or rates (voter-approval rules vary widely)
+- Charter and code appear to conflict
+- Council wants to act by a vehicle the charter does not authorize
+- Provision cited by staff cannot be located in the current codified text
+
+## Common mistakes
+- Citing an outdated code section; always confirm the supplement date
+- Treating a council rule as if it carried the force of law
+- Missing a referendum or protest-petition window that delays the effective date
+
+*Do not state conclusions about legality; frame as issues for the city attorney.*

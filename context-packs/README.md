@@ -45,4 +45,4 @@ Update `SOURCE_NOTES.md` any time the charter, code, or key policies change. A s
 - `context-pack-builder.md` — the prompt for generating a pack from your local documents in a single AI session
 - `TEMPLATE/README.md` — the governance summary template (fill in or use as the builder's output target)
 - `TEMPLATE/SOURCE_NOTES.md` — the source verification checklist
-- `yukon-ok/` — example pack for Yukon, Oklahoma (reference implementation)
+- `sample-springfield-example/` — a fully completed **fictional** pack (not a real city) showing what a finished README.md and SOURCE_NOTES.md look like; safe for demos, tests, and evals

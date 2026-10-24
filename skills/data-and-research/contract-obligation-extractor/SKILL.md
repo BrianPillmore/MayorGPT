@@ -4,34 +4,41 @@ description: Extract deadlines, deliverables, payment triggers, notice clauses, 
 argument-hint: [contract-name]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Convert a contract into a working obligation register so the city meets its own duties, enforces the vendor's, and acts before notice windows, auto-renewals, and insurance expirations pass. This is an extraction and calendar tool, not a legal interpretation; ambiguous clauses go to the city attorney.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- source materials
-- decision audience
-- date range
-- output format
-- known caveats
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Full executed contract with all exhibits, amendments, change orders, task orders, and referenced documents (RFP, proposal, insurance requirements).
+- Contract administrator and department owner; funding source and appropriation.
+- Procurement file basics (method, threshold, approval date) and any grant flow-down terms.
 
-Always flag:
-- data limitations
-- missing sources
-- weak inference
-- items needing validation
+## Workflow
+1. Identify parties, effective date, term, renewal options, and the order of precedence among documents.
+2. Extract obligations of each party: scope and deliverables with due dates, acceptance criteria, performance standards and service levels, reporting, personnel or subcontractor approvals, and key-person provisions.
+3. Money terms: price, rate schedule, escalators (with index and cap), not-to-exceed, invoicing and payment timing (and statutory prompt-payment interest), retainage, milestone payments, expenses, liquidated damages, and credits.
+4. Notice and option dates: renewal or non-renewal notice windows, termination for convenience or cause (notice period, cure period), price adjustment dates, and audit rights. Compute the actual calendar date of each trigger and set an advance reminder.
+5. Risk allocation: indemnification, limitation of liability, insurance types and limits with certificate expiry dates, bonds (bid, performance, payment) and expiry, warranties, and dispute resolution and venue.
+6. Compliance: prevailing wage, E-Verify or similar where required, non-discrimination, federal flow-downs (2 CFR 200 Appendix II) for grant-funded contracts, public records provisions, data protection and security, and ownership of work product and data.
+7. Appropriation and authority: non-appropriation clause, signature authority, and council approval record. Flag auto-renew clauses that obligate funds beyond the fiscal year.
+8. Build the register and calendar; note gaps (missing exhibits, unsigned amendments) and conflicts between documents.
 
-Your output should usually include:
-- synthesis memo
-- structured extracts
-- questions for follow-up
+## Output structure
+| # | Clause | Party | Obligation | Trigger / date | Reminder date | Owner | $ effect | Risk |
+Add: key terms summary (one page), critical dates calendar, insurance/bond tracker, and unresolved ambiguities for counsel.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Auto-renewal with a short notice window or multi-year commitments without non-appropriation language.
+- Unlimited indemnity or liability caps that exclude key risks.
+- Termination or exclusivity terms that restrict city options.
+- Missing insurance or expired certificates.
+- Data ownership, AI/analytics rights, or public records conflicts in technology contracts.
+- Missing required federal clauses on grant-funded work.
+
+## Common mistakes
+- Relying on the cover summary rather than the full text.
+- Ignoring amendments and exhibits.
+- Computing deadlines without business-day and notice-delivery rules.
+- Treating vendor proposals as part of the contract without checking incorporation.
+
+## State-law variance
+Prompt-payment, auto-renewal, indemnity limits, and contract authority rules vary by state.

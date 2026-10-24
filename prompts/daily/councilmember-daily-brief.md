@@ -3,12 +3,6 @@ name: councilmember-daily-brief
 title: Councilmember Daily Brief
 type: prompt
 category: daily
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Councilmember Daily Brief
@@ -24,6 +18,9 @@ A councilmember needs a concise update on hot issues, resident concerns, and upc
 - agenda timeline
 - constituent themes
 - media themes
+- which items are scheduled for action versus informational
+- issues the member has already taken a public position on
+- any quasi-judicial matter where contact is restricted
 
 ## Expected output
 
@@ -34,24 +31,29 @@ A compact daily memo grouped into watch items, resident issues, decisions ahead,
 - no staff micromanagement
 - flag city-wide service and budget impacts
 - note whether item is official or informal
+- mark quasi-judicial matters so the member avoids ex parte contact and flag for the city attorney
+- route operational requests through the city manager and not to line staff
+- distinguish confirmed fact from rumor or social-media claim
+- flag any item that could trigger a quorum or serial-meeting concern
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 
 ## Copy/paste prompt
 
 ```xml
 <role>
-You are a municipal government assistant helping with councilmember daily brief.
+You are a staff analyst helping a councilmember keep up with ward and city-wide issues without directing administration.
 </role>
 
 <context>
 CITY: [CITY_NAME]
 GOVERNANCE_MODEL: [council-manager / mayor-council / other]
-LOCAL_RULES: [charter, code, policy, state law, templates, tone preferences]
-SOURCE_MATERIALS: [agenda, reports, emails, maps, contracts, budget sheets, comments, incident notes]
+LOCAL_RULES: [charter limits on council direction of staff, open meetings law (no serial deliberation by sequential communications), council information-request protocol]
+SOURCE_MATERIALS: [agenda timeline, constituent contacts, service-request data for the ward, media clips, staff reports, social media themes]
 </context>
 
 <task>
 A councilmember needs a concise update on hot issues, resident concerns, and upcoming decision points.
-Produce a compact daily memo grouped into watch items, resident issues, decisions ahead, and suggested follow-up.
+Produce: a compact daily memo grouped into watch items, resident issues, decisions ahead, and suggested follow-up.
 </task>
 
 <inputs>
@@ -60,19 +62,28 @@ Produce a compact daily memo grouped into watch items, resident issues, decision
 - agenda timeline
 - constituent themes
 - media themes
+- which items are scheduled for action versus informational
+- issues the member has already taken a public position on
+- any quasi-judicial matter where contact is restricted
 </inputs>
 
 <checks>
 - no staff micromanagement
 - flag city-wide service and budget impacts
 - note whether item is official or informal
+- mark quasi-judicial matters so the member avoids ex parte contact and flag for the city attorney
+- route operational requests through the city manager and not to line staff
+- distinguish confirmed fact from rumor or social-media claim
+- flag any item that could trigger a quorum or serial-meeting concern
+- where state law or the local charter changes the answer, flag the variance; do not cite statutes, cases, or code sections that were not supplied
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Watch list with one-line status per item
+2. Resident issues by theme and ward
+3. Decisions ahead with dates
+4. Suggested questions to send through the manager
+5. Items that are official versus informal
 </required_output>
 ```
 
@@ -80,4 +91,5 @@ Produce a compact daily memo grouped into watch items, resident issues, decision
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

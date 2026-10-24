@@ -7,48 +7,6 @@
     "argument_hint": "meeting-date or meeting-type"
   },
   {
-    "name": "ordinance-drafter",
-    "title": "Ordinance Drafter",
-    "category": "governance",
-    "description": "Draft or revise a municipal ordinance with issue spotting around authority, amendment targets, enforcement, effective dates, and procedural steps.",
-    "argument_hint": "topic or code-section"
-  },
-  {
-    "name": "resolution-drafter",
-    "title": "Resolution Drafter",
-    "category": "governance",
-    "description": "Draft a municipal resolution for appointments, approvals, findings, recognitions, or formal policy statements.",
-    "argument_hint": "topic"
-  },
-  {
-    "name": "staff-report-builder",
-    "title": "Staff Report Builder",
-    "category": "governance",
-    "description": "Create a decision-ready staff report with summary, background, analysis, options, recommendation, fiscal impact, and attachment list.",
-    "argument_hint": "issue"
-  },
-  {
-    "name": "council-meeting-brief",
-    "title": "Council Meeting Brief",
-    "category": "governance",
-    "description": "Prepare the mayor, council, manager, or clerk for a meeting with question lists, motions, and item-by-item watch notes.",
-    "argument_hint": "meeting-date"
-  },
-  {
-    "name": "motion-language-crafter",
-    "title": "Motion Language Crafter",
-    "category": "governance",
-    "description": "Turn a desired decision into clean motion language and identify amendments, findings, and signature blocks that may be needed.",
-    "argument_hint": "agenda-item"
-  },
-  {
-    "name": "public-hearing-prep",
-    "title": "Public Hearing Prep",
-    "category": "governance",
-    "description": "Prepare hearing scripts, findings, notice checkpoints, public-comment capture structure, and closing action options.",
-    "argument_hint": "hearing-topic"
-  },
-  {
     "name": "board-appointment-check",
     "title": "Board Appointment Check",
     "category": "governance",
@@ -63,18 +21,18 @@
     "argument_hint": "draft-action"
   },
   {
-    "name": "open-meeting-risk-check",
-    "title": "Open Meeting Risk Check",
+    "name": "consent-calendar-screen",
+    "title": "Consent Calendar Screen",
     "category": "governance",
-    "description": "Review proposed meeting activity, messaging, workshops, emails, or serial conversations for meeting-law and transparency risk.",
-    "argument_hint": "scenario"
+    "description": "Screen proposed consent-calendar items for eligibility, hidden controversy, fiscal thresholds, and legal-notice problems before the agenda is published.",
+    "argument_hint": "meeting-date"
   },
   {
-    "name": "legislative-history-brief",
-    "title": "Legislative History Brief",
+    "name": "council-meeting-brief",
+    "title": "Council Meeting Brief",
     "category": "governance",
-    "description": "Build a concise history of an ordinance, resolution, policy, or recurring issue from prior agendas, minutes, and staff memos.",
-    "argument_hint": "topic"
+    "description": "Prepare the mayor, council, manager, or clerk for a meeting with question lists, motions, and item-by-item watch notes.",
+    "argument_hint": "meeting-date"
   },
   {
     "name": "election-calendar-planner",
@@ -91,53 +49,67 @@
     "argument_hint": "process"
   },
   {
-    "name": "budget-variance-analysis",
-    "title": "Budget Variance Analysis",
-    "category": "finance",
-    "description": "Explain monthly or quarterly variances by separating timing noise, structural variance, one-time events, and management action needs.",
-    "argument_hint": "fund or department"
+    "name": "legislative-history-brief",
+    "title": "Legislative History Brief",
+    "category": "governance",
+    "description": "Build a concise history of an ordinance, resolution, policy, or recurring issue from prior agendas, minutes, and staff memos.",
+    "argument_hint": "topic"
   },
   {
-    "name": "revenue-forecast-scenario",
-    "title": "Revenue Forecast Scenario",
-    "category": "finance",
-    "description": "Build scenario-based revenue outlooks with assumptions, downside cases, and budget implications for city leadership.",
-    "argument_hint": "revenue-source"
+    "name": "motion-language-crafter",
+    "title": "Motion Language Crafter",
+    "category": "governance",
+    "description": "Turn a desired decision into clean motion language and identify amendments, findings, and signature blocks that may be needed.",
+    "argument_hint": "agenda-item"
   },
   {
-    "name": "cip-prioritizer",
-    "title": "Cip Prioritizer",
-    "category": "finance",
-    "description": "Rank capital projects using risk, condition, service impact, regulatory pressure, funding fit, and delivery realism.",
-    "argument_hint": "cip-list"
+    "name": "open-meeting-risk-check",
+    "title": "Open Meeting Risk Check",
+    "category": "governance",
+    "description": "Review proposed meeting activity, messaging, workshops, emails, or serial conversations for meeting-law and transparency risk.",
+    "argument_hint": "scenario"
   },
   {
-    "name": "procurement-bid-evaluator",
-    "title": "Procurement Bid Evaluator",
-    "category": "finance",
-    "description": "Compare bids, proposals, or quotes using documented criteria, threshold awareness, and a defendable recommendation.",
-    "argument_hint": "solicitation-name"
+    "name": "ordinance-drafter",
+    "title": "Ordinance Drafter",
+    "category": "governance",
+    "description": "Draft or revise a municipal ordinance with issue spotting around authority, amendment targets, enforcement, effective dates, and procedural steps.",
+    "argument_hint": "topic or code-section"
   },
   {
-    "name": "invoice-claim-review",
-    "title": "Invoice Claim Review",
-    "category": "finance",
-    "description": "Summarize a claim, invoice batch, or approval item for executive or council review, including funding source and red flags.",
-    "argument_hint": "claim-batch"
+    "name": "parliamentary-procedure-coach",
+    "title": "Parliamentary Procedure Coach",
+    "category": "governance",
+    "description": "Coach a chair or member through the correct parliamentary mechanics for a live or anticipated procedural situation, using the body's adopted rules first.",
+    "argument_hint": "situation"
   },
   {
-    "name": "user-fee-policy-review",
-    "title": "User Fee Policy Review",
-    "category": "finance",
-    "description": "Assess fees, permit charges, and rate proposals against cost recovery, policy goals, peer context, and public communication needs.",
-    "argument_hint": "fee-program"
+    "name": "public-hearing-prep",
+    "title": "Public Hearing Prep",
+    "category": "governance",
+    "description": "Prepare hearing scripts, findings, notice checkpoints, public-comment capture structure, and closing action options.",
+    "argument_hint": "hearing-topic"
   },
   {
-    "name": "debt-financing-brief",
-    "title": "Debt Financing Brief",
-    "category": "finance",
-    "description": "Prepare a plain-language financing brief on options, constraints, voter approval needs, reserve effects, and timing.",
-    "argument_hint": "project or issue"
+    "name": "public-records-response",
+    "title": "Public Records Response",
+    "category": "governance",
+    "description": "Triage a public records or FOIA request into responsive records, applicable exemptions, required notifications, and a legally sufficient draft response letter.",
+    "argument_hint": "request-text or request-number"
+  },
+  {
+    "name": "resolution-drafter",
+    "title": "Resolution Drafter",
+    "category": "governance",
+    "description": "Draft a municipal resolution for appointments, approvals, findings, recognitions, or formal policy statements.",
+    "argument_hint": "topic"
+  },
+  {
+    "name": "staff-report-builder",
+    "title": "Staff Report Builder",
+    "category": "governance",
+    "description": "Create a decision-ready staff report with summary, background, analysis, options, recommendation, fiscal impact, and attachment list.",
+    "argument_hint": "issue"
   },
   {
     "name": "audit-response-builder",
@@ -147,11 +119,39 @@
     "argument_hint": "audit-finding"
   },
   {
-    "name": "grant-opportunity-screen",
-    "title": "Grant Opportunity Screen",
+    "name": "budget-variance-analysis",
+    "title": "Budget Variance Analysis",
     "category": "finance",
-    "description": "Quickly screen a grant for eligibility, strategic fit, match burden, operating tail, and probability of success.",
-    "argument_hint": "grant-name"
+    "description": "Explain monthly or quarterly variances by separating timing noise, structural variance, one-time events, and management action needs.",
+    "argument_hint": "fund or department"
+  },
+  {
+    "name": "cip-prioritizer",
+    "title": "Cip Prioritizer",
+    "category": "finance",
+    "description": "Rank capital projects using risk, condition, service impact, regulatory pressure, funding fit, and delivery realism.",
+    "argument_hint": "cip-list"
+  },
+  {
+    "name": "debt-financing-brief",
+    "title": "Debt Financing Brief",
+    "category": "finance",
+    "description": "Prepare a plain-language financing brief on options, constraints, voter approval needs, reserve effects, and timing.",
+    "argument_hint": "project or issue"
+  },
+  {
+    "name": "enterprise-fund-rate-study",
+    "title": "Enterprise Fund Rate Study",
+    "category": "finance",
+    "description": "Review or frame a water, wastewater, stormwater, or solid waste rate study \u2014 revenue requirement, cost-of-service allocation, rate design, covenants, and affordability \u2014 and translate it for council.",
+    "argument_hint": "utility-and-rate-proposal"
+  },
+  {
+    "name": "fund-balance-policy-review",
+    "title": "Fund Balance Policy Review",
+    "category": "finance",
+    "description": "Analyze the city's general fund and enterprise fund reserve balances against GFOA recommended practices, council-adopted policy, and peer benchmarks \u2014 with findings and recommended policy or budget actions.",
+    "argument_hint": "fund-name or fiscal-year"
   },
   {
     "name": "grant-compliance-check",
@@ -161,25 +161,53 @@
     "argument_hint": "grant-name"
   },
   {
+    "name": "grant-opportunity-screen",
+    "title": "Grant Opportunity Screen",
+    "category": "finance",
+    "description": "Quickly screen a grant for eligibility, strategic fit, match burden, operating tail, and probability of success.",
+    "argument_hint": "grant-name"
+  },
+  {
+    "name": "invoice-claim-review",
+    "title": "Invoice Claim Review",
+    "category": "finance",
+    "description": "Summarize a claim, invoice batch, or approval item for executive or council review, including funding source and red flags.",
+    "argument_hint": "claim-batch"
+  },
+  {
+    "name": "one-time-recurring-screen",
+    "title": "One Time Recurring Screen",
+    "category": "finance",
+    "description": "Screen a budget proposal, amendment, or spending request to separate one-time from recurring revenue and expenditure and show the multi-year recurring consequence.",
+    "argument_hint": "budget-item-or-proposal"
+  },
+  {
+    "name": "procurement-bid-evaluator",
+    "title": "Procurement Bid Evaluator",
+    "category": "finance",
+    "description": "Compare bids, proposals, or quotes using documented criteria, threshold awareness, and a defendable recommendation.",
+    "argument_hint": "solicitation-name"
+  },
+  {
+    "name": "revenue-forecast-scenario",
+    "title": "Revenue Forecast Scenario",
+    "category": "finance",
+    "description": "Build scenario-based revenue outlooks with assumptions, downside cases, and budget implications for city leadership.",
+    "argument_hint": "revenue-source"
+  },
+  {
+    "name": "user-fee-policy-review",
+    "title": "User Fee Policy Review",
+    "category": "finance",
+    "description": "Assess fees, permit charges, and rate proposals against cost recovery, policy goals, peer context, and public communication needs.",
+    "argument_hint": "fee-program"
+  },
+  {
     "name": "contract-issue-spotter",
     "title": "Contract Issue Spotter",
     "category": "legal-risk",
     "description": "Review a draft contract for scope, term, payment, indemnity, insurance, records, termination, and operational red flags.",
     "argument_hint": "contract-name"
-  },
-  {
-    "name": "records-request-triage",
-    "title": "Records Request Triage",
-    "category": "legal-risk",
-    "description": "Triage a public records request into likely custodians, date ranges, exclusions, sensitive material, and response steps.",
-    "argument_hint": "request"
-  },
-  {
-    "name": "litigation-hold-checklist",
-    "title": "Litigation Hold Checklist",
-    "category": "legal-risk",
-    "description": "Create a defensible litigation-hold plan with custodians, systems, retention steps, and communication notes.",
-    "argument_hint": "matter-name"
   },
   {
     "name": "ethics-conflict-check",
@@ -189,25 +217,18 @@
     "argument_hint": "scenario"
   },
   {
-    "name": "labor-employment-issue-scan",
-    "title": "Labor Employment Issue Scan",
+    "name": "executive-session-checklist",
+    "title": "Executive Session Checklist",
     "category": "legal-risk",
-    "description": "Screen a personnel or workplace issue for policy, due-process, leave, retaliation, wage-hour, or discrimination risk.",
-    "argument_hint": "issue"
+    "description": "Verify that a proposed closed session has proper statutory grounds, compliant notice, and the documentation needed to defend the session from a sunshine-law challenge.",
+    "argument_hint": "session-topic"
   },
   {
-    "name": "ordinance-enforceability-check",
-    "title": "Ordinance Enforceability Check",
+    "name": "first-amendment-comment-limits",
+    "title": "First Amendment Comment Limits",
     "category": "legal-risk",
-    "description": "Review a draft ordinance for vague language, missing definitions, due-process issues, and enforcement practicality.",
-    "argument_hint": "ordinance-topic"
-  },
-  {
-    "name": "land-use-findings-builder",
-    "title": "Land Use Findings Builder",
-    "category": "legal-risk",
-    "description": "Draft or test zoning and land-use findings so they track adopted criteria rather than preference alone.",
-    "argument_hint": "case-name"
+    "description": "Evaluate proposed public-comment rules, speaker removals, and social-media moderation against First Amendment limits for government-run forums.",
+    "argument_hint": "scenario or rule"
   },
   {
     "name": "franchise-utility-review",
@@ -217,53 +238,53 @@
     "argument_hint": "utility-action"
   },
   {
-    "name": "service-request-triage",
-    "title": "Service Request Triage",
-    "category": "operations",
-    "description": "Triage resident or internal service requests into the right department, urgency, response language, and escalation path.",
-    "argument_hint": "request-text"
+    "name": "labor-employment-issue-scan",
+    "title": "Labor Employment Issue Scan",
+    "category": "legal-risk",
+    "description": "Screen a personnel or workplace issue for policy, due-process, leave, retaliation, wage-hour, or discrimination risk.",
+    "argument_hint": "issue"
   },
   {
-    "name": "emergency-incident-brief",
-    "title": "Emergency Incident Brief",
-    "category": "operations",
-    "description": "Create a leader-ready incident brief with facts, impacts, actions underway, resource asks, and message guidance.",
-    "argument_hint": "incident"
+    "name": "land-use-findings-builder",
+    "title": "Land Use Findings Builder",
+    "category": "legal-risk",
+    "description": "Draft or test zoning and land-use findings so they track adopted criteria rather than preference alone.",
+    "argument_hint": "case-name"
   },
   {
-    "name": "storm-recovery-action-plan",
-    "title": "Storm Recovery Action Plan",
-    "category": "operations",
-    "description": "Turn a storm or tornado damage snapshot into immediate, near-term, and long-term recovery work with owners.",
-    "argument_hint": "incident"
+    "name": "litigation-hold-checklist",
+    "title": "Litigation Hold Checklist",
+    "category": "legal-risk",
+    "description": "Create a defensible litigation-hold plan with custodians, systems, retention steps, and communication notes.",
+    "argument_hint": "matter-name"
   },
   {
-    "name": "public-works-project-update",
-    "title": "Public Works Project Update",
-    "category": "operations",
-    "description": "Draft a clear progress update for a public works project, including schedule, budget, traffic, and resident impact.",
-    "argument_hint": "project-name"
+    "name": "ordinance-enforceability-check",
+    "title": "Ordinance Enforceability Check",
+    "category": "legal-risk",
+    "description": "Review a draft ordinance for vague language, missing definitions, due-process issues, and enforcement practicality.",
+    "argument_hint": "ordinance-topic"
   },
   {
-    "name": "utility-outage-comms",
-    "title": "Utility Outage Comms",
-    "category": "operations",
-    "description": "Prepare outage communications for water, wastewater, stormwater, or other utility events in plain language.",
-    "argument_hint": "outage"
+    "name": "records-request-triage",
+    "title": "Records Request Triage",
+    "category": "legal-risk",
+    "description": "Triage a public records request into likely custodians, date ranges, exclusions, sensitive material, and response steps.",
+    "argument_hint": "request"
   },
   {
-    "name": "fleet-policy-drafter",
-    "title": "Fleet Policy Drafter",
-    "category": "operations",
-    "description": "Draft or refine policy for fleet use, take-home vehicles, replacement timing, accidents, or fuel controls.",
-    "argument_hint": "policy-topic"
+    "name": "records-retention-trigger-check",
+    "title": "Records Retention Trigger Check",
+    "category": "legal-risk",
+    "description": "Determine retention periods, event triggers, and destruction holds for a category of city records before disposal or response.",
+    "argument_hint": "record-category"
   },
   {
-    "name": "facilities-maintenance-prioritizer",
-    "title": "Facilities Maintenance Prioritizer",
+    "name": "after-action-report-builder",
+    "title": "After Action Report Builder",
     "category": "operations",
-    "description": "Rank facility issues by safety, compliance, mission impact, cost, and temporary workaround options.",
-    "argument_hint": "facility-list"
+    "description": "Build a structured after-action report (AAR) for any significant incident, emergency activation, project completion, or major event \u2014 capturing what happened, what worked, what did not, and what should change.",
+    "argument_hint": "incident-or-project-name"
   },
   {
     "name": "code-enforcement-case-summary",
@@ -273,11 +294,74 @@
     "argument_hint": "case-id"
   },
   {
-    "name": "zoning-case-analysis",
-    "title": "Zoning Case Analysis",
+    "name": "emergency-incident-brief",
+    "title": "Emergency Incident Brief",
+    "category": "operations",
+    "description": "Create a leader-ready incident brief with facts, impacts, actions underway, resource asks, and message guidance.",
+    "argument_hint": "incident"
+  },
+  {
+    "name": "facilities-maintenance-prioritizer",
+    "title": "Facilities Maintenance Prioritizer",
+    "category": "operations",
+    "description": "Rank facility issues by safety, compliance, mission impact, cost, and temporary workaround options.",
+    "argument_hint": "facility-list"
+  },
+  {
+    "name": "fleet-policy-drafter",
+    "title": "Fleet Policy Drafter",
+    "category": "operations",
+    "description": "Draft or refine policy for fleet use, take-home vehicles, replacement timing, accidents, or fuel controls.",
+    "argument_hint": "policy-topic"
+  },
+  {
+    "name": "public-safety-staffing-analysis",
+    "title": "Public Safety Staffing Analysis",
+    "category": "operations",
+    "description": "Analyze police, fire, EMS, or dispatch staffing requests using workload, response-time, and relief-factor data rather than ratios alone, and show the multi-year cost.",
+    "argument_hint": "department-and-request"
+  },
+  {
+    "name": "public-works-project-update",
+    "title": "Public Works Project Update",
+    "category": "operations",
+    "description": "Draft a clear progress update for a public works project, including schedule, budget, traffic, and resident impact.",
+    "argument_hint": "project-name"
+  },
+  {
+    "name": "service-request-triage",
+    "title": "Service Request Triage",
+    "category": "operations",
+    "description": "Triage resident or internal service requests into the right department, urgency, response language, and escalation path.",
+    "argument_hint": "request-text"
+  },
+  {
+    "name": "storm-recovery-action-plan",
+    "title": "Storm Recovery Action Plan",
+    "category": "operations",
+    "description": "Turn a storm or tornado damage snapshot into immediate, near-term, and long-term recovery work with owners.",
+    "argument_hint": "incident"
+  },
+  {
+    "name": "utility-outage-comms",
+    "title": "Utility Outage Comms",
+    "category": "operations",
+    "description": "Prepare outage communications for water, wastewater, stormwater, or other utility events in plain language.",
+    "argument_hint": "outage"
+  },
+  {
+    "name": "water-wastewater-capital-plan",
+    "title": "Water Wastewater Capital Plan",
+    "category": "operations",
+    "description": "Structure or review a water, wastewater, or stormwater capital plan \u2014 condition and risk ranking, regulatory drivers, capacity, funding, and rate impact \u2014 for council and utility board decisions.",
+    "argument_hint": "utility-and-time-horizon"
+  },
+  {
+    "name": "annexation-brief",
+    "title": "Annexation Brief",
     "category": "planning-and-growth",
-    "description": "Analyze a rezoning, special permit, plat, or development case against plan and code criteria, context, and precedent.",
-    "argument_hint": "case-name"
+    "description": "Prepare an annexation or growth-boundary brief with service, fiscal, land-use, and process considerations.",
+    "argument_hint": "area-name"
   },
   {
     "name": "comp-plan-crosswalk",
@@ -294,18 +378,11 @@
     "argument_hint": "project-name"
   },
   {
-    "name": "subdivision-case-brief",
-    "title": "Subdivision Case Brief",
+    "name": "downtown-project-concept",
+    "title": "Downtown Project Concept",
     "category": "planning-and-growth",
-    "description": "Prepare a concise decision brief for platting or subdivision cases with conditions, utility issues, and hearing notes.",
-    "argument_hint": "case-name"
-  },
-  {
-    "name": "housing-policy-options",
-    "title": "Housing Policy Options",
-    "category": "planning-and-growth",
-    "description": "Generate practical housing policy options with pros, cons, implementation steps, and likely political considerations.",
-    "argument_hint": "housing-topic"
+    "description": "Shape a downtown or corridor concept into a usable project brief with partners, phasing, and activation ideas.",
+    "argument_hint": "location"
   },
   {
     "name": "economic-development-incentive-memo",
@@ -315,53 +392,67 @@
     "argument_hint": "project-name"
   },
   {
-    "name": "downtown-project-concept",
-    "title": "Downtown Project Concept",
+    "name": "economic-gardening-analysis",
+    "title": "Economic Gardening Analysis",
     "category": "planning-and-growth",
-    "description": "Shape a downtown or corridor concept into a usable project brief with partners, phasing, and activation ideas.",
-    "argument_hint": "location"
+    "description": "Evaluate whether intensive support for existing growing local businesses would generate better fiscal return than a traditional incentive recruitment approach.",
+    "argument_hint": "sector or project-name"
   },
   {
-    "name": "annexation-brief",
-    "title": "Annexation Brief",
+    "name": "exaction-nexus-review",
+    "title": "Exaction Nexus Review",
     "category": "planning-and-growth",
-    "description": "Prepare an annexation or growth-boundary brief with service, fiscal, land-use, and process considerations.",
-    "argument_hint": "area-name"
+    "description": "Test a proposed development condition, dedication, impact fee, or in-lieu payment against essential nexus and rough proportionality before it goes into an approval or agreement.",
+    "argument_hint": "condition-or-fee-and-project"
   },
   {
-    "name": "hiring-panel-kit",
-    "title": "Hiring Panel Kit",
-    "category": "people",
-    "description": "Build a panel interview kit with role-based questions, scoring guidance, and red-flag notes for city hiring.",
-    "argument_hint": "position-title"
+    "name": "fiscal-impact-analysis",
+    "title": "Fiscal Impact Analysis",
+    "category": "planning-and-growth",
+    "description": "Evaluate the full fiscal impact of a development proposal \u2014 headline tax revenue, full cost of services, capital investment required, and net fiscal return.",
+    "argument_hint": "project-name"
   },
   {
-    "name": "performance-review-writer",
-    "title": "Performance Review Writer",
-    "category": "people",
-    "description": "Draft a balanced performance evaluation with evidence, tone control, and practical development goals.",
-    "argument_hint": "employee-or-role"
+    "name": "housing-policy-options",
+    "title": "Housing Policy Options",
+    "category": "planning-and-growth",
+    "description": "Generate practical housing policy options with pros, cons, implementation steps, and likely political considerations.",
+    "argument_hint": "housing-topic"
   },
   {
-    "name": "disciplinary-memo-builder",
-    "title": "Disciplinary Memo Builder",
-    "category": "people",
-    "description": "Draft a corrective-action or discipline memo that is factual, professional, and process-aware.",
-    "argument_hint": "issue"
+    "name": "infrastructure-liability-assessment",
+    "title": "Infrastructure Liability Assessment",
+    "category": "planning-and-growth",
+    "description": "Help a city understand its infrastructure liability \u2014 the deferred maintenance and replacement obligations on city-owned assets \u2014 and calculate the hidden annual deficit.",
+    "argument_hint": "asset-category or city-name"
   },
   {
-    "name": "org-chart-and-span-review",
-    "title": "Org Chart And Span Review",
-    "category": "people",
-    "description": "Assess an org chart or reporting structure for clear accountability, workload, succession, and service impact.",
-    "argument_hint": "department-name"
+    "name": "street-design-fiscal-analysis",
+    "title": "Street Design Fiscal Analysis",
+    "category": "planning-and-growth",
+    "description": "Evaluate a proposed street redesign, new road project, or transportation corridor decision through a financial productivity lens \u2014 classifying the corridor type, assessing the fiscal direction of the proposed change, and flagging conflicts between engineering and tax-value optimization.",
+    "argument_hint": "corridor name or project description"
   },
   {
-    "name": "board-training-builder",
-    "title": "Board Training Builder",
-    "category": "people",
-    "description": "Build an orientation or training packet for council, boards, commissions, or department supervisors.",
-    "argument_hint": "audience"
+    "name": "subdivision-case-brief",
+    "title": "Subdivision Case Brief",
+    "category": "planning-and-growth",
+    "description": "Prepare a concise decision brief for platting or subdivision cases with conditions, utility issues, and hearing notes.",
+    "argument_hint": "case-name"
+  },
+  {
+    "name": "tif-district-analysis",
+    "title": "Tif District Analysis",
+    "category": "planning-and-growth",
+    "description": "Analyze a proposed or existing tax increment financing (TIF) district for eligibility, increment projections, overlapping-jurisdiction effects, project-cost fit, and exit risk.",
+    "argument_hint": "district-name-or-proposal"
+  },
+  {
+    "name": "zoning-case-analysis",
+    "title": "Zoning Case Analysis",
+    "category": "planning-and-growth",
+    "description": "Analyze a rezoning, special permit, plat, or development case against plan and code criteria, context, and precedent.",
+    "argument_hint": "case-name"
   },
   {
     "name": "ai-acceptable-use-policy",
@@ -371,11 +462,25 @@
     "argument_hint": "policy-version"
   },
   {
-    "name": "staff-handbook-redline",
-    "title": "Staff Handbook Redline",
+    "name": "board-training-builder",
+    "title": "Board Training Builder",
     "category": "people",
-    "description": "Review or draft handbook language with an eye to clarity, consistency, and rollout issues.",
-    "argument_hint": "section"
+    "description": "Build an orientation or training packet for council, boards, commissions, or department supervisors.",
+    "argument_hint": "audience"
+  },
+  {
+    "name": "disciplinary-memo-builder",
+    "title": "Disciplinary Memo Builder",
+    "category": "people",
+    "description": "Draft a corrective-action or discipline memo that is factual, professional, and process-aware.",
+    "argument_hint": "issue"
+  },
+  {
+    "name": "hiring-panel-kit",
+    "title": "Hiring Panel Kit",
+    "category": "people",
+    "description": "Build a panel interview kit with role-based questions, scoring guidance, and red-flag notes for city hiring.",
+    "argument_hint": "position-title"
   },
   {
     "name": "investigation-intake",
@@ -385,11 +490,81 @@
     "argument_hint": "matter-name"
   },
   {
+    "name": "org-chart-and-span-review",
+    "title": "Org Chart And Span Review",
+    "category": "people",
+    "description": "Assess an org chart or reporting structure for clear accountability, workload, succession, and service impact.",
+    "argument_hint": "department-name"
+  },
+  {
+    "name": "performance-review-writer",
+    "title": "Performance Review Writer",
+    "category": "people",
+    "description": "Draft a balanced performance evaluation with evidence, tone control, and practical development goals.",
+    "argument_hint": "employee-or-role"
+  },
+  {
+    "name": "religious-accommodation-guide",
+    "title": "Religious Accommodation Guide",
+    "category": "people",
+    "description": "Help a city evaluate and respond to a religious accommodation request from an employee or elected official, applying a generous standard that starts from accommodation rather than denial.",
+    "argument_hint": "employee-name or matter-reference"
+  },
+  {
+    "name": "staff-handbook-redline",
+    "title": "Staff Handbook Redline",
+    "category": "people",
+    "description": "Review or draft handbook language with an eye to clarity, consistency, and rollout issues.",
+    "argument_hint": "section"
+  },
+  {
     "name": "constituent-response",
     "title": "Constituent Response",
     "category": "public-engagement",
     "description": "Draft a respectful response to a resident issue while routing the matter internally and protecting the city from overpromising.",
     "argument_hint": "issue"
+  },
+  {
+    "name": "crisis-message-house",
+    "title": "Crisis Message House",
+    "category": "public-engagement",
+    "description": "Build a disciplined crisis message house with holding statement, key messages, and tough Q&A.",
+    "argument_hint": "incident"
+  },
+  {
+    "name": "engagement-plan-designer",
+    "title": "Engagement Plan Designer",
+    "category": "public-engagement",
+    "description": "Design a proportionate public engagement plan for a city decision, matching methods to the decision, audience, legal notice duties, and timeline.",
+    "argument_hint": "project-or-decision"
+  },
+  {
+    "name": "faq-builder",
+    "title": "Faq Builder",
+    "category": "public-engagement",
+    "description": "Convert a project, policy, or controversy into a plain-language public FAQ that reduces repeated confusion.",
+    "argument_hint": "topic"
+  },
+  {
+    "name": "language-access-plan",
+    "title": "Language Access Plan",
+    "category": "public-engagement",
+    "description": "Build a practical language-access and accessibility plan for a notice, hearing, program, or outreach campaign serving limited-English-proficient and disabled residents.",
+    "argument_hint": "program-or-event"
+  },
+  {
+    "name": "meeting-notice-drafter",
+    "title": "Meeting Notice Drafter",
+    "category": "public-engagement",
+    "description": "Draft a legally sufficient public notice for any city council, board, commission, or committee meeting \u2014 covering required content, posting deadlines, and special-meeting or emergency-meeting rules.",
+    "argument_hint": "meeting-type and date"
+  },
+  {
+    "name": "press-release-writer",
+    "title": "Press Release Writer",
+    "category": "public-engagement",
+    "description": "Write a city press release that is accurate, readable, and aligned with legal and operational review needs.",
+    "argument_hint": "topic"
   },
   {
     "name": "public-comment-summarizer",
@@ -399,11 +574,11 @@
     "argument_hint": "meeting-topic"
   },
   {
-    "name": "press-release-writer",
-    "title": "Press Release Writer",
+    "name": "social-post-series",
+    "title": "Social Post Series",
     "category": "public-engagement",
-    "description": "Write a city press release that is accurate, readable, and aligned with legal and operational review needs.",
-    "argument_hint": "topic"
+    "description": "Generate a multi-post city social media series with tone control, accessibility, and channel fit.",
+    "argument_hint": "campaign-topic"
   },
   {
     "name": "speechwriter",
@@ -420,67 +595,11 @@
     "argument_hint": "event-topic"
   },
   {
-    "name": "faq-builder",
-    "title": "Faq Builder",
-    "category": "public-engagement",
-    "description": "Convert a project, policy, or controversy into a plain-language public FAQ that reduces repeated confusion.",
-    "argument_hint": "topic"
-  },
-  {
-    "name": "social-post-series",
-    "title": "Social Post Series",
-    "category": "public-engagement",
-    "description": "Generate a multi-post city social media series with tone control, accessibility, and channel fit.",
-    "argument_hint": "campaign-topic"
-  },
-  {
-    "name": "crisis-message-house",
-    "title": "Crisis Message House",
-    "category": "public-engagement",
-    "description": "Build a disciplined crisis message house with holding statement, key messages, and tough Q&A.",
-    "argument_hint": "incident"
-  },
-  {
-    "name": "kpi-dashboard-narrative",
-    "title": "Kpi Dashboard Narrative",
+    "name": "ai-records-retention",
+    "title": "Ai Records Retention",
     "category": "data-and-research",
-    "description": "Turn KPI tables into a useful narrative that explains movement, drivers, and management action.",
-    "argument_hint": "dashboard-name"
-  },
-  {
-    "name": "vendor-proposal-scorecard",
-    "title": "Vendor Proposal Scorecard",
-    "category": "data-and-research",
-    "description": "Create or refine a proposal scorecard with weighted criteria, notes fields, and a fair evaluation approach.",
-    "argument_hint": "rfp-name"
-  },
-  {
-    "name": "records-retention-mapper",
-    "title": "Records Retention Mapper",
-    "category": "data-and-research",
-    "description": "Map city records to retention, custody, sensitivity, and disposition steps using local practice and law.",
-    "argument_hint": "record-series"
-  },
-  {
-    "name": "policy-research-synthesizer",
-    "title": "Policy Research Synthesizer",
-    "category": "data-and-research",
-    "description": "Synthesize policy research into decision-ready options that name trade-offs, examples, and implementation questions.",
-    "argument_hint": "topic"
-  },
-  {
-    "name": "meeting-minutes-drafter",
-    "title": "Meeting Minutes Drafter",
-    "category": "data-and-research",
-    "description": "Draft minutes from notes, motions, and recordings with procedural clarity and neutral tone.",
-    "argument_hint": "meeting-date"
-  },
-  {
-    "name": "legislative-tracker",
-    "title": "Legislative Tracker",
-    "category": "data-and-research",
-    "description": "Track recurring legislation, ordinances, or policy proposals through status changes and decision points.",
-    "argument_hint": "topic"
+    "description": "Identify when AI prompts and outputs are public records, apply the correct retention schedule to AI-generated content, and produce a records retention map covering every AI use case in the city.",
+    "argument_hint": "list of AI use cases or department"
   },
   {
     "name": "contract-obligation-extractor",
@@ -495,5 +614,54 @@
     "category": "data-and-research",
     "description": "Build a clear demographic or service-area brief from census or local data without overstating weak signals.",
     "argument_hint": "area-or-topic"
+  },
+  {
+    "name": "kpi-dashboard-narrative",
+    "title": "Kpi Dashboard Narrative",
+    "category": "data-and-research",
+    "description": "Turn KPI tables into a useful narrative that explains movement, drivers, and management action needed \u2014 suitable for council packets, city manager reports, or department reviews.",
+    "argument_hint": "dashboard-name or reporting-period"
+  },
+  {
+    "name": "legislative-tracker",
+    "title": "Legislative Tracker",
+    "category": "data-and-research",
+    "description": "Track state or federal legislation relevant to city operations through status changes, fiscal and authority impacts, and recommended city action \u2014 producing a working tracker and a leadership brief.",
+    "argument_hint": "legislative-session or topic-area"
+  },
+  {
+    "name": "meeting-minutes-drafter",
+    "title": "Meeting Minutes Drafter",
+    "category": "data-and-research",
+    "description": "Draft city council or board minutes from notes, audio timestamps, and motions \u2014 with procedural accuracy, neutral tone, and a complete record of all actions taken.",
+    "argument_hint": "meeting-date"
+  },
+  {
+    "name": "policy-research-synthesizer",
+    "title": "Policy Research Synthesizer",
+    "category": "data-and-research",
+    "description": "Synthesize policy research into decision-ready options that name trade-offs, examples, and implementation questions.",
+    "argument_hint": "topic"
+  },
+  {
+    "name": "public-records-request-response",
+    "title": "Public Records Request Response",
+    "category": "data-and-research",
+    "description": "Triage and plan the response to a public records request \u2014 scope, search, exemptions, redaction, fees, deadlines, and a documented response letter \u2014 for review by the records officer and city attorney.",
+    "argument_hint": "request-text"
+  },
+  {
+    "name": "records-retention-mapper",
+    "title": "Records Retention Mapper",
+    "category": "data-and-research",
+    "description": "Map city record series to required retention periods, custody locations, sensitivity classifications, and disposition steps \u2014 using the state retention schedule, local policy, and any applicable litigation-hold or audit-hold constraints.",
+    "argument_hint": "record-series or department"
+  },
+  {
+    "name": "vendor-proposal-scorecard",
+    "title": "Vendor Proposal Scorecard",
+    "category": "data-and-research",
+    "description": "Create or refine a proposal evaluation scorecard with weighted criteria, scoring rubrics, evaluator notes fields, and a process structure that supports a defensible, fair, and documented award recommendation.",
+    "argument_hint": "rfp-name or solicitation-number"
   }
 ]

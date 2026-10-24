@@ -4,43 +4,42 @@ description: Verify that a proposed closed session has proper statutory grounds,
 argument-hint: [session-topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Executive Session Checklist
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- proposed closed session topic and reason given
-- state open meetings law provisions governing executive session
-- city charter or code provisions, if more restrictive than state law
-- draft agenda and public notice language
-- any prior executive sessions on the same or related matter
-- decision-maker list (who may attend)
-3. Verify the proposed topic falls within a recognized statutory exemption. Common valid grounds include: pending litigation or settlement negotiation; personnel evaluation or discipline of a named individual; real property acquisition negotiation; security vulnerabilities; labor negotiation. Flag the specific statutory citation for each.
-4. Check that public notice adequately describes the general subject without disclosing the content the session is protecting. Vague or misleading notices are a frequent source of challenge.
-5. Review who may lawfully attend. Executive sessions are typically limited to council or board members and specific staff; outside advisors must be justified.
-6. Draft the motion language to enter and exit executive session, including return-to-open-session requirements and prohibition on taking formal action in closed session.
-7. Build a post-session documentation checklist: minutes requirements, action taken in open session, and any vote required to ratify decisions arising from the session.
-8. Do not hide uncertainty. If the proposed topic is on the boundary of a recognized exemption, recommend city attorney review before the session is noticed.
-9. End with clear next steps.
+**Purpose:** Test a proposed closed session against open-meetings law. Closed sessions are an exception to a presumption of openness; grounds are narrow, procedures are strict, and **states differ** (list of permitted topics, whether a vote is required, who may attend, and whether recordings or minutes are mandatory). Verify your own statute. Use `executive-session-script.md`.
 
-Always flag:
-- topics that do not clearly fit a statutory executive session exemption
-- notice language that is too vague or too specific
-- attendees who may not be permitted in closed session under state law
-- any prohibition against taking formal binding action in closed session
-- states where minutes or recordings of executive sessions may be required
-- prior challenges or litigation involving this city's executive session practices
+## Required inputs
+- Topic and what the body hopes to accomplish
+- Statute and city rule listing permitted grounds
+- Who would attend (attorney, manager, outside counsel, labor negotiator, others)
+- Agenda language and posting date
 
-Your output should usually include:
-- exemption citation and legal basis analysis
-- draft notice and motion language
-- permissible-attendees list
-- post-session documentation checklist
-- risk rating and recommended review steps
+## Workflow
+1. **Match a specific statutory ground.** Commonly recognized (verify): consultation with the attorney on pending or threatened litigation or privileged legal advice; real property acquisition or sale price negotiation; labor negotiations strategy; specific personnel matters (appointment, discipline, evaluation of an individual); security matters; certain licensing or confidential-by-law matters. "Sensitive" or "politically awkward" is not a ground.
+2. **Narrow the scope.** Discuss only what the ground allows. General policy, budget, and public-interest questions belong in open session even if they relate to the matter.
+3. **Notice and agenda:** describe the ground with the specificity your law requires (some require the statutory citation and the identity of the negotiators or the case caption).
+4. **Open-session motion:** convene publicly, state the ground in open session, vote if required, and announce expected duration and whether the body will reconvene.
+5. **Attendance:** only people necessary; the attorney should attend when relying on attorney-client privilege. Non-members, staff, and consultants who are not part of the privilege can waive it.
+6. **Conduct:** no final action unless the statute allows (most states require final votes in public); no side topics; no recording leaks; note who attended.
+7. **Documentation:** minutes or a confidential record, per statute; sealed record rules; certification by the presiding officer or attorney that the session complied.
+8. **Reconvene:** report out as required (e.g., "direction given" without disclosing privileged content) and take any vote publicly.
+9. **Confidentiality:** members' duty not to disclose, penalties, and the process if a leak occurs.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Ground-fit table: ground | statute (to be verified) | supporting facts | fit (Yes/No/Unsure)
+- Agenda language and the open-session motion
+- Attendee list with role and privilege note
+- Post-session reporting plan
+
+## Red flags / escalate to the city attorney
+- Real property or personnel topics expanded into public-policy discussion
+- Elected official wants non-attorney advisors present
+- Final action, straw votes, or consensus-gathering in closed session
+- Prior challenge or complaint about closed sessions
+
+## Common mistakes
+- Citing a ground in the agenda that does not match the discussion
+- Not recording the motion and statutory citation in open session
+- Taking a vote because "everyone agrees"
+
+*Not legal advice.*

@@ -4,34 +4,45 @@ description: Draft or refine policy for fleet use, take-home vehicles, replaceme
 argument-hint: [policy-topic]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Draft an enforceable fleet policy section with clear eligibility, accountability, and cost controls. Fleet policy touches tax rules (personal use of employer vehicles), insurance, labor agreements, and public records.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- location or system affected
-- known facts
-- photos/maps if any
-- responsible department
-- time sensitivity
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Current policy, council resolutions, and applicable labor agreements or personnel rules.
+- Fleet inventory: unit, age, mileage, department, assignment type (pool, assigned, take-home), cost per mile, and downtime.
+- Policy topic and the reason it is being revised (audit finding, accident, cost, council direction).
+- Insurance requirements, state law on public vehicle use, and IRS rules on take-home vehicles.
+- Fuel card data, telematics capabilities, and maintenance records.
 
-Always flag:
-- safety impacts
-- resident impacts
-- resource constraints
-- communication needs
+## Workflow
+1. Define scope: who and what vehicles are covered, including elected officials and volunteers, and equipment on trailers.
+2. Topic-specific content:
+ - Take-home vehicles: allow only for a documented operational need (24-hour response, on-call emergency, equipment storage), approved annually, with residency/distance limits per policy. Personal use of an employer vehicle and commuting can be taxable fringe benefit unless excluded (for example, qualified nonpersonal-use vehicles or a valid law-enforcement exception); coordinate with payroll and the IRS rules, and verify current requirements.
+ - Replacement: criteria by class using age, miles/hours, repair cost ratio, downtime, safety/emissions, and resale. Establish a replacement fund with annual contributions equal to replacement cost divided by service life; avoid ad hoc purchases.
+ - Accidents: reporting timelines, post-accident drug/alcohol testing where required (CDL operators under federal rules), photo and report standards, preventability review board, and discipline linked to personnel rules.
+ - Fuel and credit cards: PIN-controlled cards, receipt reconciliation, odometer entry, anomaly reports, and limits on non-fuel purchases.
+ - Use controls: authorized drivers, license checks (motor vehicle record screening), no personal use except as defined, telematics notice and data retention, and prohibition on passengers.
+3. Align with other policies: procurement thresholds, surplus disposal, anti-idling or electrification goals, and records retention.
+4. Define roles and enforcement: fleet manager authority, department head duties, audit frequency, and consequences. Include appeal paths.
+5. Cost-benefit: show the annual cost of the policy change and of the status quo, including take-home vehicle costs and replacement backlog.
+6. Draft clear language with definitions, effective date, and exceptions procedure requiring written approval.
 
-Your output should usually include:
-- operations summary
-- owner/urgency routing
-- action list
+## Output structure
+Policy draft with sections: Purpose, Scope, Definitions, Eligibility, Responsibilities, Procedures, Reporting, Enforcement, Review Date. Plus a summary table: Decision | Criteria | Approver | Frequency.
+Add: implementation checklist, cost impact, and items for union notice or negotiation.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate
+- Policy changes affecting employee benefits or working conditions (meet-and-confer or bargaining duties).
+- Tax treatment of personal use.
+- Insurance coverage gaps for volunteers or personal vehicles used for city business.
+- Telematics tracking raising privacy and records issues.
+- Elected officials' use of city vehicles.
+
+## Common mistakes
+- Granting take-home as a perk.
+- Replacement based on budget year rather than lifecycle.
+- No fuel reconciliation.
+- Policy with no audit or enforcement.
+
+## State-law variance
+Public-vehicle use limits, labor bargaining rules, and records laws vary by state.

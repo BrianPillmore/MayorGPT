@@ -4,36 +4,43 @@ description: Draft or revise a municipal ordinance with issue spotting around au
 argument-hint: [topic or code-section]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Use the supporting file(s) in this skill directory when helpful: `ordinance-template.md`.
+# Ordinance Drafter
 
-Follow this workflow:
+**Purpose:** Produce a codifiable draft ordinance plus a short issues memo. Use `ordinance-template.md` for structure. Output is a draft for attorney review.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- agenda or docket
-- draft staff report
-- charter/code provisions
-- proposed action language
-- posting/publication deadlines
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+## Required inputs
+- Policy goal in one or two sentences, and the problem it solves
+- Current code section(s) to amend, repeal, or add; the codification title and chapter conventions
+- Authority source (charter, state enabling statute) as identified by the attorney
+- Enforcement department and penalty framework; fiscal impact
 
-Always flag:
-- missing legal review
-- missing fiscal impact
-- missing attachments
-- authority/process mismatch
+## Workflow
+1. **Confirm an ordinance is the right vehicle.** Binding regulation, penalties, fees, zoning, and code amendments generally require an ordinance; policy statements may be a resolution.
+2. **Verify authority and preemption** (see `charter-code-crosscheck`). Do not assume state law allows more stringent local rules.
+3. **Draft the title** to match the content; some states limit an ordinance to a single subject expressed in its title. Add a purpose and findings section that supports the legislative record.
+4. **Definitions first**, then operative provisions. Use "shall" for duties, "may" for discretion, and defined terms consistently. Avoid vague standards ("unreasonable") without criteria (see `ordinance-enforceability-check`).
+5. **Amendments:** show strike-and-underline text; cite the section being amended by its current number; preserve numbering.
+6. **Enforcement:** who enforces, notice, civil vs. criminal vs. administrative penalties, graduated fines, abatement, appeal path, and statutory caps on fines.
+7. **Boilerplate:** severability, repealer of conflicting provisions, codification instruction, publication, and effective date (often 30 days or on publication; emergency clauses have strict requirements).
+8. **Procedure map:** readings required, public hearing and published notice if required, committee referral, planning commission recommendation, mayoral signature or veto, referendum window.
+9. **Impact check:** fiscal note, staffing, equity effects, existing contracts or vested rights, grandfathering.
 
-Your output should usually include:
-- ready-to-use draft
-- risk and missing-info list
-- next-step checklist
+## Output structure
+1. Draft ordinance (template structure)
+2. Issues memo: authority, preemption, enforcement, constitutional hot spots
+3. Procedure timeline with dates
+4. Questions for the sponsor
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Red flags / escalate to the city attorney
+- Regulation of speech, assembly, religion, housing, or property rights
+- Criminal penalties or new fees/taxes (voter approval rules vary)
+- Preemption uncertainty; conflict with a franchise or contract
+- Emergency clause or retroactive effect
+
+## Common mistakes
+- Amending a section that was already amended or renumbered
+- Effective date earlier than publication
+- No enforcement mechanism or an unfunded one
+- Fixing a problem with an overbroad prohibition
+
+*Draft only; not legal advice.*

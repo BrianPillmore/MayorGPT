@@ -3,12 +3,6 @@ name: technology-governance-review
 title: Technology and AI Governance Review
 type: prompt
 category: annual
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Technology and AI Governance Review
@@ -78,10 +72,11 @@ Produce a technology governance review memo with systems risk summary, cybersecu
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. Systems risk summary (high-risk first)
+2. Cybersecurity posture assessment, without exploitable detail
+3. AI use inventory and policy gaps
+4. Compliance status and vendor-contract flags
+5. Recommended council actions
 </required_output>
 ```
 
@@ -89,4 +84,5 @@ Produce a technology governance review memo with systems risk summary, cybersecu
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

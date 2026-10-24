@@ -3,12 +3,6 @@ name: public-health-emergency
 title: Public Health Emergency Response
 type: prompt
 category: emergencies
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # Public Health Emergency Response
@@ -78,10 +72,11 @@ Produce a city role summary, interagency coordination checklist, public messagin
 </checks>
 
 <required_output>
-1. Brief issue framing
-2. Draft work product
-3. Key risks / missing information
-4. Recommended next step
+1. City role statement (lead versus support)
+2. Inter-agency coordination checklist
+3. Public messaging draft aligned to health authority
+4. Resource deployment list
+5. Notification and action timeline
 </required_output>
 ```
 
@@ -89,4 +84,5 @@ Produce a city role summary, interagency coordination checklist, public messagin
 
 - Replace bracketed fields with your local city context.
 - If the work will be used publicly or officially, attach the relevant charter, code section, staff report, budget page, or contract first.
-- For Claude, keep long source material above the task block when possible and put the ask near the end of the prompt.
+- Keep long source material above the task block when possible and put the ask near the end of the prompt.
+- This prompt does not supply legal citations. State law and local charters vary; add the controlling authority yourself and have the city attorney confirm before official use.

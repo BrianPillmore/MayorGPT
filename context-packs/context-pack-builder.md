@@ -3,12 +3,6 @@ name: context-pack-builder
 title: City Context Pack Builder
 type: prompt
 category: setup
-model_compatibility:
-  - Claude
-  - ChatGPT
-  - Gemini
-  - Open-weight LLMs
-claude_fit: high
 ---
 
 # City Context Pack Builder

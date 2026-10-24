@@ -4,34 +4,41 @@ description: Triage a public records request into likely custodians, date ranges
 argument-hint: [request]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+# Records Request Triage
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- draft document or scenario facts
-- local charter/code/policy
-- state-law context if known
-- timeline
-- decision-maker
-3. Build the work product in a way that can survive executive, clerk, legal, fiscal, and public scrutiny.
-4. Do not hide uncertainty. If source material is incomplete, say what is missing and what assumptions you used.
-5. End with clear next steps.
+**Purpose:** Early-stage intake: understand the request, start the clock, find the custodians, and flag sensitivity before drafting a response. For the full response letter and exemption analysis use `public-records-response`. Statutory deadlines, fees, and exemptions vary by state.
 
-Always flag:
-- facts still unknown
-- items needing licensed counsel review
-- procedural vulnerabilities
-- recordkeeping needs
+## Required inputs
+- Request text, date and channel received, requester information
+- State act and city records policy; retention schedule
+- Org chart or department list; systems inventory
 
-Your output should usually include:
-- issue spot list
-- risk summary
-- review checklist
+## Workflow
+1. **Start the clock:** note date received and compute the statutory response and extension dates (verify business vs. calendar days). Calendar internal deadlines two to three days earlier.
+2. **Is it a valid request?** Written form, reasonably described records, correct recipient; routing to the designated records officer. Questions are not always "records requests"; the act may not require creating records or answering questions.
+3. **Parse scope:** subject, date range, record types (email, text, video, spreadsheets, calendars, drafts), persons named, and keywords.
+4. **Map custodians and systems:** departments, individual employees, elected officials, vendors holding city data, backup or archive. Include personal accounts if used for city business.
+5. **Retention check:** do the records still exist per the schedule? If scheduled for destruction, pause destruction on responsive records (see `records-retention-trigger-check`).
+6. **Sensitivity screen:** privileged communications, personnel/medical, law-enforcement or investigation records, security plans, juvenile or victim data, Social Security and account numbers, bids in progress, third-party trade secrets. Mark for attorney review rather than withholding by default.
+7. **Burden and clarification:** if broad, contact the requester to refine scope; document the exchange and whether the clock pauses.
+8. **Assign and track:** owner, due dates, search log, estimate of volume and cost.
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+## Output structure
+- Intake summary (one paragraph) and deadline table
+- Custodian/system matrix: who | system | search method | date range | due
+- Sensitivity flags
+- Draft clarification note (if needed)
+- Next steps with owners
+
+## Red flags / escalate to the city attorney
+- Request linked to litigation, claims, or personnel complaint
+- Requester is media, an opponent, or counsel (does not change duties; heightens scrutiny)
+- Request for personal-device records, body-camera video, or investigation files
+- Records scheduled for destruction
+
+## Common mistakes
+- Missing the first acknowledgment deadline
+- Searching only the main email system
+- Narrowing the request without the requester's agreement
+
+*Not legal advice.*

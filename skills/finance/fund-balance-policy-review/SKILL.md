@@ -4,43 +4,44 @@ description: Analyze the city's general fund and enterprise fund reserve balance
 argument-hint: [fund-name or fiscal-year]
 ---
 
-When this skill is invoked, act like a municipal-government specialist and work in a disciplined,
-decision-ready way.
-Follow this workflow:
+## Purpose
+Assess whether reserves are adequate, excessive, mis-classified, or being used to mask a structural gap. Uses GASB 54 classifications for governmental funds and working-capital or unrestricted net position concepts for enterprise funds.
 
-1. Clarify the exact municipal question, audience, and deadline.
-2. Ask for or locate the minimum necessary source material:
-- current fund balance by category (nonspendable, restricted, committed, assigned, unassigned) per GASB 54
-- council-adopted fund balance policy including target range and replenishment timeline
-- GFOA recommended practice on fund balance (current version)
-- five-year trend of actual fund balance vs. policy target
-- major revenue volatility factors for this city (sales tax concentration, assessed valuation swings, etc.)
-- upcoming expenditure pressures or known one-time draws on reserves
-- any audit findings or bond rating commentary on fund balance
-3. Calculate the unassigned fund balance as a percentage of annual expenditures and compare to: (a) GFOA recommended minimum of two months (approximately 16.7%); (b) the city's own adopted policy target; (c) any bond covenant or state law minimum.
-4. Identify the city's GASB 54 classification of each fund balance component and flag any restricted or committed balances being counted toward the operating reserve that should not be.
-5. Assess whether the current balance, trend, and policy are adequate for the city's specific revenue risk profile. A city heavily dependent on a single sales-tax generator warrants a higher target than GFOA's minimum.
-6. Draft findings and, if applicable, recommended changes to the fund balance policy or a replenishment plan.
-7. Do not hide uncertainty. If audit, CAFR, or trend data is incomplete, say what is missing and what assumptions you used.
-8. End with clear next steps, including any council resolution or budget amendment required.
+## Required inputs
+- Last three to five years of ACFR or audited statements: fund balance by classification (nonspendable, restricted, committed, assigned, unassigned), revenues, expenditures, and transfers.
+- Adopted reserve policy (target, minimum, replenishment rule), and current-year budget with planned use of fund balance.
+- Revenue volatility profile (sales tax share, state aid, intergovernmental dependence), exposure to disasters, and cash-flow timing (property tax installments).
+- Enterprise funds: operating expenses, debt service, depreciation, rate covenants, and capital reserve policy.
+- Peer cities or state benchmarks, if available.
 
-Always flag:
-- balances that fall below council-adopted minimums or GFOA recommended minimums
-- restricted or committed funds that should not be counted toward the operating reserve
-- revenue concentration risk that argues for a target above the GFOA minimum
-- any draws on reserves that are structural rather than one-time
-- bond covenant or state law reserve minimums that are binding constraints
-- upcoming capital or liability events that will affect the reserve in the near term
+## Workflow
+1. Identify the correct measure. For the general fund, GFOA's published best practice recommends unrestricted budgetary fund balance (committed + assigned + unassigned) of no less than two months of regular general fund operating revenues or expenditures; verify the current text and note that larger amounts may be warranted by risk. Do not count nonspendable or restricted money.
+2. Compute days or months of operating expenditures on hand, trend over time, and balance relative to policy.
+3. Reconcile policy to practice: policy exists? Reviewed within three to five years? Includes replenishment timeline? Are "committed" amounts backed by council resolution as GASB 54 requires?
+4. Risk-adjust the target: revenue volatility, reliance on one taxpayer, disaster exposure, pending litigation, self-insurance, cash-flow gaps, and capital needs. Explain why the target is above or below the two-month floor.
+5. Decompose changes in balance: operating surplus/deficit, one-time transfers, and planned drawdowns. Flag a balance maintained by deferring maintenance or capital.
+6. Enterprise funds: compare unrestricted cash to operating-reserve target (for example days of cash on hand), debt service reserve, and capital replacement reserve versus depreciation. Confirm rate covenants. Check for general fund transfers or subsidies that blur fund integrity.
+7. Evaluate excess: balances well above target may signal over-collection or unused capacity, but also a funding source for one-time needs only, not recurring spending.
+8. Recommend actions: adopt or update policy, define use-and-replenish rules, change budgeting to avoid reliance on reserves, create separate stabilization, capital, or insurance reserves.
 
-Your output should usually include:
-- fund balance summary table (current year and five-year trend) vs. policy and GFOA benchmarks
-- GASB 54 classification review
-- written findings with risk assessment
-- recommended policy action or replenishment plan if needed
-- council briefing points
+## Output structure
+| Fund | Classification | Balance | Months of expenditures | Policy target | Gap/Excess | Trend (3-5 yr) | Risk factors |
 
-Writing standards:
-- Use plain English before jargon.
-- Distinguish facts, assumptions, options, and recommendations.
-- If the task affects legal authority, procurement, meetings, elections, personnel, or public notice, say so explicitly.
-- Preserve a calm, professional municipal tone.
+Add: findings, recommended policy language outline, allowable uses list, and replenishment schedule.
+
+## Red flags / escalate
+- Balance below policy minimum or declining several years in a row.
+- Structural deficit funded by reserves (see revenue-forecast-scenario).
+- Negative unrestricted net position in an enterprise fund or negative cash.
+- Reserve use without council authorization, or "committed" funds without proper action.
+- Debt covenant or rating-agency threshold near.
+
+## Common mistakes
+- Counting restricted or nonspendable balance as available.
+- Using fund balance as a revenue source for recurring costs.
+- Applying a single percentage to all funds without regard to risk.
+- Ignoring capital replacement in enterprise reserves.
+- Comparing to peers that use different accounting classifications.
+
+## State-law variance
+Some states cap or require reserves or restrict use of balance; charters may set minimums. Confirm.

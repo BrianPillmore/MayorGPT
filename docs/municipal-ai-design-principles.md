@@ -35,6 +35,7 @@ of smoothing it over.
 ## 5. Plain language wins public trust
 Public outputs should sound like local government at its best: clear, calm, specific, and respectful.
 
-## 6. Claude-first, model-portable
-This repo leans into Claude strengths—clear role prompts, XML-ready structure, long-context patterns, and
-skill files—while keeping every artifact readable as plain Markdown for other models.
+## 6. Model-portable
+This repo uses clear role prompts, XML-style tagged blocks that work well across models, and portable
+SKILL.md instruction folders, while keeping every artifact readable as plain Markdown. No vendor-specific
+syntax belongs in agents, prompts, or skills. See `model-portability.md`.
