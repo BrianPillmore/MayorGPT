@@ -15,7 +15,7 @@ jobs:
     # setup-python is unsupported on Amazon Linux; run in a python image
     container: python:3.12
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate repository structure, links, and counts
         run: python scripts/validate_repo.py
       - name: Check catalog is up to date
@@ -39,7 +39,7 @@ jobs:
       matrix:
         python-version: ['3.10', '3.12']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
       - name: Run tests
@@ -48,6 +48,6 @@ jobs:
   shellcheck:
     runs-on: ${{ fromJSON(vars.CI_RUNNER_LABELS || '["ubuntu-latest"]') }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Lint installer scripts
         run: docker run --rm -v "$PWD:/mnt" -w /mnt koalaman/shellcheck:stable integrations/skills-installer/install_mayorgpt_skills.sh
