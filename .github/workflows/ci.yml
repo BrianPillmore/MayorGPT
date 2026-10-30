@@ -11,12 +11,11 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON(vars.CI_RUNNER_LABELS || '["ubuntu-latest"]') }}
+    # setup-python is unsupported on Amazon Linux; run in a python image
+    container: python:3.12
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
       - name: Validate repository structure, links, and counts
         run: python scripts/validate_repo.py
       - name: Check catalog is up to date
@@ -33,25 +32,22 @@ jobs:
             python integrations/api/mayorgpt_llm.py --agent mayor --user hello --dry-run > /dev/null
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON(vars.CI_RUNNER_LABELS || '["ubuntu-latest"]') }}
+    # setup-python is unsupported on Amazon Linux; run in a python image
+    container: python:${{ matrix.python-version }}
     strategy:
       matrix:
         python-version: ['3.10', '3.12']
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          cache: pip
-          cache-dependency-path: requirements*.txt
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
       - name: Run tests
         run: pytest tests/ -v
 
   shellcheck:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON(vars.CI_RUNNER_LABELS || '["ubuntu-latest"]') }}
     steps:
       - uses: actions/checkout@v4
       - name: Lint installer scripts
-        run: shellcheck integrations/skills-installer/install_mayorgpt_skills.sh
+        run: docker run --rm -v "$PWD:/mnt" -w /mnt koalaman/shellcheck:stable integrations/skills-installer/install_mayorgpt_skills.sh
